@@ -1,0 +1,12 @@
+<mat-table #snctable [dataSource]="sncDataSource">
+  <ng-container matColumnDef="cidade">
+    <mat-header-cell *matHeaderCellDef>Cidade</mat-header-cell>
+    <mat-cell *matCellDef="let user"> {{cidade.nome}} </mat-cell>
+  </ng-container>
+  <ng-container matColumnDef="uf">
+    <mat-header-cell *matHeaderCellDef>Uf</mat-header-cell>
+    <mat-cell *matCellDef="let user"> {{uf.nome}} </mat-cell>
+  </ng-container>
+  <mat-header-row *matHeaderRowDef="['cidade', 'uf']"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: ['cidade', 'uf'];"></mat-row>
+</mat-table>

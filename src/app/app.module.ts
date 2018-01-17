@@ -9,10 +9,12 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from './material/material.module';
 
 import { environment } from '../environments/environment';
+import { SncTableComponent } from './snc-table/snc-table.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SncTableComponent
   ],
   imports: [
     BrowserModule,
