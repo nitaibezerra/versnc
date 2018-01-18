@@ -15,6 +15,7 @@ node_js:
 before_script:
   - sudo chown root /opt/google/chrome/chrome-sandbox
   - sudo chmod 4755 /opt/google/chrome/chrome-sandbox
+  - ng server &
 
 install:
   - yarn install --dev
