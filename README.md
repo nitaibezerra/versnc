@@ -1,27 +1,34 @@
 # Versnc
+[![Maintainability](https://api.codeclimate.com/v1/badges/7eafd90c059488f7a7b4/maintainability)](https://codeclimate.com/github/culturagovbr/versnc/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/7eafd90c059488f7a7b4/test_coverage)](https://codeclimate.com/github/culturagovbr/versnc/test_coverage)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.4.
+VerSNC é um projeto que utiliza a API do SNC para exibir dados em outros formatos que não estão planejados na primeira plataforma. Utiliza Angular 5, Angular Material e outras tecnologias para desenvolver uma interface web de fácil utilização.
 
-## Development server
+Este projeto foi gerado usando [Angular CLI](https://github.com/angular/angular-cli) versão 1.6.4.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Backend
+O código fonte da plataforma original e da API podem ser encontrados em [https://github.com/culturagovbr/sistema-nacional-cultura](https://github.com/culturagovbr/sistema-nacional-cultura)
+
+## Servidor de Desenvolvimento
+
+Execute `ng serve` para usar o servidor de desenvolvimento. Navegue para `http://localhost:4200/`. A aplicação será recarregada automaticamente cada vez que algum arquivo for alterado.
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Execute `ng generate component component-name` para gerar um novo componente. Você também pode usar `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Construção
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Execute `ng build` para construir o projeto. Artefatos gerados durante a construção estarão armazenados no diretório `dist/`. Use o parametro `-prod` para uma construção pronta para produção.
 
-## Running unit tests
+## Executar testes unitários
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Execute `ng test` para executar os testes unitários através de [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Executar os testes E2E
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Execute `yarn e2e` para executar os testes end-to-end(aceitação) através do [Cypress](https://cypress.io).
 
-## Further help
+## Maiores informações
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Para obter mais ajuda com o Angular CLI, use `ng help` ou verifique o [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
