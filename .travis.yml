@@ -1,3 +1,6 @@
+env:
+  global:
+    - CC_TEST_REPORTER_ID=de550a75992b55c0af6fc7e949e5850eb0f3407cd4172af99cabbf8f89c88a29
 sudo: required
 dist: trusty
 
@@ -15,6 +18,9 @@ node_js:
 before_script:
   - sudo chown root /opt/google/chrome/chrome-sandbox
   - sudo chmod 4755 /opt/google/chrome/chrome-sandbox
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
   - ng server &
 
 install:
@@ -23,3 +29,6 @@ install:
 script:
   - ng test --watch=false --code-coverage
   - yarn e2e
+
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
