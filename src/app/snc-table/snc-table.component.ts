@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 import { MatTableDataSource } from '@angular/material';
 
+import { SlcApiService } from '../slc-api.service';
+
 @Component({
   selector: 'snc-table',
   templateUrl: './snc-table.component.html',
@@ -9,10 +11,13 @@ import { MatTableDataSource } from '@angular/material';
 })
 export class SncTableComponent implements OnInit {
 
-  constructor() { }
+  constructor(private slcapi: SlcApiService) {
+  }
 
   ngOnInit() {
-    let sncDataSource = new MatTableDataSource();
+    const sncDataSource = new MatTableDataSource();
+    this.slcapi.get()
+      .subscribe(res => res['_embedded']['items']);
   }
 
 }

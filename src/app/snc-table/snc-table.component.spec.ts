@@ -1,6 +1,12 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+
+import { MaterialModule } from '../material/material.module';
+// import { MaterialModule } from '@angular/material';
+
 import { SncTableComponent } from './snc-table.component';
+import { SlcApiService } from '../slc-api.service';
 
 describe('SncTableComponent', () => {
   let component: SncTableComponent;
@@ -8,9 +14,12 @@ describe('SncTableComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SncTableComponent ]
+      imports: [ HttpClientModule, MaterialModule ],
+      declarations: [ SncTableComponent ],
+      providers: [ SlcApiService ],
     })
     .compileComponents();
+    TestBed.get(SlcApiService);
   }));
 
   beforeEach(() => {
