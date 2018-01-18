@@ -1,6 +1,7 @@
 # Versnc
 [![Maintainability](https://api.codeclimate.com/v1/badges/7eafd90c059488f7a7b4/maintainability)](https://codeclimate.com/github/culturagovbr/versnc/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/7eafd90c059488f7a7b4/test_coverage)](https://codeclimate.com/github/culturagovbr/versnc/test_coverage)
+[![Build Status](https://travis-ci.org/culturagovbr/versnc.svg?branch=master)](https://travis-ci.org/culturagovbr/versnc)
 
 VerSNC é um projeto que utiliza a API do SNC para exibir dados em outros formatos que não estão planejados na primeira plataforma. Utiliza Angular 5, Angular Material e outras tecnologias para desenvolver uma interface web de fácil utilização.
 
