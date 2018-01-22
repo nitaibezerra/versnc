@@ -1,11 +1,11 @@
-<mat-table #snctable>
+<mat-table #snctable [dataSource]="sncDataSource">
   <ng-container matColumnDef="cidade">
     <mat-header-cell *matHeaderCellDef>Cidade</mat-header-cell>
-    <mat-cell *matCellDef="let user"> {{cidade.nome}} </mat-cell>
+    <mat-cell *matCellDef="let localizacao"> {{localizacao.cidade}} </mat-cell>
   </ng-container>
   <ng-container matColumnDef="uf">
     <mat-header-cell *matHeaderCellDef>Uf</mat-header-cell>
-    <mat-cell *matCellDef="let user"> {{uf.nome}} </mat-cell>
+    <mat-cell *matCellDef="let localizacao"> {{localizacao.uf}} </mat-cell>
   </ng-container>
   <mat-header-row *matHeaderRowDef="['cidade', 'uf']"></mat-header-row>
   <mat-row *matRowDef="let row; columns: ['cidade', 'uf'];"></mat-row>

@@ -11,13 +11,25 @@ import { SlcApiService } from '../slc-api.service';
 })
 export class SncTableComponent implements OnInit {
 
+  private sncDataSource: any;
+
   constructor(private slcapi: SlcApiService) {
   }
 
   ngOnInit() {
-    const sncDataSource = new MatTableDataSource();
-    this.slcapi.get()
-      .subscribe(res => res['_embedded']['items']);
+    this.slcapi.get().subscribe(data => {
+      let localizacao = [];
+      for (let i in data['_embedded']['items']) {
+        localizacao.push(new Localizacao());
+        localizacao[i].cidade = String(data['_embedded']['items'][i]['ente_federado']['localizacao']['cidade']['nome_municipio']);
+        localizacao[i].uf = String(data['_embedded']['items'][i]['ente_federado']['localizacao']['estado']['sigla']);
+      }
+      this.sncDataSource = new MatTableDataSource<Localizacao>(localizacao);
+    });
   }
+}
 
+export class Localizacao {
+  cidade: string;
+  uf: string;
 }

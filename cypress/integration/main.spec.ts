@@ -21,3 +21,13 @@ it('Apresenta UF na tabela da Página Inicial', () => {
   cy.visit('http://localhost:4200/');
   cy.get('app-root snc-table mat-table mat-header-row').contains('Uf');
 });
+
+it('Apresenta 10 elementos referentes aos municipios', () => {
+  cy.visit('http://localhost:4200/');
+  cy.get('app-root snc-table mat-table mat-row').should('have.length', 10);
+});
+
+it('Apresenta dados nas linhas da tabela', () => {
+  cy.visit('http://localhost:4200/');
+  cy.get('app-root snc-table mat-table mat-row').should('not.be.empty');
+});
