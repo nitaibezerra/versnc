@@ -87,7 +87,8 @@ describe('SlcApiService', () => {
       expect(res).toEqual(response);
     });
 
-    const req = httpMock.expectOne('http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/');
+    const req = httpMock.expectOne(request => request.method === 'GET' &&
+                                   request.url === 'http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/');
     req.flush(response);
     httpMock.verify();
   });
@@ -117,7 +118,8 @@ describe('SlcApiService', () => {
       expect(res).toEqual(response);
     });
 
-    const req = httpMock.expectOne('http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/');
+    const req = httpMock.expectOne(request => request.method === 'GET' &&
+                                   request.url === 'http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/');
     req.flush(response);
     httpMock.verify();
   });
