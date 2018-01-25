@@ -7,7 +7,13 @@ export class SlcApiService {
 
   constructor(private http: HttpClient) {  }
 
-  get() {
-    return this.http.get('http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/');
+  get(offset?) {
+    return this.http.get(
+      'http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/',
+      {
+      params: {
+          offset: offset,
+        }
+      });
   }
 }

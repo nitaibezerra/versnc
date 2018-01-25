@@ -7,6 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { MaterialModule } from './material/material.module';
 
 import { SlcApiService } from './slc-api.service';
@@ -22,6 +24,7 @@ import { SncTableComponent } from './snc-table/snc-table.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     HttpClientModule,

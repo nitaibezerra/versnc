@@ -10,3 +10,4 @@
   <mat-header-row *matHeaderRowDef="['cidade', 'uf']"></mat-header-row>
   <mat-row *matRowDef="let row; columns: ['cidade', 'uf'];"></mat-row>
 </mat-table>
+<mat-paginator [length]="count" [pageSize]="10" (page)="pageEvent = getServerData($event)"></mat-paginator>

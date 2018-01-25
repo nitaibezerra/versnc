@@ -91,4 +91,34 @@ describe('SlcApiService', () => {
     req.flush(response);
     httpMock.verify();
   });
+
+  it('retorna as meta-informações do endpoint sistemadeculturalocal', () => {
+    let response = {
+      "_links": {
+        "self": {
+          "href": "http://snc.cultura.gov.br/api/v1/sistemadeculturalocal/"
+        },
+      "next": {
+            "href": "http://snc.cultura.gov.br/api/v1/sistemadeculturalocal/?limit=10&offset=20"
+        },
+        "page": {
+            "templated": true,
+            "href": "http://snc.cultura.gov.br/api/v1/sistemadeculturalocal/?limit={?page}&offset=10"
+        },
+        "previous": {
+            "href": "http://snc.cultura.gov.br/api/v1/sistemadeculturalocal/?limit=10"
+        }
+      },
+      "count": 2966,
+      "page_size": 10,
+    };
+
+    service.get().subscribe(res => {
+      expect(res).toEqual(response);
+    });
+
+    const req = httpMock.expectOne('http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/');
+    req.flush(response);
+    httpMock.verify();
+  });
 });

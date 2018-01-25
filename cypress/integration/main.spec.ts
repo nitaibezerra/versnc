@@ -27,6 +27,11 @@ it('Apresenta 10 elementos referentes aos municipios', () => {
   cy.get('app-root snc-table mat-table mat-row').should('have.length', 10);
 });
 
+it('Apresenta o componente de paginação', () => {
+  cy.visit('http://localhost:4200/');
+  cy.get('app-root snc-table mat-table mat-paginator');
+});
+
 it('Apresenta dados nas linhas da tabela', () => {
   cy.visit('http://localhost:4200/');
   cy.get('app-root snc-table mat-table mat-row').should('not.be.empty');
