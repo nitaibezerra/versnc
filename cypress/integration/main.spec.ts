@@ -29,7 +29,7 @@ it('Apresenta 10 elementos referentes aos municipios', () => {
 
 it('Apresenta o componente de paginação', () => {
   cy.visit('http://localhost:4200/');
-  cy.get('app-root snc-table mat-table mat-paginator');
+  cy.get('app-root snc-table mat-paginator');
 });
 
 it('Apresenta dados nas linhas da tabela', () => {

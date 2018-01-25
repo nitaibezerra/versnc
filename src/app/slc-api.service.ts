@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import 'rxjs/add/operator/map';
 
+import { Localizacao } from './snc-table/snc-table.component'
+
 @Injectable()
 export class SlcApiService {
 
@@ -14,6 +16,21 @@ export class SlcApiService {
       params: {
           offset: offset,
         }
-      });
+      })
+      .map(
+        data => {
+          let count: Number = 0;
+          let localizacoes: Localizacao[] = [];
+          count = data['count'];
+          localizacoes = data['_embedded']['items'].map((element, index) => {
+            const localizacao: Localizacao = {'cidade': '', 'uf': ''};
+            localizacao.cidade = String(element['ente_federado']['localizacao']['cidade']['nome_municipio']);
+            localizacao.uf = String(element['ente_federado']['localizacao']['estado']['sigla']);
+            return localizacao;
+          });
+        return {localizacoes, count};
+      }
+    );
   }
 }
+
