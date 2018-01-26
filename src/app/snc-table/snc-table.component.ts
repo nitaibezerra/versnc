@@ -4,6 +4,7 @@ import { MatTableDataSource } from '@angular/material';
 import { PageEvent } from '@angular/material';
 
 import { SlcApiService } from '../slc-api.service';
+import { EnteFederado } from '../slc-api.service';
 
 @Component({
   selector: 'snc-table',
@@ -25,7 +26,7 @@ export class SncTableComponent implements OnInit {
     }
     this.slcapi.get(index * 10).subscribe(
       data => {
-        this.sncDataSource = new MatTableDataSource<Localizacao>(data['localizacoes']);
+        this.sncDataSource = new MatTableDataSource<EnteFederado>(data['entes_federados']);
         this.count = data['count'];
       }
     );
@@ -39,7 +40,3 @@ export class SncTableComponent implements OnInit {
   }
 }
 
-export interface Localizacao {
-  cidade: string;
-  uf: string;
-}

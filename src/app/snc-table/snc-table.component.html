@@ -1,13 +1,25 @@
 <mat-table #snctable [dataSource]="sncDataSource">
   <ng-container matColumnDef="cidade">
     <mat-header-cell *matHeaderCellDef>Cidade</mat-header-cell>
-    <mat-cell *matCellDef="let localizacao"> {{localizacao.cidade}} </mat-cell>
+    <mat-cell *matCellDef="let ente_federado"> {{ente_federado.localizacao.cidade}} </mat-cell>
   </ng-container>
   <ng-container matColumnDef="uf">
     <mat-header-cell *matHeaderCellDef>Uf</mat-header-cell>
-    <mat-cell *matCellDef="let localizacao"> {{localizacao.uf}} </mat-cell>
+    <mat-cell *matCellDef="let ente_federado"> {{ente_federado.localizacao.uf}} </mat-cell>
   </ng-container>
-  <mat-header-row *matHeaderRowDef="['cidade', 'uf']"></mat-header-row>
-  <mat-row *matRowDef="let row; columns: ['cidade', 'uf'];"></mat-row>
+  <ng-container matColumnDef="plano_trabalho">
+    <mat-header-cell *matHeaderCellDef>Plano de Trabalho</mat-header-cell>
+    <mat-cell *matCellDef="let ente_federado">
+      <ul>
+        <li>Plano de Cultura: {{ente_federado.plano_trabalho.plano_cultura}}</li>
+        <li>Lei de Cultura: {{ente_federado.plano_trabalho.lei_sistema_cultura}}</li>
+        <li>Fundo Cultural: {{ente_federado.plano_trabalho.fundo_cultura}}</li>
+        <li>Conselho Cultural: {{ente_federado.plano_trabalho.conselho_cultural}}</li>
+        <li>Orgão Gestor: {{ente_federado.plano_trabalho.orgao_gestor}}</li>
+      </ul>
+    </mat-cell>
+  </ng-container>
+  <mat-header-row *matHeaderRowDef="['cidade', 'uf', 'plano_trabalho']"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: ['cidade', 'uf','plano_trabalho'];"></mat-row>
 </mat-table>
 <mat-paginator [length]="count" [pageSize]="10" (page)="pageEvent = getServerData($event)"></mat-paginator>
