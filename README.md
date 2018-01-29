@@ -24,7 +24,9 @@ Execute `ng build` para construir o projeto. Artefatos gerados durante a constru
 
 ## Executar testes unitários
 
-Execute `ng test` para executar os testes unitários através de [Karma](https://karma-runner.github.io).
+Execute `yarn test` para executar os testes unitários através de [Jest](http://facebook.github.io/jest).
+Você pode ainda usar `yarn test:partial` para executar apenas os ultimos testes adicionados desde o ultimo commit.
+E também `yarn test:coverage` para gerar os relatório de cobertura dos testes unitários.
 
 ## Executar os testes E2E
 

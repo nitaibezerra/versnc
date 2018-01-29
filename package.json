@@ -6,7 +6,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
-    "test": "ng test",
+    "test": "jest src/",
+    "test:partial": "jest -o src/",
+    "test:coverage": "jest --coverage src/",
     "lint": "ng lint",
     "e2e": "cypress run"
   },
@@ -35,11 +37,14 @@
     "@bahmutov/add-typescript-to-cypress": "^1.1.1",
     "@types/jasmine": "~2.8.3",
     "@types/jasminewd2": "~2.0.2",
+    "@types/jest": "^22.0.1",
     "@types/node": "~6.0.60",
     "codelyzer": "^4.0.1",
     "cypress": "^1.4.1",
     "jasmine-core": "~2.8.0",
     "jasmine-spec-reporter": "~4.2.1",
+    "jest": "^22.1.4",
+    "jest-preset-angular": "^5.0.0",
     "karma": "~2.0.0",
     "karma-chrome-launcher": "~2.2.0",
     "karma-cli": "~1.0.1",
@@ -50,5 +55,9 @@
     "ts-node": "~3.2.0",
     "tslint": "~5.9.1",
     "typescript": "~2.5.3"
+  },
+  "jest": {
+    "preset": "jest-preset-angular",
+    "setupTestFrameworkScriptFile": "<rootDir>/src/setupJest.ts"
   }
 }
