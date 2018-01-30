@@ -20,20 +20,38 @@ export class SlcApiService {
           let count: Number = 0;
           let entes_federados: EnteFederado[] = [];
           count = data['count'];
-          entes_federados = data['_embedded']['items'].map((element, index) => {
+          entes_federados = data['_embedded']['items'].map((element) => {
             const localizacao: Localizacao = {'cidade': '', 'uf': ''};
-            const componente: PlanoTrabalho = {'plano_cultura': 'null', 'lei_sistema_cultura': 'null',
-                                              'fundo_cultura': 'null', 'conselho_cultural': 'null', 'orgao_gestor': 'null'};
+            const componente: PlanoTrabalho = {'plano_cultura': 'Não existe', 'lei_sistema_cultura': 'Não existe',
+                                              'fundo_cultura': 'Não existe', 'conselho_cultural': 'Não existe',
+                                              'orgao_gestor': 'Não existe'};
             const ente_federado: EnteFederado = {'localizacao': null, 'plano_trabalho': null};
 
-            localizacao.cidade = String(element['ente_federado']['localizacao']['cidade']['nome_municipio']);
             localizacao.uf = String(element['ente_federado']['localizacao']['estado']['sigla']);
 
+            if (element['ente_federado']['localizacao']['cidade'] !== null) {
+              localizacao.cidade = String(element['ente_federado']['localizacao']['cidade']['nome_municipio']);
+            }
+
             if (element['_embedded']['acoes_plano_trabalho'] !== null) {
-              componente.plano_cultura = String(element['_embedded']['acoes_plano_trabalho']['criacao_plano_cultura']['situacao']);
-              componente.lei_sistema_cultura = String(element['_embedded']['acoes_plano_trabalho']['criacao_lei_sistema_cultura']['situacao']);
-              componente.fundo_cultura = String(element['_embedded']['acoes_plano_trabalho']['criacao_fundo_cultura']['situacao']);
-              componente.orgao_gestor = String(element['_embedded']['acoes_plano_trabalho']['criacao_orgao_gestor']['situacao']);
+              try {
+                componente.plano_cultura = String(
+                  element['_embedded']['acoes_plano_trabalho']['criacao_plano_cultura']['situacao']);
+
+                componente.lei_sistema_cultura = String(
+                  element['_embedded']['acoes_plano_trabalho']['criacao_lei_sistema_cultura']['situacao']);
+
+                componente.fundo_cultura = String(
+                  element['_embedded']['acoes_plano_trabalho']['criacao_fundo_cultura']['situacao']);
+
+                componente.orgao_gestor = String(
+                  element['_embedded']['acoes_plano_trabalho']['criacao_orgao_gestor']['situacao']);
+
+                componente.conselho_cultural = String(
+                  element['_embedded']['acoes_plano_trabalho']['criacao_conselho_cultural']['situacao']);
+              }
+              catch (error) {
+              }
             }
 
             ente_federado.localizacao = localizacao;
