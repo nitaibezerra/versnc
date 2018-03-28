@@ -15,12 +15,16 @@ import { SlcApiService } from './slc-api.service';
 
 import { AppComponent } from './app.component';
 import { SncTableComponent } from './snc-table/snc-table.component';
+import { HomeComponent } from './home/home.component';
+import { BuscaComponent } from './busca/busca.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SncTableComponent
+    SncTableComponent,
+    HomeComponent,
+    BuscaComponent
   ],
   imports: [
     BrowserModule,
