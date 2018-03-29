@@ -5,10 +5,17 @@
 </div>
 
 <mat-grid-list cols="16" rowHeight="5:1">
-    <mat-grid-tile [colspan]="15" [rowspan]="1" [style.background]="'red'">
+    <mat-grid-tile [colspan]="15" [rowspan]="1" class="background">
       <h1>
         {{ title }}
       </h1>
+
+      <nav class="menuTop">
+          <a routerLink="/">Sobre o SNC</a>
+          <a routerLink="/">Perguntas frequentes</a>
+          <a routerLink="/">Fale conosco</a>
+          <a routerLink="/"><b>Entrar</b></a>
+      </nav>
     </mat-grid-tile>
     <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'green'">
       <snc-menu></snc-menu>

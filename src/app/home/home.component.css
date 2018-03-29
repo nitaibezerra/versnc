@@ -1,15 +1,25 @@
 .example-card {
-  max-width: 40%;
-  align-self: center;
-  align-items: center;
-  align-content: center;
+  width: 200px;
+  height: 150px;
 }
+
+.busca h4 {
+  font-family: Lato;
+   font-style: normal;
+   font-weight: normal;
+   line-height: normal;
+   font-size: 36px;
+   color: #2B9087;
+   text-align: center;
+   margin-bottom: 2px;
+ }
 
 @media (min-width: 630px) {
   .alinhamento {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 0px;
   }
 }
 

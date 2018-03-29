@@ -1,15 +1,14 @@
 /* Consulte o seu Município ou UF */
+.alinhamento{
+    padding-left: 20%;
+    padding-right: 20%;
+    width: 100%;
+}
 
-h4 {
-  position: absolute;
-  width: 725px;
-  height: 163px;
-  left: 357px;
-  top: 298px;
-  font-family: Lato;
-  font-style: normal;
-  font-weight: normal;
-  line-height: normal;
-  font-size: 36px;
-  color: #2B9087;
+.layoutFill{
+    width: 60%;
+}
+
+.textCenter{
+    text-align: center
 }

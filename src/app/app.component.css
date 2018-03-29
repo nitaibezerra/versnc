@@ -1,0 +1,16 @@
+.background {
+  background: radial-gradient(48.16px at 50% 49.17%,
+                 rgba(255, 255, 255, 0.19) 0%,
+                 rgba(255, 255, 255, 0) 100%), 
+             linear-gradient(270deg,
+                 rgba(90, 201, 127, 0.6) 0%,
+                 rgba(204, 255, 0, 0.6) 49.49%,
+                 rgba(0, 159, 227, 0.6) 100%),
+                 #082C48;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menuTop a{
+    text-decoration-color: snow;
+    color: snow;
+}
