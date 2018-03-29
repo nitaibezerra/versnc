@@ -1,13 +1,23 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <h1>
-    {{ title }}
-  </h1>
+
+  
 </div>
 
+<mat-grid-list cols="16" rowHeight="5:1">
+    <mat-grid-tile [colspan]="15" [rowspan]="1" [style.background]="'red'">
+      <h1>
+        {{ title }}
+      </h1>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'green'">
+      <snc-menu></snc-menu>
+    </mat-grid-tile>
+</mat-grid-list>
+
 <nav>
-    <a routerLink="/">Home</a>
-    <a routerLink="/tabela-uf-municipio">Tabela UF</a>
+  <a routerLink="/">Home</a>
+  <a routerLink="/tabela-uf-municipio">Tabela UF</a>
 </nav>
 
 <router-outlet></router-outlet>

@@ -17,6 +17,7 @@ import { AppComponent } from './app.component';
 import { SncTableComponent } from './snc-table/snc-table.component';
 import { HomeComponent } from './home/home.component';
 import { BuscaComponent } from './busca/busca.component';
+import { MenuComponent } from './menu/menu.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { BuscaComponent } from './busca/busca.component';
     AppComponent,
     SncTableComponent,
     HomeComponent,
-    BuscaComponent
+    BuscaComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

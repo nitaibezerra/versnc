@@ -1,0 +1,21 @@
+.example-card {
+  max-width: 40%;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+}
+
+@media (min-width: 630px) {
+  .alinhamento {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 629px) {
+    .alinhamento {
+      align-items: center;
+      justify-content: space-around;
+    }
+  }

@@ -1,18 +1,30 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { MatTableModule } from '@angular/material/table';
-import { MatPaginatorModule } from '@angular/material/paginator';
+import {
+  MatTableModule,
+  MatIconModule,
+  MatMenuModule,
+  MatPaginatorModule,
+  MatGridListModule,
+  MatCardModule,
+  MatButtonModule,
+} from '@angular/material';
 
 @NgModule({
   imports: [
     CommonModule,
     MatTableModule,
-    MatPaginatorModule
+    MatPaginatorModule,
   ],
   exports: [
     MatTableModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatMenuModule,
+    MatIconModule,
+    MatGridListModule,
+    MatCardModule,
+    MatButtonModule,
   ],
   declarations: []
 })

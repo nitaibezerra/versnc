@@ -1,13 +1,13 @@
 <div id="search-component">
-  <h4>Consulte Políticas Culturais e Verifique a 
-      Situação do seu Município no SNC</h4>
+  <h4>
+      Consulte o seu Município ou UF</h4>
 
   <input #searchBox id="search-box" (keyup)="search(searchBox.value)" placeholder="Informe o Estado, Município ou UF"/>
 
   <!-- <ul class="search-result">
-    <li *ngFor="let hero of heroes$ | async">
-      <a routerLink="/detail/{{hero.id}}">
-        {{hero.name}}
+    <li *ngFor="let documento of munincipios$ | async">
+      <a routerLink="/detail/{{documento.id}}">
+        {{munincipio.name}}
       </a>
     </li>
   </ul> -->
