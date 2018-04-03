@@ -19,12 +19,12 @@ export class SncTableComponent implements OnInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
   public getServerData(event?: PageEvent) {
-    console.info(this.paginator + "- Paginator!");
-    
-    let count: Number = 0;
+    //console.info(this.paginator + '- Paginator!');
+
+    const count: Number = 0;
     let index = 0;
-    
-    console.info(index + "- Index!");
+
+    //console.info(index + '- Index!');
 
     if (event != null) {
       index = event.pageIndex;
@@ -38,12 +38,28 @@ export class SncTableComponent implements OnInit {
     );
   }
 
+  public getEntesFederados(event?: PageEvent) {
+    const count: Number = 0;
+    let index = 0;
+
+    if (event != null) {
+      index = event.pageIndex;
+    }
+    this.slcapi.search(index * 10).subscribe(
+      data => {
+        this.sncDataSource = new MatTableDataSource<Entidade>(data['entesFederados']);
+        this.count = data['count'];
+        this.sncDataSource.paginator = this.paginator;
+      }
+    );
+  }
 
   constructor(private slcapi: SlcApiService) {
   }
- 
+
   ngOnInit() {
     this.getServerData();
+    this.getEntesFederados();
   }
 
 }
@@ -51,4 +67,8 @@ export class SncTableComponent implements OnInit {
 export interface Localizacao {
   cidade: string;
   uf: string;
+}
+
+export interface Entidade {
+  entidade: string;
 }
