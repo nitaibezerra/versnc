@@ -77,4 +77,5 @@ export interface Entidade {
   acoes_plano_trabalho: string;
   link_entidade: string;
   link_plano_trabalho_entidade: string;
+  nome_municipio: string;
 }
