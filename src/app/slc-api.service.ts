@@ -45,23 +45,30 @@ export class SlcApiService {
           let count: Number = 0;
           let entesFederados: Entidade[] = [];
           count = data['count'];
+
           entesFederados = data['_embedded']['items'].map((element, index) => {
-            const entidade: Entidade = { 'ente_federado': '', 'conselho': '', 'situacao_adesao': '', 'acoes_plano_trabalho': ''
+            const entidade: Entidade = { 'id': '', 'ente_federado': '', 'situacao_adesao': '', 'conselho': '', 'acoes_plano_trabalho': ''
               , 'link_entidade': '', 'link_plano_trabalho_entidade': ''};
-            entidade.conselho = element['conselho'];
-            entidade.acoes_plano_trabalho = element['_embedded']['acoes_plano_trabalho'];
-            entidade.link_entidade = element['_links'];
-            if (element['_embedded']['acoes_plano_trabalho'] !==  null){
-              entidade.link_plano_trabalho_entidade = element['_embedded']['acoes_plano_trabalho']['_links'];
-            }else{
-              console.info(element);
+
+            entidade.id = element['id'];
+            entidade.ente_federado = element['ente_federado'];     
+
+            if (element['situacao_adesao'] !== null) {
+              entidade.situacao_adesao = String(element['situacao_adesao']['situacao_adesao']);                     
+            } 
+
+            if(element['conselho'] !== null) {
+              entidade.conselho = element['conselho'];              
             }
+            entidade.acoes_plano_trabalho = element['_embedded']['acoes_plano_trabalho'];
+            entidade.link_entidade = String(element['_links']['self']['href']);
 
-
+            if (element['_embedded']['acoes_plano_trabalho'] !==  null){
+              entidade.link_plano_trabalho_entidade = String(element['_embedded']['acoes_plano_trabalho']['_links']['self']['href']);
+            }
 
             return entidade;
           });
-          console.info('coisinha');
           console.info(entesFederados);
           return { entesFederados, count };
         }

@@ -70,6 +70,7 @@ export interface Localizacao {
 }
 
 export interface Entidade {
+  id: string;
   ente_federado: string;
   conselho: string;
   situacao_adesao: string;
