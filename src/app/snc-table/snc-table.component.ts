@@ -58,7 +58,7 @@ export class SncTableComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.getServerData();
+    // this.getServerData();
     this.getEntesFederados();
   }
 
@@ -70,5 +70,10 @@ export interface Localizacao {
 }
 
 export interface Entidade {
-  entidade: string;
+  ente_federado: string;
+  conselho: string;
+  situacao_adesao: string;
+  acoes_plano_trabalho: string;
+  link_entidade: string;
+  link_plano_trabalho_entidade: string;
 }
