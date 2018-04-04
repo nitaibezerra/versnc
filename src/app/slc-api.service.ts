@@ -9,6 +9,18 @@ export class SlcApiService {
 
   constructor(private http: HttpClient) { }
 
+  getLimitAll() {
+    return this.http.get(
+      'http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/'
+      ).map(
+        data => {
+          const count = data['count'];
+          return { count };
+        }
+      );
+  }
+
+
   get(offset?) {
     return this.http.get(
       'http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/',
@@ -33,12 +45,13 @@ export class SlcApiService {
       );
   }
 
-  search(offset?) {
+  search(offset?, limit?) {
     return this.http.get(
-      'http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/?limit=100',
+      'http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/',
       {
         params: {
           offset: offset,
+          limit: limit,
         }
       }).map(
         data => {
@@ -51,14 +64,14 @@ export class SlcApiService {
               , 'link_entidade': '', 'link_plano_trabalho_entidade': '', 'nome_municipio': ''};
 
             entidade.id = element['id'];
-            entidade.ente_federado = element['ente_federado'];     
+            entidade.ente_federado = element['ente_federado'];
 
             if (element['situacao_adesao'] !== null) {
-              entidade.situacao_adesao = String(element['situacao_adesao']['situacao_adesao']);                     
-            } 
+              entidade.situacao_adesao = String(element['situacao_adesao']['situacao_adesao']);
+            }
 
-            if(element['conselho'] !== null) {
-              entidade.conselho = element['conselho'];              
+            if (element['conselho'] !== null) {
+              entidade.conselho = element['conselho'];
             }
             entidade.acoes_plano_trabalho = element['_embedded']['acoes_plano_trabalho'];
             entidade.link_entidade = String(element['_links']['self']['href']);
@@ -73,7 +86,6 @@ export class SlcApiService {
 
             return entidade;
           });
-          console.info(entesFederados);
           return { entesFederados, count };
         }
       );

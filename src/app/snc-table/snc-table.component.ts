@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 
 import { MatPaginator, MatTableDataSource } from '@angular/material';
 import { PageEvent } from '@angular/material';
@@ -14,29 +14,9 @@ export class SncTableComponent implements OnInit {
 
   private sncDataSource: any;
   private count: Number;
-
+  private limit;
   private pageEvent: PageEvent;
   @ViewChild(MatPaginator) paginator: MatPaginator;
-
-  public getServerData(event?: PageEvent) {
-    //console.info(this.paginator + '- Paginator!');
-
-    const count: Number = 0;
-    let index = 0;
-
-    //console.info(index + '- Index!');
-
-    if (event != null) {
-      index = event.pageIndex;
-    }
-    this.slcapi.get(index * 10).subscribe(
-      data => {
-        this.sncDataSource = new MatTableDataSource<Localizacao>(data['localizacoes']);
-        this.count = data['count'];
-        this.sncDataSource.paginator = this.paginator;
-      }
-    );
-  }
 
   public getEntesFederados(event?: PageEvent) {
     const count: Number = 0;
@@ -45,23 +25,35 @@ export class SncTableComponent implements OnInit {
     if (event != null) {
       index = event.pageIndex;
     }
-    this.slcapi.search(index * 10).subscribe(
-      data => {
-        this.sncDataSource = new MatTableDataSource<Entidade>(data['entesFederados']);
-        this.count = data['count'];
-        this.sncDataSource.paginator = this.paginator;
-      }
-    );
+
+     this.slcapi.getLimitAll().subscribe(
+      limit => {
+        this.slcapi.search(index * 10, limit.count).subscribe(
+          data => {
+            this.sncDataSource = new MatTableDataSource<Entidade>(data['entesFederados']);
+            this.count = data['count'];
+            this.sncDataSource.paginator = this.paginator;
+            this.sncDataSource.filteredData = this.sncDataSource.filteredData.sort((t1, t2) => {
+              if (t1.id > t2.id) {return -1; }
+              if (t1.id < t2.id) {return 1; }
+              return 0;
+            });
+          }
+        );
+      });
+
+
   }
 
   constructor(private slcapi: SlcApiService) {
   }
 
-  ngOnInit() {
-    // this.getServerData();
+  ngAfterViewInit() {
     this.getEntesFederados();
   }
 
+  ngOnInit() {
+  }
 }
 
 export interface Localizacao {
