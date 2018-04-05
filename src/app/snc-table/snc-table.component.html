@@ -14,4 +14,4 @@
   <mat-header-row *matHeaderRowDef="['id', 'nome_municipio', 'situacao_adesao']"></mat-header-row>
   <mat-row *matRowDef="let row; columns: ['id', 'nome_municipio', 'situacao_adesao'];"></mat-row>
 </mat-table>
-<mat-paginator #paginator [length]="count" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]" (page)="pageEvent = $event"></mat-paginator>
+<mat-paginator [length]="count" [pageSize]="10" (page)="pageEvent = getEntesFederados($event)"></mat-paginator>

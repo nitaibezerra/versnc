@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 
 import { MatPaginator, MatTableDataSource } from '@angular/material';
+
 import { PageEvent } from '@angular/material';
 
 import { SlcApiService } from '../slc-api.service';
@@ -14,50 +15,46 @@ export class SncTableComponent implements OnInit {
 
   private sncDataSource: any;
   private count: Number;
-  private limit;
+  // private limit;
+
   private pageEvent: PageEvent;
-  @ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatPaginator) pag: MatPaginator;
 
   public getEntesFederados(event?: PageEvent) {
-    const count: Number = 0;
+    
+    let count: Number = 0;
+    let index = 0;
+
     const nomeMunicipio: String = '';
     const uf: String = '';
     const cnpjPrefeitura: String = '';
 
-    let index = 0;
 
     if (event != null) {
       index = event.pageIndex;
     }
 
-    this.slcapi.getLimitAll().subscribe(
-      limit => {
-        this.slcapi.search(index * 10, limit.count, nomeMunicipio, uf, cnpjPrefeitura).subscribe(
-          data => {
-            this.sncDataSource = new MatTableDataSource<Entidade>(data['entesFederados']);
-            this.count = data['count'];
-            this.sncDataSource.paginator = this.paginator;
-            this.sncDataSource.filteredData = this.sncDataSource.filteredData.sort((t1, t2) => {
-              if (t1.id > t2.id) { return -1; }
-              if (t1.id < t2.id) { return 1; }
-              return 0;
-            });
-          }
-        );
+    
+    this.slcapi.search(index * 10, count, nomeMunicipio, uf, cnpjPrefeitura).subscribe(
+      data => {
+        this.sncDataSource = new MatTableDataSource<Entidade>(data['entesFederados']);
+        this.count = data['count'];
+        // this.sncDataSource.filteredData = this.sncDataSource.filteredData.sort((t1, t2) => {
+        //   if (t1.id > t2.id) { return -1; }
+        //   if (t1.id < t2.id) { return 1; }
+        //   return 0;
+        // });
       });
-
-
+      
   }
 
   constructor(private slcapi: SlcApiService) {
   }
 
-  ngAfterViewInit() {
+  ngOnInit() {
     this.getEntesFederados();
   }
 
-  ngOnInit() {
-  }
 }
 
 export interface Localizacao {
