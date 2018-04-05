@@ -20,22 +20,26 @@ export class SncTableComponent implements OnInit {
 
   public getEntesFederados(event?: PageEvent) {
     const count: Number = 0;
+    const nomeMunicipio: String = '';
+    const uf: String = '';
+    const cnpjPrefeitura: String = '';
+
     let index = 0;
 
     if (event != null) {
       index = event.pageIndex;
     }
 
-     this.slcapi.getLimitAll().subscribe(
+    this.slcapi.getLimitAll().subscribe(
       limit => {
-        this.slcapi.search(index * 10, limit.count).subscribe(
+        this.slcapi.search(index * 10, limit.count, nomeMunicipio, uf, cnpjPrefeitura).subscribe(
           data => {
             this.sncDataSource = new MatTableDataSource<Entidade>(data['entesFederados']);
             this.count = data['count'];
             this.sncDataSource.paginator = this.paginator;
             this.sncDataSource.filteredData = this.sncDataSource.filteredData.sort((t1, t2) => {
-              if (t1.id > t2.id) {return -1; }
-              if (t1.id < t2.id) {return 1; }
+              if (t1.id > t2.id) { return -1; }
+              if (t1.id < t2.id) { return 1; }
               return 0;
             });
           }

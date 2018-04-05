@@ -45,13 +45,16 @@ export class SlcApiService {
       );
   }
 
-  search(offset?, limit?) {
+  search(offset?, limit?, nomeMunicipio?, uf?, cnpjPrefeitura?) {
     return this.http.get(
       'http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/',
       {
         params: {
           offset: offset,
           limit: limit,
+          nome_municipio: nomeMunicipio,
+          estado_sigla: uf,
+          cnpj_prefeitura: cnpjPrefeitura,
         }
       }).map(
         data => {
