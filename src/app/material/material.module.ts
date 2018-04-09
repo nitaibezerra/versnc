@@ -12,6 +12,7 @@ import {
   MatInputModule,
   MatFormFieldModule,
   MatToolbarModule,
+  MatExpansionModule,
 } from '@angular/material';
 
 @NgModule({
@@ -31,6 +32,7 @@ import {
     MatFormFieldModule,
     MatInputModule,
     MatToolbarModule,
+    MatExpansionModule,
   ],
   declarations: []
 })
