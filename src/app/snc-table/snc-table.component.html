@@ -1,3 +1,4 @@
+<mat-paginator [length]="count" [pageSize]="10" (page)="pageEvent = getEntesFederados($event)"></mat-paginator>
 <mat-table #snctable [dataSource]="sncDataSource">
   <ng-container matColumnDef="id">
     <mat-header-cell *matHeaderCellDef>ID</mat-header-cell>
@@ -11,7 +12,30 @@
     <mat-header-cell *matHeaderCellDef>SITUAÇÂO DA ADESÃO</mat-header-cell>
     <mat-cell *matCellDef="let entidade"> {{entidade.situacao_adesao}} </mat-cell>
   </ng-container>
-  <mat-header-row *matHeaderRowDef="['id', 'nome_municipio', 'situacao_adesao']"></mat-header-row>
-  <mat-row *matRowDef="let row; columns: ['id', 'nome_municipio', 'situacao_adesao'];"></mat-row>
+
+  <ng-container matColumnDef="plano_trabalho">   
+    <mat-header-cell *matHeaderCellDef>PLANO TRABALHO</mat-header-cell>
+    <mat-cell *matCellDef="let entidade"> Situação do Plano Trabalho </mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="['id', 'nome_municipio', 'situacao_adesao','plano_trabalho']"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: ['id', 'nome_municipio', 'situacao_adesao', 'plano_trabalho'];" ></mat-row>
 </mat-table>
-<mat-paginator [length]="count" [pageSize]="10" (page)="pageEvent = getEntesFederados($event)"></mat-paginator>
+
+<!-- <mat-accordion>
+  <mat-expansion-panel>
+
+    <mat-expansion-panel-header>
+      <mat-panel-description>Type your name and age</mat-panel-description>
+      <mat-panel-description>Type your name and age</mat-panel-description>
+      <mat-panel-description>Type your name and age</mat-panel-description>
+      <mat-panel-description>Type your name and age</mat-panel-description>
+      <mat-panel-description>Type your name and age</mat-panel-description>      
+    </mat-expansion-panel-header>
+
+    <mat-panel-description>Type your name and age</mat-panel-description>
+    <mat-panel-description>Type your name and age</mat-panel-description>
+    <mat-panel-description>Type your name and age</mat-panel-description>    
+  </mat-expansion-panel>
+
+</mat-accordion> -->

@@ -10,7 +10,7 @@ import { SlcApiService } from '../slc-api.service';
   styleUrls: ['./snc-table.component.css']
 })
 export class SncTableComponent implements OnInit {
-
+  panelOpenState: boolean = false;
   private sncDataSource: any;
   private count: Number;
   // private limit;
@@ -62,4 +62,10 @@ export interface Entidade {
   link_entidade: string;
   link_plano_trabalho_entidade: string;
   nome_municipio: string;
+  criacao_lei_sistema: string;
+  criacao_conselho_cultural: string;
+  criacao_orgao_gestor: string;
+  criacao_fundo_cultura: string;
+  criacao_plano_cultura: string;
+  
 }
