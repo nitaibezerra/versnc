@@ -3,22 +3,21 @@
 
     <mat-toolbar class="menuTop background top">
         <mat-toolbar-row>
-            <span>
-                {{ title }}
-            </span>
-            <span>  <img class="imageTop" src="./assets/Group 20.2.png"/> </span>
+            <a class="homeLink" routerLink="/">
+              <img src="./assets/Group 1.png">
+            </a>
             <span class="space"></span>
             <span>        
-              <a routerLink="/">Sobre o SNC</a>
-              <a routerLink="/">Perguntas frequentes</a>
-              <a routerLink="/">Fale conosco</a>
-              <a routerLink="/"><b>Entrar</b></a></span>
+              <a href="http://cultura.gov.br/snc" target="_blank">Sobre o SNC</a>
+              <a href="http://www.cultura.gov.br/documents/10883/1289124/microsoft-word-nova-plataforma-perguntas-frequentes-_2_.pdf/798876e0-902c-4346-96f9-cbf76c097554" target="_blank">Perguntas frequentes</a>
+              <a href="http://snchomolog.cultura.gov.br/adesao/faleconosco/" target="_blank">Fale conosco</a>
+              <a href="http://snchomolog.cultura.gov.br/"><b>Entrar</b></a></span>
+               <img class="imageTop" src="./assets/Group 20.2.png"/>
           </mat-toolbar-row>  
     </mat-toolbar>
 </header>
 
 <nav>
-  <a routerLink="/">Home</a>
   <a routerLink="/tabela-uf-municipio">Tabela UF</a>
 </nav>
 

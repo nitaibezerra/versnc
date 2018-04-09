@@ -1,7 +1,8 @@
 <!-- <div id="search-component"> -->
 <form class="alinhamento">
 <mat-form-field class="layoutFill textCenter">
-  <input matInput type="search" id="search-box" (keyup)="search(searchBox.value)" placeholder="Informe o Estado, Município ou UF" />
+  <mat-placeholder>Informe o Estado, Município ou UF  <mat-icon>search</mat-icon></mat-placeholder>
+  <input matInput type="search" id="search-box" (keyup)="search(searchBox.value)"  />
 </mat-form-field>
 </form>
   <!-- <ul class="search-result">

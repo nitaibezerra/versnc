@@ -10,13 +10,22 @@
   top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index:1;
 }
 
 .top {
   height: 80px;
 }
 
-.menuTop a {
+.homeLink{
+  margin-top: 10px;
+  text-align: left !important;
+}
+.menuTop span{
+  z-index:2;
+}
+.menuTop a{
+
   text-decoration-color: snow;
   color: snow;
   width: 100%;
@@ -25,6 +34,7 @@
   line-height: normal;
   font-size: 18px;
   text-align: right;
+  z-index:2;
 }
 
 .menuTop mat-toolbar {
