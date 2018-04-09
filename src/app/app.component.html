@@ -1,18 +1,21 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<mat-grid-list cols="1" rowHeight="5:1">
-    <mat-grid-tile [colspan]="1" [rowspan]="1" class="background">
-      <h1>
-        {{ title }}
-      </h1>
+<header >
 
-      <nav style="align:right" class="menuTop">
-          <a routerLink="/">Sobre o SNC</a>
-          <a routerLink="/">Perguntas frequentes</a>
-          <a routerLink="/">Fale conosco</a>
-          <a routerLink="/"><b>Entrar</b></a>
-      </nav>
-    </mat-grid-tile>
-</mat-grid-list>
+    <mat-toolbar class="menuTop background top">
+        <mat-toolbar-row>
+            <span>
+                {{ title }}
+            </span>
+            <span>  <img class="imageTop" src="./assets/Group 20.2.png"/> </span>
+            <span class="space"></span>
+            <span>        
+              <a routerLink="/">Sobre o SNC</a>
+              <a routerLink="/">Perguntas frequentes</a>
+              <a routerLink="/">Fale conosco</a>
+              <a routerLink="/"><b>Entrar</b></a></span>
+          </mat-toolbar-row>  
+    </mat-toolbar>
+</header>
 
 <nav>
   <a routerLink="/">Home</a>

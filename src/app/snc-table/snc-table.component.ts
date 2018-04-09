@@ -1,8 +1,6 @@
 import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 
-import { MatPaginator, MatTableDataSource } from '@angular/material';
-
-import { PageEvent } from '@angular/material';
+import { MatPaginator, MatTableDataSource, PageEvent} from '@angular/material';
 
 import { SlcApiService } from '../slc-api.service';
 
@@ -18,7 +16,7 @@ export class SncTableComponent implements OnInit {
   // private limit;
 
   private pageEvent: PageEvent;
-  @ViewChild(MatPaginator) pag: MatPaginator;
+  @ViewChild(MatPaginator) paginator: MatPaginator;
 
   public getEntesFederados(event?: PageEvent) {
     
@@ -34,18 +32,11 @@ export class SncTableComponent implements OnInit {
       index = event.pageIndex;
     }
 
-    
     this.slcapi.search(index * 10, count, nomeMunicipio, uf, cnpjPrefeitura).subscribe(
       data => {
-        this.sncDataSource = new MatTableDataSource<Entidade>(data['entesFederados']);
+        this.sncDataSource = new MatTableDataSource<Entidade>(data['entesFederados'] as Entidade[]);
         this.count = data['count'];
-        // this.sncDataSource.filteredData = this.sncDataSource.filteredData.sort((t1, t2) => {
-        //   if (t1.id > t2.id) { return -1; }
-        //   if (t1.id < t2.id) { return 1; }
-        //   return 0;
-        // });
       });
-      
   }
 
   constructor(private slcapi: SlcApiService) {
