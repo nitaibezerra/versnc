@@ -5,16 +5,6 @@ background-color: transparent;
 box-shadow: transparent;
 }
 
-.busca h4 {
-   font-style: normal;
-   font-weight: normal;
-   line-height: normal;
-   font-size: 36px;
-   color: #2B9087;
-   text-align: center;
-   margin-bottom: 2px;
- }
-
 @media (min-width: 659px) {
   .alinhamento {
     display: flex;

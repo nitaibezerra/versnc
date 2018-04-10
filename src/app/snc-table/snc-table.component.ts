@@ -13,13 +13,13 @@ export class SncTableComponent implements OnInit {
   panelOpenState: boolean = false;
   private sncDataSource: any;
   private count: Number;
-  // private limit;
+  private entidades: Entidade[] = [];
 
   private pageEvent: PageEvent;
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
   public getEntesFederados(event?: PageEvent) {
-    
+
     let count: Number = 0;
     let index = 0;
 
@@ -34,7 +34,9 @@ export class SncTableComponent implements OnInit {
 
     this.slcapi.search(index * 10, count, nomeMunicipio, uf, cnpjPrefeitura).subscribe(
       data => {
-        this.sncDataSource = new MatTableDataSource<Entidade>(data['entesFederados'] as Entidade[]);
+        this.entidades = data['entesFederados'] as Entidade[];
+       // this.sncDataSource = new MatTableDataSource<Entidade>(data['entesFederados'] as Entidade[]);
+        console.info(this.entidades);
         this.count = data['count'];
       });
   }

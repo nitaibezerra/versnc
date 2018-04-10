@@ -1,4 +1,5 @@
-<mat-paginator [length]="count" [pageSize]="10" (page)="pageEvent = getEntesFederados($event)"></mat-paginator>
+<snc-busca></snc-busca>
+<!-- <mat-paginator [length]="count" [pageSize]="10" (page)="pageEvent = getEntesFederados($event)"></mat-paginator>
 <mat-table #snctable [dataSource]="sncDataSource">
   <ng-container matColumnDef="id">
     <mat-header-cell *matHeaderCellDef>ID</mat-header-cell>
@@ -20,22 +21,31 @@
 
   <mat-header-row *matHeaderRowDef="['id', 'nome_municipio', 'situacao_adesao','plano_trabalho']"></mat-header-row>
   <mat-row *matRowDef="let row; columns: ['id', 'nome_municipio', 'situacao_adesao', 'plano_trabalho'];" ></mat-row>
-</mat-table>
+</mat-table> -->
 
-<!-- <mat-accordion>
-  <mat-expansion-panel>
+<div style="margin-left:10%; margin-right:20%; width:80%;">
+<mat-paginator [length]="count" [pageSize]="10" (page)="pageEvent = getEntesFederados($event)"></mat-paginator>
+<header style="width:100%;">
+  <thead style="width:100%;">
+    <tr style="width:100%;">
+      <td style="margin-left:10%; margin-right:20%; width:20%;">municipio</td>
+      <td style="margin-left:10%; margin-right:20%; width:20%;">municipio</td>
+      <td style="margin-left:10%; margin-right:20%; width:20%;">municipio</td>
+      <td style="margin-left:10%; margin-right:20%; width:20%;">municipio</td>
+     </tr>
+  </thead>
+</header>
 
-    <mat-expansion-panel-header>
-      <mat-panel-description>Type your name and age</mat-panel-description>
-      <mat-panel-description>Type your name and age</mat-panel-description>
-      <mat-panel-description>Type your name and age</mat-panel-description>
-      <mat-panel-description>Type your name and age</mat-panel-description>
-      <mat-panel-description>Type your name and age</mat-panel-description>      
-    </mat-expansion-panel-header>
 
-    <mat-panel-description>Type your name and age</mat-panel-description>
-    <mat-panel-description>Type your name and age</mat-panel-description>
-    <mat-panel-description>Type your name and age</mat-panel-description>    
-  </mat-expansion-panel>
+<mat-accordion *ngFor="let entidade of entidades">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-description>{{entidade.nome_municipio}}</mat-panel-description>
+        <mat-panel-description>{{entidade.situacao_adesao}}</mat-panel-description>
+      </mat-expansion-panel-header>
 
-</mat-accordion> -->
+      <mat-panel-description><b>CNPJ Prefeitura:</b> {{entidade.ente_federado.cnpj_prefeitura}}</mat-panel-description>
+    </mat-expansion-panel>
+
+  </mat-accordion>
+</div>
