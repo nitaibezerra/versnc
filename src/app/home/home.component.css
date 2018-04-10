@@ -1,8 +1,36 @@
 .card {
   width: 200px;
   height: 150px;
-background-color: transparent;
-box-shadow: transparent;
+  background-color: transparent;
+  box-shadow: transparent;
+}
+
+.contador {
+  background: #F2F2F2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 30%;
+  margin: 0 0 0 0px;
+}
+
+.contador mat-card{
+  background-color: transparent;
+  box-shadow: transparent;
+  width: 30%;
+}
+
+.contador p{
+  text-align: center;
+  color: #2B9087;
+  font-size: 26px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+.contador h1{
+  text-align: center;
+  color: #2B9087;
+  font-size: 32px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
 }
 
 @media (min-width: 659px) {
@@ -12,54 +40,57 @@ box-shadow: transparent;
     justify-content: space-around;
     margin-bottom: 0px;
   }
+  #cardsHome {
+    height: 40%;
+  }
 }
 
 @media (max-width: 660px) {
-    .alinhamento {
-      align-items: center;
-      justify-content: space-around;
-    }
+  .alinhamento {
+    align-items: center;
+    justify-content: space-around;
   }
-
-  .background {
-    background: radial-gradient(723.00px at 50% 50%, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(270deg, rgba(141, 225, 71, 0.7) 0%, rgba(42, 179, 180, 0.7) 47.03%, rgba(0, 77, 110, 0.7) 100%), #082C48;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    position: relative;
-  }
-
   #cardsHome {
-    height: 100%;
+    height: 110%;
   }
+}
 
-  #cardsHome h4 {
-    color: whitesmoke;
-    text-align: center;
-    padding-top: 10px;
-  }
+.background {
+  background: radial-gradient(723.00px at 50% 50%, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(270deg, rgba(141, 225, 71, 0.7) 0%, rgba(42, 179, 180, 0.7) 47.03%, rgba(0, 77, 110, 0.7) 100%), #082C48;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
 
-.card a{
-    text-decoration:none; 
-  }
+#cardsHome h4 {
+  color: whitesmoke;
+  text-align: center;
+  margin-top: 10px;
+}
 
-#amareloClaro{
+.card a {
+  text-decoration: none;
+}
+
+#amareloClaro {
   color: whitesmoke;
 }
-#amareloClaro span{
-color: #FFEAA8;
+
+#amareloClaro span {
+  color: #FFEAA8;
 }
 
-#azulClaro{
-color: whitesmoke;
+#azulClaro {
+  color: whitesmoke;
 }
 
-#azulClaro span{
+#azulClaro span {
   color: #56CCF2;
 }
 
-#verdeClaro{
-color: whitesmoke;
+#verdeClaro {
+  color: whitesmoke;
 }
 
-#verdeClaro span{
+#verdeClaro span {
   color: #00FF6A;
 }

@@ -19,22 +19,30 @@
   #menu {
     display: none;
   }
-  .imageTop img{
-    display: none;
-  }
 }
 
 @media (max-width: 900px) {
   #menu {
     float: right;
   }
-#menu mat-icon{
-  color: ghostwhite;
-  font-size: 42px;
-  width: 100%;
-  height: 100%;
+
+  #menu mat-icon {
+    color: ghostwhite;
+    font-size: 42px;
+    width: 100%;
+    height: 100%;
+  }
+  #dashMenu {
+    display: none;
+  }
+
+  .menuContent a{
+    text-decoration-line: none;
+  }
 }
-  #dashMenu{
+
+@media (max-width: 701px) {
+  .imageTop {
     display: none;
   }
 }
@@ -47,9 +55,11 @@
   margin-top: 20px;
   text-align: left !important;
 }
-.homeLink img{
+
+.homeLink img {
   max-width: 100%;
 }
+
 .menuTop span {
   z-index: 2;
 }
