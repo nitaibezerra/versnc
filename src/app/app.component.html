@@ -1,18 +1,21 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<header >
-
+<header>
     <mat-toolbar class="menuTop background top">
         <mat-toolbar-row>
             <a class="homeLink" routerLink="/">
               <img src="./assets/Group 1.png">
             </a>
             <span class="space"></span>
-            <span>        
+            <span id="dashMenu">        
               <a href="http://cultura.gov.br/snc" target="_blank">Sobre o SNC</a>
               <a href="http://www.cultura.gov.br/documents/10883/1289124/microsoft-word-nova-plataforma-perguntas-frequentes-_2_.pdf/798876e0-902c-4346-96f9-cbf76c097554" target="_blank">Perguntas frequentes</a>
               <a href="http://snchomolog.cultura.gov.br/adesao/faleconosco/" target="_blank">Fale conosco</a>
               <a href="http://snchomolog.cultura.gov.br/"><b>Entrar</b></a></span>
                <img class="imageTop" src="./assets/Group 20.2.png"/>
+               <button id="menu" mat-button [matMenuTriggerFor]="menu"><mat-icon >dehaze</mat-icon></button>
+               <mat-menu #menu="matMenu">
+                 <button mat-menu-item>Item 1</button>
+                 <button mat-menu-item>Item 2</button>
+               </mat-menu>
           </mat-toolbar-row>  
     </mat-toolbar>
 </header>
