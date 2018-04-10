@@ -34,8 +34,8 @@ export class SncTableComponent implements OnInit {
 
     this.slcapi.search(index * 10, count, nomeMunicipio, uf, cnpjPrefeitura).subscribe(
       data => {
-        this.entidades = data['entesFederados'] as Entidade[];
-       // this.sncDataSource = new MatTableDataSource<Entidade>(data['entesFederados'] as Entidade[]);
+        // this.entidades = data['entesFederados'] as Entidade[];
+       this.sncDataSource = new MatTableDataSource<Entidade>(data['entesFederados'] as Entidade[]);
         console.info(this.entidades);
         this.count = data['count'];
       });
@@ -69,5 +69,5 @@ export interface Entidade {
   criacao_orgao_gestor: string;
   criacao_fundo_cultura: string;
   criacao_plano_cultura: string;
-  
+  sigla_estado: string;
 }

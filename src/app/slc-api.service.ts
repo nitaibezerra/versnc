@@ -65,7 +65,7 @@ export class SlcApiService {
           entesFederados = data['_embedded']['items'].map((element, index) => {
             const entidade: Entidade = { 'id': '', 'ente_federado': '', 'situacao_adesao': '', 'conselho': '', 'acoes_plano_trabalho': ''
               , 'link_entidade': '', 'link_plano_trabalho_entidade': '', 'nome_municipio': '', 'criacao_lei_sistema': '', 'criacao_conselho_cultural': ''
-              , 'criacao_orgao_gestor': '', 'criacao_fundo_cultura': '', 'criacao_plano_cultura': ''};
+              , 'criacao_orgao_gestor': '', 'criacao_fundo_cultura': '', 'criacao_plano_cultura': '', 'sigla_estado': ''};
 
             entidade.id = element['id'];
             entidade.ente_federado = element['ente_federado'];
@@ -91,6 +91,7 @@ export class SlcApiService {
                                                        
             }
 
+            entidade.sigla_estado = element['ente_federado']['localizacao']['estado']['sigla'];
             if (element['ente_federado']['localizacao']['cidade'] !== null) {
               entidade.nome_municipio = String(element['ente_federado']['localizacao']['cidade']['nome_municipio']);
             }
