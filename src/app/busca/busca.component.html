@@ -1,20 +1,15 @@
-<!-- <div id="search-component"> -->
-    <div class="busca">
-    <h4>
-        Consulte o seu Município ou UF
- </h4>
+<div class="fit">
+<div class="busca">
+  <h4>
+    Consulte o seu Município ou UF
+  </h4>
 </div>
 <form class="alinhamento">
-<mat-form-field class="layoutFill textCenter">
-  <mat-placeholder>Informe o Estado, Município ou UF  <mat-icon>search</mat-icon></mat-placeholder>
-  <input matInput type="search" id="search-box" (keyup)="search(searchBox.value)"  />
-</mat-form-field>
+  <mat-form-field class="layoutFill textCenter">
+    <mat-placeholder>Informe o Estado, Município ou UF
+      <mat-icon>search</mat-icon>
+    </mat-placeholder>
+    <input matInput type="search" id="search-box" (keyup)="search(searchBox.value)" />
+  </mat-form-field>
 </form>
-  <!-- <ul class="search-result">
-    <li *ngFor="let documento of munincipios$ | async">
-      <a routerLink="/detail/{{documento.id}}">
-        {{munincipio.name}}
-      </a>
-    </li>
-  </ul> 
-</div> -->
+</div>
