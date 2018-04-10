@@ -6,8 +6,10 @@
 
 .imageTop {
   position: absolute;
+  margin-top: 0px;
   width: 50%;
-  top: 90%;
+  height: 97%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index:1;
@@ -18,7 +20,7 @@
 }
 
 .homeLink{
-  margin-top: 10px;
+  margin-top: 20px;
   text-align: left !important;
 }
 .menuTop span{

@@ -36,3 +36,30 @@ box-shadow: transparent;
     text-align: center;
     padding-top: 10px;
   }
+
+.card a{
+    text-decoration:none; 
+  }
+
+#amareloClaro{
+  color: whitesmoke;
+}
+#amareloClaro span{
+color: #FFEAA8;
+}
+
+#azulClaro{
+color: whitesmoke;
+}
+
+#azulClaro span{
+  color: #56CCF2;
+}
+
+#verdeClaro{
+color: whitesmoke;
+}
+
+#verdeClaro span{
+  color: #00FF6A;
+}
