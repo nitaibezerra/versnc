@@ -1,6 +1,14 @@
 <snc-busca></snc-busca>
 
-<mat-card>
+<mat-card id="filtros">
+  <mat-chip-list>
+    <mat-chip>Município</mat-chip>
+    <mat-chip>CNPJ</mat-chip>
+    <mat-chip>Publicado no DOU</mat-chip>
+  </mat-chip-list>
+</mat-card>
+
+<mat-card id="tabela">
 
   <mat-paginator [length]="count" [pageSize]="10" (page)="pageEvent = getEntesFederados($event)"></mat-paginator>
   <mat-table #snctable [dataSource]="sncDataSource">
@@ -27,7 +35,7 @@
         </a>
       </mat-cell>
     </ng-container>
-    
+
     <mat-header-row *matHeaderRowDef="['nome_municipio', 'situacao_adesao', 'data_adesao', 'plano_trabalho']"></mat-header-row>
     <mat-row *matRowDef="let row; columns: ['nome_municipio', 'situacao_adesao', 'data_adesao', 'plano_trabalho'];"></mat-row>
   </mat-table>

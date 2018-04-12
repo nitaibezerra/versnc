@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 
 import { MatPaginator, MatTableDataSource, PageEvent} from '@angular/material';
+import {MatChipsModule} from '@angular/material/chips';
 
 import { SlcApiService } from '../slc-api.service';
 
