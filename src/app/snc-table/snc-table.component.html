@@ -11,19 +11,19 @@
 <mat-card id="tabela">
 
   <mat-paginator [length]="count" [pageSize]="10" (page)="pageEvent = getEntesFederados($event)"></mat-paginator>
-  <mat-table #snctable [dataSource]="sncDataSource">
+  <mat-table #snctable [dataSource]="sncDataSource" matSort>
     <ng-container matColumnDef="nome_municipio">
-      <mat-header-cell *matHeaderCellDef>MUNICÍPIO</mat-header-cell>
+      <mat-header-cell *matHeaderCellDef mat-sort-header>MUNICÍPIO</mat-header-cell>
       <mat-cell *matCellDef="let entidade"> {{entidade.nome_municipio}} - {{entidade.sigla_estado}} </mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="situacao_adesao">
-      <mat-header-cell *matHeaderCellDef>SITUAÇÂO DA ADESÃO</mat-header-cell>
+      <mat-header-cell *matHeaderCellDef mat-sort-header>SITUAÇÂO DA ADESÃO</mat-header-cell>
       <mat-cell *matCellDef="let entidade"> {{entidade.situacao_adesao}} </mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="data_adesao">
-      <mat-header-cell *matHeaderCellDef>DATA DA ADESÃO</mat-header-cell>
+      <mat-header-cell *matHeaderCellDef mat-sort-header>DATA DA ADESÃO</mat-header-cell>
       <mat-cell *matCellDef="let entidade"> 01/01/2018 </mat-cell>
     </ng-container>
 

@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 
-import { MatPaginator, MatTableDataSource, PageEvent} from '@angular/material';
-import {MatChipsModule} from '@angular/material/chips';
+import { MatPaginator, MatTableDataSource, MatSort, MatChipsModule, PageEvent} from '@angular/material';
 
 import { SlcApiService } from '../slc-api.service';
 
@@ -15,9 +14,10 @@ export class SncTableComponent implements OnInit {
   private sncDataSource: any;
   private count: Number;
   private entidades: Entidade[] = [];
-
   private pageEvent: PageEvent;
+
   @ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatSort) sort: MatSort;
 
   public getEntesFederados(event?: PageEvent) {
 
@@ -37,7 +37,10 @@ export class SncTableComponent implements OnInit {
       data => {
        this.sncDataSource = new MatTableDataSource<Entidade>(data['entesFederados'] as Entidade[]);
         console.info(this.entidades);
+        this.sncDataSource.sort = this.sort;
         this.count = data['count'];
+
+        
       });
   }
 
@@ -47,7 +50,7 @@ export class SncTableComponent implements OnInit {
   ngOnInit() {
     this.getEntesFederados();
   }
-
+ 
 }
 
 export interface Localizacao {
