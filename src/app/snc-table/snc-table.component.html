@@ -1,30 +1,37 @@
 <snc-busca></snc-busca>
-<mat-paginator [length]="count" [pageSize]="10" (page)="pageEvent = getEntesFederados($event)"></mat-paginator>
-<mat-table #snctable [dataSource]="sncDataSource">
-  <ng-container matColumnDef="nome_municipio">
-    <mat-header-cell *matHeaderCellDef>MUNICÍPIO</mat-header-cell>
-    <mat-cell *matCellDef="let entidade"> {{entidade.nome_municipio}} - {{entidade.sigla_estado}} </mat-cell>
-  </ng-container>
- 
-  <ng-container matColumnDef="situacao_adesao">
-    <mat-header-cell *matHeaderCellDef>SITUAÇÂO DA ADESÃO</mat-header-cell>
-    <mat-cell *matCellDef="let entidade"> {{entidade.situacao_adesao}} </mat-cell>
-  </ng-container>
 
-  <ng-container matColumnDef="data_adesao">   
+<mat-card>
+
+  <mat-paginator [length]="count" [pageSize]="10" (page)="pageEvent = getEntesFederados($event)"></mat-paginator>
+  <mat-table #snctable [dataSource]="sncDataSource">
+    <ng-container matColumnDef="nome_municipio">
+      <mat-header-cell *matHeaderCellDef>MUNICÍPIO</mat-header-cell>
+      <mat-cell *matCellDef="let entidade"> {{entidade.nome_municipio}} - {{entidade.sigla_estado}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="situacao_adesao">
+      <mat-header-cell *matHeaderCellDef>SITUAÇÂO DA ADESÃO</mat-header-cell>
+      <mat-cell *matCellDef="let entidade"> {{entidade.situacao_adesao}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="data_adesao">
       <mat-header-cell *matHeaderCellDef>DATA DA ADESÃO</mat-header-cell>
       <mat-cell *matCellDef="let entidade"> 01/01/2018 </mat-cell>
-  </ng-container>
+    </ng-container>
 
-  <ng-container matColumnDef="plano_trabalho">   
-    <mat-header-cell *matHeaderCellDef>DETALHAR</mat-header-cell>
-    <mat-cell *matCellDef="let entidade"> <a href="http://snchomolog.cultura.gov.br/adesao/detalhar/{{entidade.id}}" class="detalhe-municipio">
-                                            <i class="material-icons">insert_drive_file</i></a> </mat-cell>
-  </ng-container>
-
-  <mat-header-row *matHeaderRowDef="['nome_municipio', 'situacao_adesao', 'data_adesao', 'plano_trabalho']"></mat-header-row>
-  <mat-row *matRowDef="let row; columns: ['nome_municipio', 'situacao_adesao', 'data_adesao', 'plano_trabalho'];" ></mat-row>
-</mat-table>
+    <ng-container matColumnDef="plano_trabalho">
+      <mat-header-cell *matHeaderCellDef>DETALHAR</mat-header-cell>
+      <mat-cell *matCellDef="let entidade">
+        <a href="http://snchomolog.cultura.gov.br/adesao/detalhar/{{entidade.id}}" class="detalhe-municipio">
+          <i class="material-icons">insert_drive_file</i>
+        </a>
+      </mat-cell>
+    </ng-container>
+    
+    <mat-header-row *matHeaderRowDef="['nome_municipio', 'situacao_adesao', 'data_adesao', 'plano_trabalho']"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: ['nome_municipio', 'situacao_adesao', 'data_adesao', 'plano_trabalho'];"></mat-row>
+  </mat-table>
+</mat-card>
 
 <!-- <div style="margin-left:10%; margin-right:20%; width:80%;">
 <mat-paginator [length]="count" [pageSize]="10" (page)="pageEvent = getEntesFederados($event)"></mat-paginator>
