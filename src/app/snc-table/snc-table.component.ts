@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
-
-import { MatPaginator, MatTableDataSource, MatSort, MatChipsModule, PageEvent} from '@angular/material';
+import { MatPaginator, MatTableDataSource, MatSort, MatSelectModule, MatChipsModule, PageEvent} from '@angular/material';
 
 import { SlcApiService } from '../slc-api.service';
 
@@ -39,6 +38,7 @@ export class SncTableComponent implements OnInit {
         console.info(this.entidades);
         this.sncDataSource.sort = this.sort;
         this.count = data['count'];
+        
 
         
       });

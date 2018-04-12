@@ -1,12 +1,22 @@
 <snc-busca></snc-busca>
 
-<mat-card id="filtros">
-  <mat-chip-list>
-    <mat-chip>Município</mat-chip>
-    <mat-chip>CNPJ</mat-chip>
-    <mat-chip>Publicado no DOU</mat-chip>
-  </mat-chip-list>
-</mat-card>
+<div id="filtros">
+  
+    <mat-chip-list>
+      <mat-chip>Município</mat-chip>
+      <mat-chip>CNPJ</mat-chip>
+      <mat-chip>Publicado no DOU</mat-chip>
+    </mat-chip-list>
+    
+    <mat-form-field>
+      <mat-select [(value)]="selected" placeholder="Filtrar por">
+        <mat-option value="nome_municipio">Município</mat-option>
+        <mat-option value="situacao_adesao">Situação da Adesão</mat-option>
+        <mat-option value="data_adesao">Data da Adesão</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+</div>
 
 <mat-card id="tabela">
 
