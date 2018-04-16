@@ -34,13 +34,14 @@
 
     <ng-container matColumnDef="data_adesao">
       <mat-header-cell *matHeaderCellDef mat-sort-header>DATA DA ADESÃO</mat-header-cell>
-      <mat-cell *matCellDef="let entidade"> 01/01/2018 </mat-cell>
+      <mat-cell *matCellDef="let entidade"> {{entidade.data_adesao | date: 'M/dd/y'}} </mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="plano_trabalho">
       <mat-header-cell *matHeaderCellDef>DETALHAR</mat-header-cell>
       <mat-cell *matCellDef="let entidade">
-        <a href="http://snchomolog.cultura.gov.br/adesao/detalhar/{{entidade.id}}" class="detalhe-municipio">
+        <!-- <a href="http://snchomolog.cultura.gov.br/adesao/detalhar/{{entidade.id}}" class="detalhe-municipio"> -->
+        <a href="http://localhost:8000/adesao/detalhar/{{entidade.id}}" class="detalhe-municipio">          
           <i class="material-icons">insert_drive_file</i>
         </a>
       </mat-cell>

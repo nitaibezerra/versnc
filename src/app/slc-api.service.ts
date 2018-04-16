@@ -47,7 +47,8 @@ export class SlcApiService {
 
   search(offset?, limit?, nomeMunicipio?, uf?, cnpjPrefeitura?) {
     return this.http.get(
-      'http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/',
+      // 'http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/',
+      'http://localhost:8000/api/v1/sistemadeculturalocal/',
       {
         params: {
           offset: offset,
@@ -65,7 +66,7 @@ export class SlcApiService {
           entesFederados = data['_embedded']['items'].map((element, index) => {
             const entidade: Entidade = { 'id': '', 'ente_federado': '', 'situacao_adesao': '', 'conselho': '', 'acoes_plano_trabalho': ''
               , 'link_entidade': '', 'link_plano_trabalho_entidade': '', 'nome_municipio': '', 'criacao_lei_sistema': '', 'criacao_conselho_cultural': ''
-              , 'criacao_orgao_gestor': '', 'criacao_fundo_cultura': '', 'criacao_plano_cultura': '', 'sigla_estado': ''};
+              , 'criacao_orgao_gestor': '', 'criacao_fundo_cultura': '', 'criacao_plano_cultura': '', 'sigla_estado': '', 'data_adesao': ''};
 
             entidade.id = element['id'];
             entidade.ente_federado = element['ente_federado'];
@@ -79,7 +80,8 @@ export class SlcApiService {
             }
             entidade.acoes_plano_trabalho = element['_embedded']['acoes_plano_trabalho'];
             entidade.link_entidade = String(element['_links']['self']['href']);
-
+            entidade.data_adesao = element['data_adesao'];
+            
             if (element['_embedded']['acoes_plano_trabalho'] !==  null){
               entidade.link_plano_trabalho_entidade = String(element['_embedded']['acoes_plano_trabalho']['_links']['self']['href']);
 

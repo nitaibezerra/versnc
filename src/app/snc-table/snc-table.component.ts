@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import { MatPaginator, MatTableDataSource, MatSort, MatSelectModule, MatChipsModule, PageEvent} from '@angular/material';
-
+import { DatePipe } from '@angular/common';
 import { SlcApiService } from '../slc-api.service';
 
 @Component({
@@ -35,10 +35,10 @@ export class SncTableComponent implements OnInit {
     this.slcapi.search(index * 10, count, nomeMunicipio, uf, cnpjPrefeitura).subscribe(
       data => {
        this.sncDataSource = new MatTableDataSource<Entidade>(data['entesFederados'] as Entidade[]);
-        console.info(this.entidades);
+        // console.info(this.entidades);
         this.sncDataSource.sort = this.sort;
         this.count = data['count'];
-        
+
 
         
       });
@@ -73,4 +73,5 @@ export interface Entidade {
   criacao_fundo_cultura: string;
   criacao_plano_cultura: string;
   sigla_estado: string;
+  data_adesao: string;
 }
