@@ -1,22 +1,29 @@
 <snc-busca></snc-busca>
 
-<div id="filtros">
-  <a>
-    <mat-chip-list>
-      <mat-chip>Município</mat-chip>
-      <mat-chip>CNPJ</mat-chip>
-      <mat-chip>Publicado no DOU</mat-chip>
-    </mat-chip-list>
-  </a>
-  <a>
-    <mat-form-field>
-      <mat-select [(value)]="selected" placeholder="Filtrar por">
-        <mat-option value="nome_municipio">Município</mat-option>
-        <mat-option value="situacao_adesao">Situação da Adesão</mat-option>
-        <mat-option value="data_adesao">Data da Adesão</mat-option>
-      </mat-select>
-    </mat-form-field>
-  </a>
+<div class="container" id="filtros">
+  <div fxLayout="row" fxLayoutAlign="start center" class="content">
+    <div class="blocks" fxFlex="70%">
+      <mat-chip-list>
+        <mat-chip>Município</mat-chip>
+        <mat-chip>CNPJ</mat-chip>
+        <mat-chip>Publicado no DOU</mat-chip>
+      </mat-chip-list>
+    </div>
+
+    <div class="blocks filtrar" fxLayoutAlign="end" fxFlex="20%">
+      <mat-form-field>
+        <mat-select [(value)]="selected" placeholder="Filtrar por">
+          <mat-option value="nome_municipio">Município</mat-option>
+          <mat-option value="situacao_adesao">Situação da Adesão</mat-option>
+          <mat-option value="data_adesao">Data da Adesão</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="blocks" fxLayoutAlign="center" fxFlex="10%">
+      <img class="order" src="../../assets/Group 5.png"/>
+      <img class="order up" src="../../assets/Group 4.png"/>
+    </div>
+  </div>
 
 </div>
 

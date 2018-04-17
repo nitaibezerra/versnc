@@ -28,3 +28,17 @@
     font-size: 11px;
     background-color: white;
 }
+
+.filtrar {
+    max-height: 38px;
+    margin-top: -20px;
+}
+.order {
+    height: 32px;
+    width: 39px;
+    padding-right: 4px;
+}
+
+.order.up {
+    transform: rotate(-180deg);
+}

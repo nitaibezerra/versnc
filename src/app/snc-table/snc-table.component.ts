@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import { MatPaginator, MatTableDataSource, MatSort, MatSelectModule, MatChipsModule, PageEvent} from '@angular/material';
 import { DatePipe } from '@angular/common';
 import { SlcApiService } from '../slc-api.service';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @Component({
   selector: 'snc-table',
