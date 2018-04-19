@@ -8,49 +8,29 @@ import {
   debounceTime, distinctUntilChanged, switchMap
 } from 'rxjs/operators';
 
-
+import { Entidade } from '../models/entidade.model';
+import { SlcApiService } from '../slc-api.service';
 @Component({
   selector: 'snc-busca',
   templateUrl: './busca.component.html',
   styleUrls: ['./busca.component.css']
 })
 export class BuscaComponent implements OnInit {
+  entidades$: Observable<any>;
+  private filtros = new Subject<string>();
 
-  constructor() { }
+  constructor(private slcApiService: SlcApiService) { }
 
-  ngOnInit() {
+  search(filtro: string) {
+    this.filtros.next(filtro);
+  }
+
+  ngOnInit(): void {
+    this.entidades$ = this.filtros.pipe(
+      debounceTime(300),
+      distinctUntilChanged(),
+      switchMap((filtro: string) => this.slcApiService.search(filtro)),
+    );
   }
 
 }
-
-
-
-
-
-// import { Hero } from '../hero';
-// import { HeroService } from '../hero.service';
-
-// export class HeroSearchComponent implements OnInit {
-//   heroes$: Observable<Hero[]>;
-//   private searchTerms = new Subject<string>();
-
-//   constructor(private heroService: HeroService) {}
-
-//   // Push a search term into the observable stream.
-//   search(term: string): void {
-//     this.searchTerms.next(term);
-//   }
-
-//   ngOnInit(): void {
-//     this.heroes$ = this.searchTerms.pipe(
-//       // wait 300ms after each keystroke before considering the term
-//       debounceTime(300),
-
-//       // ignore new term if same as previous term
-//       distinctUntilChanged(),
-
-//       // switch to new search observable each time the term changes
-//       switchMap((term: string) => this.heroService.searchHeroes(term)),
-//     );
-//   }
-// }

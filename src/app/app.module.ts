@@ -36,7 +36,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     HttpClientModule,
     MaterialModule,
-    FlexLayoutModule,        
+    FlexLayoutModule,
   ],
   providers: [SlcApiService],
   bootstrap: [AppComponent]
