@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewInit, Input } from '@angular/core';
 
 import { MatPaginator, MatTableDataSource, PageEvent} from '@angular/material';
 import {MatChipsModule} from '@angular/material/chips';
@@ -36,7 +36,7 @@ export class SncTableComponent implements OnInit {
     this.slcapi.search(index * 10, count, nomeMunicipio, uf, cnpjPrefeitura).subscribe(
       data => {
        this.sncDataSource = new MatTableDataSource<Entidade>(data['entesFederados'] as Entidade[]);
-       //this.entidades = data['entesFederados'] as Entidade[];
+
         console.info(this.sncDataSource.filteredData);
         this.count = data['count'];
       });
