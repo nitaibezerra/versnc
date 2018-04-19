@@ -18,6 +18,7 @@ import { SncTableComponent } from './snc-table/snc-table.component';
 import { HomeComponent } from './home/home.component';
 import { BuscaComponent } from './busca/busca.component';
 import { MenuComponent } from './menu/menu.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @NgModule({
@@ -26,7 +27,7 @@ import { MenuComponent } from './menu/menu.component';
     SncTableComponent,
     HomeComponent,
     BuscaComponent,
-    MenuComponent
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +36,7 @@ import { MenuComponent } from './menu/menu.component';
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     HttpClientModule,
     MaterialModule,
+    FlexLayoutModule,        
   ],
   providers: [SlcApiService],
   bootstrap: [AppComponent]

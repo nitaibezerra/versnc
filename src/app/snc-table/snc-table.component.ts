@@ -1,9 +1,8 @@
-import { Component, OnInit, ViewChild, AfterViewInit, Input } from '@angular/core';
-
-import { MatPaginator, MatTableDataSource, PageEvent} from '@angular/material';
-import {MatChipsModule} from '@angular/material/chips';
-
+import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
+import { MatPaginator, MatTableDataSource, MatSort, MatSelectModule, MatChipsModule, PageEvent} from '@angular/material';
+import { DatePipe } from '@angular/common';
 import { SlcApiService } from '../slc-api.service';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @Component({
   selector: 'snc-table',
@@ -15,9 +14,10 @@ export class SncTableComponent implements OnInit {
   private sncDataSource: any;
   private count: Number;
   private entidades: Entidade[] = [];
-
   private pageEvent: PageEvent;
+
   @ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatSort) sort: MatSort;
 
   public getEntesFederados(event?: PageEvent) {
 
@@ -36,9 +36,12 @@ export class SncTableComponent implements OnInit {
     this.slcapi.search(index * 10, count, nomeMunicipio, uf, cnpjPrefeitura).subscribe(
       data => {
        this.sncDataSource = new MatTableDataSource<Entidade>(data['entesFederados'] as Entidade[]);
-
-        console.info(this.sncDataSource.filteredData);
+        // console.info(this.entidades);
+        this.sncDataSource.sort = this.sort;
         this.count = data['count'];
+
+
+        
       });
   }
 
@@ -48,7 +51,7 @@ export class SncTableComponent implements OnInit {
   ngOnInit() {
     this.getEntesFederados();
   }
-
+ 
 }
 
 export interface Localizacao {
@@ -71,4 +74,5 @@ export interface Entidade {
   criacao_fundo_cultura: string;
   criacao_plano_cultura: string;
   sigla_estado: string;
+  data_adesao: string;
 }

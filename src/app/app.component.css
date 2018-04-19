@@ -7,10 +7,10 @@
 .imageTop {
   position: absolute;
   margin-top: 0px;
-  width: 50%;
-  height: 97%;
-  top: 50%;
-  left: 50%;
+  width: 48%;
+  height: 100%;
+  top: 47%;
+  left: 47%;
   transform: translate(-50%, -50%);
   z-index: 1;
 }
@@ -51,8 +51,12 @@
   height: 80px;
 }
 
+.menuRow {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .homeLink {
-  margin-top: 20px;
   text-align: left !important;
 }
 
@@ -67,13 +71,18 @@
 .menuTop a {
   text-decoration-color: snow;
   color: snow;
-  width: 100%;
   font-style: normal;
   font-weight: normal;
   line-height: normal;
   font-size: 18px;
   text-align: right;
+  text-decoration: none;
+  padding: 0 .6rem 0 .3rem;
   z-index: 2;
+}
+
+#dashMenu {
+  color: snow;
 }
 
 .menuTop mat-toolbar {

@@ -14,6 +14,8 @@ import {
   MatToolbarModule,
   MatExpansionModule,
   MatChipsModule,
+  MatSortModule,
+  MatSelectModule,
 } from '@angular/material';
 
 @NgModule({
@@ -35,6 +37,8 @@ import {
     MatToolbarModule,
     MatExpansionModule,
     MatChipsModule,
+    MatSortModule,
+    MatSelectModule,
   ],
   declarations: []
 })
