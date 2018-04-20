@@ -9,7 +9,13 @@
     <mat-placeholder>Informe o Estado, Município ou UF
       <mat-icon>search</mat-icon>
     </mat-placeholder>
-    <input matInput type="search" id="search-box" (keyup)="search(searchBox.value)" />
+    <input #searchBox matInput type="search" id="search-box" 
+    (keyup)="search(searchBox.value)" />
   </mat-form-field>
 </form>
+
+<ul class="search-result">
+  <li ng-if="entidades$ != ''" *ngFor="let entidade of entidades | async" >
+  </li>
+</ul>
 </div>

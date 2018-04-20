@@ -16,7 +16,8 @@ import { SlcApiService } from '../slc-api.service';
   styleUrls: ['./busca.component.css']
 })
 export class BuscaComponent implements OnInit {
-  entidades$: Observable<any>;
+  entidades$: Observable<Entidade[]>;
+
   private filtros = new Subject<string>();
 
   constructor(private slcApiService: SlcApiService) { }
@@ -29,7 +30,8 @@ export class BuscaComponent implements OnInit {
     this.entidades$ = this.filtros.pipe(
       debounceTime(300),
       distinctUntilChanged(),
-      switchMap((filtro: string) => this.slcApiService.search(filtro)),
+      switchMap((filtro: string) => this.slcApiService.searchFilter(filtro)),
+
     );
   }
 
