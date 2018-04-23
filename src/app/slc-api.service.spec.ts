@@ -4,15 +4,17 @@ import { MockBackend } from '@angular/http/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 
 import { SlcApiService } from './slc-api.service';
+import { MessageService } from './message.service';
 
 describe('SlcApiService', () => {
   let httpMock, service;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [ HttpClientTestingModule ],
+      imports: [HttpClientTestingModule],
       providers: [
         SlcApiService,
+        MessageService,
         // { provide: XHRBackend, useClass: MockBackend }
       ]
     });
@@ -28,67 +30,116 @@ describe('SlcApiService', () => {
     expect(service).toBeTruthy();
   });
 
-  it('service tem o metodod get()', () => {
-    expect(service.get()).toBeTruthy();
+  it('service tem o metodo search()', () => {
+    expect(service.search()).toBeTruthy();
   });
 
   it('retorna um unico elemento da API', () => {
     let response = {
       "_embedded": {
-        "items": [
-          {
-            "id": 4460,
-            "situacao_adesao": {
-              "situacao_adesao": "Aguardando envio da documentação"
-            },
-            "_embedded": {
-              "acoes_plano_trabalho": null
-            },
-            "ente_federado": {
-              "cnpj_prefeitura": "14.105.217/0001-70",
-              "localizacao": {
-                "estado": {
-                  "codigo_ibge": 29,
-                  "sigla": "BA"
-                },
-                "cidade": {
-                  "codigo_ibge": 292020,
-                  "nome_municipio": "Malhada"
-                },
-                "cep": "46.440-000",
-                "bairro": "centro",
-                "endereco": "Praça Santa Cruz",
-                "complemento": "casa"
+        "items": [{
+          "governo": {
+            "nome_prefeito": "Prefeito do Teste",
+            "email_institucional_prefeito": "teste@email.com",
+            "termo_posse_prefeito": "/media/termo_posse/Modelo_1mdl3.png"
+          },
+          "_embedded": {
+            "acoes_plano_trabalho": {
+              "criacao_fundo_cultura": {
+                "cnpj_fundo_cultura": "96.384.155/0001-48",
+                "situacao": "Em preenchimento",
+                "lei_fundo_cultura": null
               },
-              "telefones": {
-                "telefone_um": "7736912145",
-                "telefone_dois": "",
-                "telefone_tres": ""
+              "criacao_orgao_gestor": {
+                "relatorio_atividade_secretaria": null,
+                "situacao": "Em preenchimento"
               },
-              "endereco_eletronico": "http://www.malhada.ba.gov.br"
-            },
-            "conselho": null,
-            "_links": {
-              "self": {
-                "href": "http://snc.cultura.gov.br/api/v1/sistemadeculturalocal/4460/"
+              "_links": {
+                "self": {
+                  "href": "http://snchomolog.cultura.gov.br/api/v1/acoesplanotrabalho/6183/?format=json"
+                }
+              },
+              "id": 6183,
+              "criacao_conselho_cultural": {
+                "situacao": "Em preenchimento",
+                "ata_regimento_aprovado": null
+              },
+              "criacao_lei_sistema_cultura": {
+                "lei_sistema_cultura": null,
+                "situacao": "Em preenchimento"
+              },
+              "_embedded": {
+                "sistema_cultura_local": {
+                  "_links": {
+                    "self": {
+                      "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4465/?format=json"
+                    }
+                  }
+                }
+              },
+              "criacao_plano_cultura": {
+                "lei_plano_cultura": null,
+                "minuta_preparada": null,
+                "ata_reuniao_aprovacao_plano": null,
+                "situacao": "Em preenchimento",
+                "ata_votacao_projeto_lei": null,
+                "relatorio_diretrizes_aprovadas": null
               }
-            },
-            "governo": {
-              "nome_prefeito": "Valdemar Larceda  Silva Filho",
-              "email_institucional_prefeito": "administracao@malhada.ba.gov.br",
-              "termo_posse_prefeito": "/media/termo_posse/termo_OS7pAZV.docx"
             }
+          },
+          "situacao_adesao": {
+            "situacao_adesao": "Publicado no DOU"
+          },
+          "conselho": {
+            "conselheiros": [
+              {
+                "nome": "TEste 123",
+                "email": "teste@email.com",
+                "data_situacao": "2018-03-29",
+                "segmento": "Circo",
+                "situacao": "1",
+                "data_cadastro": "2018-03-29"
+              }
+            ]
+          },
+          "_links": {
+            "self": {
+              "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4465/?format=json"
+            }
+          },
+          "id": 4465,
+          "ente_federado": {
+            "cnpj_prefeitura": "66.537.377/0001-92",
+            "localizacao": {
+              "estado": {
+                "codigo_ibge": 15,
+                "sigla": "PA"
+              },
+              "cidade": {
+                "codigo_ibge": 150140,
+                "nome_municipio": "Belém"
+              },
+              "cep": "71.000-000",
+              "bairro": "Rua de Cima",
+              "endereco": "Avenida Nao Importa",
+              "complemento": "Rua de Baixo"
+            },
+            "telefones": {
+              "telefone_um": "22020205950",
+              "telefone_dois": "",
+              "telefone_tres": ""
+            },
+            "endereco_eletronico": "http://www.cultura.gov.br/snc"
           }
-        ]
+        }]
       },
     };
 
-    service.get().subscribe(res => {
+    service.search().subscribe(res => {
       expect(res).toEqual(response);
     });
 
-    const req = httpMock.expectOne(request => request.method === 'GET' &&
-                                   request.url === 'http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/');
+    const req = httpMock.expectOne('http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/');    
     req.flush(response);
     httpMock.verify();
   });
@@ -96,30 +147,27 @@ describe('SlcApiService', () => {
   it('retorna as meta-informações do endpoint sistemadeculturalocal', () => {
     let response = {
       "_links": {
-        "self": {
-          "href": "http://snc.cultura.gov.br/api/v1/sistemadeculturalocal/"
+        "next": {
+          "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal.json?limit=10&offset=10"
         },
-      "next": {
-            "href": "http://snc.cultura.gov.br/api/v1/sistemadeculturalocal/?limit=10&offset=20"
+        "self": {
+          "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal.json"
         },
         "page": {
-            "templated": true,
-            "href": "http://snc.cultura.gov.br/api/v1/sistemadeculturalocal/?limit={?page}&offset=10"
-        },
-        "previous": {
-            "href": "http://snc.cultura.gov.br/api/v1/sistemadeculturalocal/?limit=10"
+          "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal.json?limit={?page}",
+          "templated": true
         }
       },
       "count": 2966,
-      "page_size": 10,
+      "page_size": 10
     };
 
-    service.get().subscribe(res => {
+    service.search().subscribe(res => {
       expect(res).toEqual(response);
     });
 
     const req = httpMock.expectOne(request => request.method === 'GET' &&
-                                   request.url === 'http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/');
+      request.url === 'http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/');
     req.flush(response);
     httpMock.verify();
   });

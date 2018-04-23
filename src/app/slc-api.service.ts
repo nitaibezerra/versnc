@@ -13,7 +13,7 @@ import { Conditional } from '@angular/compiler';
 @Injectable()
 export class SlcApiService {
 
-  private sncUrlHmgLocal = 'http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/';
+  private sncUrlHmgLocal = 'http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal.json';
   private sncUrlLocal = 'http://localhost:8000/api/v1/sistemadeculturalocal';
 
   constructor(private http: HttpClient,
@@ -36,45 +36,48 @@ export class SlcApiService {
           let entesFederados: Entidade[] = [];
           count = data['count'];
 
-          entesFederados = data['_embedded']['items'].map((element, index) => {
-            const entidade: Entidade = {
-              'id': '', 'ente_federado': '', 'situacao_adesao': '', 'conselho': '', 'acoes_plano_trabalho': ''
-              , 'link_entidade': '', 'link_plano_trabalho_entidade': '', 'nome_municipio': '', 'criacao_lei_sistema': '', 'criacao_conselho_cultural': ''
-              , 'criacao_orgao_gestor': '', 'criacao_fundo_cultura': '', 'criacao_plano_cultura': '', 'sigla_estado': '', 'data_adesao': ''
-            };
+          if (data['_embedded'] !== undefined) {
 
-            entidade.id = element['id'];
-            entidade.ente_federado = element['ente_federado'];
+            entesFederados = data['_embedded']['items'].map((element, index) => {
+              const entidade: Entidade = {
+                'id': '', 'ente_federado': '', 'situacao_adesao': '', 'conselho': '', 'acoes_plano_trabalho': ''
+                , 'link_entidade': '', 'link_plano_trabalho_entidade': '', 'nome_municipio': '', 'criacao_lei_sistema': '', 'criacao_conselho_cultural': ''
+                , 'criacao_orgao_gestor': '', 'criacao_fundo_cultura': '', 'criacao_plano_cultura': '', 'sigla_estado': '', 'data_adesao': ''
+              };
 
-            if (element['situacao_adesao'] !== null) {
-              entidade.situacao_adesao = String(element['situacao_adesao']['situacao_adesao']);
-            }
+              entidade.id = element['id'];
+              entidade.ente_federado = element['ente_federado'];
 
-            if (element['conselho'] !== null) {
-              entidade.conselho = element['conselho'];
-            }
-            entidade.acoes_plano_trabalho = element['_embedded']['acoes_plano_trabalho'];
-            entidade.link_entidade = String(element['_links']['self']['href']);
-            entidade.data_adesao = element['data_adesao'];
+              if (element['situacao_adesao'] !== null) {
+                entidade.situacao_adesao = String(element['situacao_adesao']['situacao_adesao']);
+              }
 
-            if (element['_embedded']['acoes_plano_trabalho'] !== null) {
-              entidade.link_plano_trabalho_entidade = String(element['_embedded']['acoes_plano_trabalho']['_links']['self']['href']);
+              if (element['conselho'] !== null) {
+                entidade.conselho = element['conselho'];
+              }
+              entidade.acoes_plano_trabalho = element['_embedded']['acoes_plano_trabalho'];
+              entidade.link_entidade = String(element['_links']['self']['href']);
+              entidade.data_adesao = element['data_adesao'];
 
-              // entidade.criacao_lei_sistema = String(element['_embedded']['acoes_plano_trabalho']['criacao_lei_sistema']['situacao']);
-              // entidade.criacao_conselho_cultural = String(element['_embedded']['acoes_plano_trabalho']['criacao_conselho_cultural']['situacao']);
-              // entidade.criacao_plano_cultura = String(element['_embedded']['acoes_plano_trabalho']['criacao_plano_cultura']['situacao']);
-              // entidade.criacao_fundo_cultura = String(element['_embedded']['acoes_plano_trabalho']['criacao_fundo_cultura']['situacao']);              
-              // entidade.criacao_orgao_gestor = String(element['_embedded']['acoes_plano_trabalho']['criacao_orgao_gestor']['situacao']);                    
+              if (element['_embedded']['acoes_plano_trabalho'] !== null) {
+                entidade.link_plano_trabalho_entidade = String(element['_embedded']['acoes_plano_trabalho']['_links']['self']['href']);
 
-            }
+                // entidade.criacao_lei_sistema = String(element['_embedded']['acoes_plano_trabalho']['criacao_lei_sistema']['situacao']);
+                // entidade.criacao_conselho_cultural = String(element['_embedded']['acoes_plano_trabalho']['criacao_conselho_cultural']['situacao']);
+                // entidade.criacao_plano_cultura = String(element['_embedded']['acoes_plano_trabalho']['criacao_plano_cultura']['situacao']);
+                // entidade.criacao_fundo_cultura = String(element['_embedded']['acoes_plano_trabalho']['criacao_fundo_cultura']['situacao']);              
+                // entidade.criacao_orgao_gestor = String(element['_embedded']['acoes_plano_trabalho']['criacao_orgao_gestor']['situacao']);                    
 
-            entidade.sigla_estado = element['ente_federado']['localizacao']['estado']['sigla'];
-            if (element['ente_federado']['localizacao']['cidade'] !== null) {
-              entidade.nome_municipio = String(element['ente_federado']['localizacao']['cidade']['nome_municipio']);
-            }
+              }
 
-            return entidade;
-          });
+              entidade.sigla_estado = element['ente_federado']['localizacao']['estado']['sigla'];
+              if (element['ente_federado']['localizacao']['cidade'] !== null) {
+                entidade.nome_municipio = String(element['ente_federado']['localizacao']['cidade']['nome_municipio']);
+              }
+
+              return entidade;
+            });
+          }
           return { entesFederados, count };
         }
       );
@@ -136,9 +139,9 @@ export class SlcApiService {
           }
           return entidade;
         });
-        
+
         return entesFederados;
-    }
+      }
       ),
       catchError(this.handleError<Entidade[]>('searchFilter', []))
     );
