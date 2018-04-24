@@ -4,6 +4,8 @@ import 'rxjs/add/operator/map';
 
 import { Localizacao } from './snc-table/snc-table.component'
 
+import { environment } from '../environments/environment';
+
 @Injectable()
 export class SlcApiService {
 
