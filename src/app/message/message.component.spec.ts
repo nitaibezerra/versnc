@@ -1,6 +1,7 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed, inject} from '@angular/core/testing';
 
 import { MessageComponent } from './message.component';
+import { MessageService } from '../message.service';
 
 describe('MessageComponent', () => {
   let component: MessageComponent;
@@ -8,7 +9,8 @@ describe('MessageComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MessageComponent ]
+      declarations: [ MessageComponent ],
+      providers: [MessageService]
     })
     .compileComponents();
   }));
@@ -19,7 +21,7 @@ describe('MessageComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create', inject([MessageService], (service: MessageService) => {
     expect(component).toBeTruthy();
-  });
+  }));
 });
