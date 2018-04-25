@@ -1,4 +1,4 @@
-import { TestBed, inject } from '@angular/core/testing';
+import { TestBed, inject, async, fakeAsync } from '@angular/core/testing';
 import { MockBackend } from '@angular/http/testing';
 // import { HttpModule, XHRBackend, Response, ResponseOptions } from '@angular/http';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
@@ -9,22 +9,22 @@ import { MessageService } from './message.service';
 describe('SlcApiService', () => {
   let httpMock, service;
 
-  beforeEach(() => {
+  beforeEach(async() => {
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
       providers: [
         SlcApiService,
         MessageService,
-        // { provide: XHRBackend, useClass: MockBackend }
       ]
     });
   });
 
-  beforeEach(inject([SlcApiService, HttpTestingController], (_service, _httpMock) => {
-    service = _service;
-    httpMock = _httpMock;
+  beforeEach(() => {
+    console.info(HttpTestingController);
+    service = TestBed.get(SlcApiService);
+    httpMock = TestBed.get(HttpTestingController);
     // mockbackend = _mockbackend;
-  }));
+  });
 
   it('deve retornar o service', () => {
     expect(service).toBeTruthy();
@@ -34,7 +34,7 @@ describe('SlcApiService', () => {
     expect(service.search()).toBeTruthy();
   });
 
-  it('retorna um unico elemento da API', () => {
+  it('retorna um unico elemento da API', (() => {
     let response = {
       "_embedded": {
         "items": [{
@@ -139,10 +139,10 @@ describe('SlcApiService', () => {
       expect(res).toEqual(response);
     });
 
-    const req = httpMock.expectOne('http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/');    
+    const req = httpMock.expectOne('http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/');
     req.flush(response);
     httpMock.verify();
-  });
+  }));
 
   it('retorna as meta-informações do endpoint sistemadeculturalocal', () => {
     let response = {
@@ -167,7 +167,7 @@ describe('SlcApiService', () => {
     });
 
     const req = httpMock.expectOne(request => request.method === 'GET' &&
-      request.url === 'http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/');
+    request.url === 'http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/');
     req.flush(response);
     httpMock.verify();
   });
