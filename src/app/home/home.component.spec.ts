@@ -1,6 +1,12 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HomeComponent } from './home.component';
+import { BuscaComponent } from '../busca/busca.component';
+import { MaterialModule } from '../material/material.module';
+import { SlcApiService } from '../slc-api.service';
+import { HttpClient, HttpHandler } from '@angular/common/http';
+import { MessageService } from '../message.service';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -8,9 +14,11 @@ describe('HomeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HomeComponent ]
+      imports: [MaterialModule, NoopAnimationsModule],
+      declarations: [HomeComponent, BuscaComponent],
+      providers:[SlcApiService, HttpClient, HttpHandler, MessageService]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
