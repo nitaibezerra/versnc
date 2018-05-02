@@ -30,8 +30,7 @@ export class BuscaComponent implements OnInit {
     this.entidades$ = this.filtros.pipe(
       debounceTime(300),
       distinctUntilChanged(),
-      switchMap((filtro: string) => this.slcApiService.searchFilter(filtro)),
-
+      switchMap((filtro: string) => this.slcApiService.searchFilter(filtro))
     );
   }
 
