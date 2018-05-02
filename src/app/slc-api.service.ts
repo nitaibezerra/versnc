@@ -74,7 +74,6 @@ export class SlcApiService {
               if (element['ente_federado']['localizacao']['cidade'] !== null) {
                 entidade.nome_municipio = String(element['ente_federado']['localizacao']['cidade']['nome_municipio']);
               }
-
               return entidade;
             });
           }
@@ -137,6 +136,7 @@ export class SlcApiService {
           if (element['ente_federado']['localizacao']['cidade'] !== null) {
             entidade.nome_municipio = String(element['ente_federado']['localizacao']['cidade']['nome_municipio']);
           }
+          
           return entidade;
         });
 
