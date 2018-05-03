@@ -21,6 +21,7 @@ import { MenuComponent } from './menu/menu.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MessageComponent } from './message/message.component';
 import { MessageService } from './message.service';
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { MessageService } from './message.service';
     MaterialModule,
     FlexLayoutModule,
     HttpModule,
+    FormsModule
   ],
   providers: [SlcApiService, MessageService],
   bootstrap: [AppComponent]

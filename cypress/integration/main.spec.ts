@@ -3,7 +3,7 @@ it('Retorna 200 OK ao acessar a raiz', () => {
 });
 
 it('Apresenta titulo da Aplicação na Tela Inicial', () => {
-  cy.visit('http://localhost:4200/');
+  cy.visit('http://localhost:4200/home');
   cy.get('app-root h1').contains('VerSNC');
 });
 
@@ -33,6 +33,6 @@ it('Apresenta o componente de paginação', () => {
 });
 
 it('Apresenta dados nas linhas da tabela', () => {
-  cy.visit('http://localhost:4200/');
+  cy.visit('http://localhost:4200/tabela-uf-municipio');
   cy.get('app-root snc-table mat-table mat-row').should('not.be.empty');
 });
