@@ -1,13 +1,15 @@
-import { Injectable } from '@angular/core';
-import { HttpClient , HttpParams} from '@angular/common/http';
+import {Injectable} from '@angular/core';
+import {HttpClient, HttpParams} from '@angular/common/http';
 import 'rxjs/add/operator/map';
-import { Observable } from 'rxjs/Observable';
-import { of } from 'rxjs/observable/of';
-import { Response } from '@angular/http';
+import {Observable} from 'rxjs/Observable';
+import {of} from 'rxjs/observable/of';
+import 'rxjs/add/operator/map';
+import {Response} from '@angular/http';
 
-import { MessageService } from './message.service';
+import {MessageService} from './message.service';
 
-import { Entidade } from './models/entidade.model';
+import {Entidade} from './models/entidade.model';
+import {element} from 'protractor';
 
 @Injectable()
 export class SlcApiService {
@@ -16,142 +18,15 @@ export class SlcApiService {
   private sncUrlLocal = 'http://localhost:8000/api/v1/sistemadeculturalocal';
 
   constructor(private http: HttpClient,
-    private messageService: MessageService) { }
-
-  search(offset?, limit?, nomeMunicipio?, uf?, cnpjPrefeitura?): Observable<any> {
-    return this.http.get(
-      this.sncUrlHmgLocal,
-      {
-        params: {
-          offset: offset,
-          limit: limit,
-          nome_municipio: nomeMunicipio,
-          estado_sigla: uf,
-          cnpj_prefeitura: cnpjPrefeitura,
-        }
-      }).map(
-        data => {
-          let count: Number = 0;
-          let entesFederados: Entidade[] = [];
-          count = data['count'];
-
-          if (data['_embedded'] !== undefined) {
-
-            entesFederados = data['_embedded']['items'].map((element, index) => {
-              const entidade: Entidade = {
-                'id': '', 'ente_federado': '', 'situacao_adesao': '',
-                'conselho': '', 'acoes_plano_trabalho': '', 'link_entidade': '',
-                'link_plano_trabalho_entidade': '', 'nome_municipio': '', 'criacao_lei_sistema': '',
-                'criacao_conselho_cultural': '', 'criacao_orgao_gestor': '', 'criacao_fundo_cultura': '',
-                'criacao_plano_cultura': '', 'sigla_estado': '', 'data_adesao': ''
-              };
-
-              entidade.id = element['id'];
-              entidade.ente_federado = element['ente_federado'];
-
-              if (element['situacao_adesao'] !== null) {
-                entidade.situacao_adesao = String(element['situacao_adesao']['situacao_adesao']);
-              }
-
-              if (element['conselho'] !== null) {
-                entidade.conselho = element['conselho'];
-              }
-              entidade.acoes_plano_trabalho = element['_embedded']['acoes_plano_trabalho'];
-              entidade.link_entidade = String(element['_links']['self']['href']);
-              entidade.data_adesao = element['data_adesao'];
-
-              if (element['_embedded']['acoes_plano_trabalho'] !== null) {
-                entidade.link_plano_trabalho_entidade = String(element['_embedded']['acoes_plano_trabalho']['_links']['self']['href']);
-                // entidade.criacao_lei_sistema = String(element['_embedded']['acoes_plano_trabalho']['criacao_lei_sistema']['situacao']);
-                // entidade.criacao_conselho_cultural = String(element['_embedded']['acoes_plano_trabalho']['criacao_conselho_cultural']['situacao']);
-                // entidade.criacao_plano_cultura = String(element['_embedded']['acoes_plano_trabalho']['criacao_plano_cultura']['situacao']);
-                // entidade.criacao_fundo_cultura = String(element['_embedded']['acoes_plano_trabalho']['criacao_fundo_cultura']['situacao']);
-                // entidade.criacao_orgao_gestor = String(element['_embedded']['acoes_plano_trabalho']['criacao_orgao_gestor']['situacao']);
-              }
-
-              entidade.sigla_estado = element['ente_federado']['localizacao']['estado']['sigla'];
-              if (element['ente_federado']['localizacao']['cidade'] !== null) {
-                entidade.nome_municipio = String(element['ente_federado']['localizacao']['cidade']['nome_municipio']);
-              }
-              return entidade;
-            });
-          }
-          return { entesFederados, count };
-        }
-      );
+              private messageService: MessageService) {
   }
 
-  // searchFilter(filtro: string): Observable<Entidade[]> {
-  //
-  //   if (!filtro.trim()) {
-  //     // if not search term, return empty Entidade array.
-  //     return of([]);
-  //   }
-  //   return this.http.get<Entidade[]>(this.sncUrlHmgLocal,
-  //     {
-  //       params: {
-  //         nome_municipio: `${filtro}`,
-  //       }
-  //     }
-  //   ).pipe(
-  //     tap(data => {
-  //       let entesFederados: Entidade[] = [];
-  //
-  //       entesFederados = data['_embedded']['items'].map((element, index) => {
-  //         const entidade: Entidade = {
-  //           'id': '', 'ente_federado': '', 'situacao_adesao': '',
-  //           'conselho': '', 'acoes_plano_trabalho': '', 'link_entidade': '',
-  //           'link_plano_trabalho_entidade': '', 'nome_municipio': '', 'criacao_lei_sistema': '',
-  //           'criacao_conselho_cultural': '', 'criacao_orgao_gestor': '', 'criacao_fundo_cultura': '',
-  //           'criacao_plano_cultura': '', 'sigla_estado': '', 'data_adesao': ''
-  //         };
-  //
-  //         entidade.id = element['id'];
-  //         entidade.ente_federado = element['ente_federado'];
-  //
-  //         if (element['situacao_adesao'] !== null) {
-  //           entidade.situacao_adesao = String(element['situacao_adesao']['situacao_adesao']);
-  //         }
-  //
-  //         if (element['conselho'] !== null) {
-  //           entidade.conselho = element['conselho'];
-  //         }
-  //         entidade.acoes_plano_trabalho = element['_embedded']['acoes_plano_trabalho'];
-  //         entidade.link_entidade = String(element['_links']['self']['href']);
-  //         entidade.data_adesao = element['data_adesao'];
-  //
-  //         if (element['_embedded']['acoes_plano_trabalho'] !== null) {
-  //           entidade.link_plano_trabalho_entidade = String(element['_embedded']['acoes_plano_trabalho']['_links']['self']['href']);
-  //
-  //           // entidade.criacao_lei_sistema = String(element['_embedded']['acoes_plano_trabalho']['criacao_lei_sistema']['situacao']);
-  //           // entidade.criacao_conselho_cultural = String(element['_embedded']['acoes_plano_trabalho']['criacao_conselho_cultural']['situacao']);
-  //           // entidade.criacao_plano_cultura = String(element['_embedded']['acoes_plano_trabalho']['criacao_plano_cultura']['situacao']);
-  //           // entidade.criacao_fundo_cultura = String(element['_embedded']['acoes_plano_trabalho']['criacao_fundo_cultura']['situacao']);
-  //           // entidade.criacao_orgao_gestor = String(element['_embedded']['acoes_plano_trabalho']['criacao_orgao_gestor']['situacao']);
-  //
-  //         }
-  //
-  //         entidade.sigla_estado = element['ente_federado']['localizacao']['estado']['sigla'];
-  //         if (element['ente_federado']['localizacao']['cidade'] !== null) {
-  //           entidade.nome_municipio = String(element['ente_federado']['localizacao']['cidade']['nome_municipio']);
-  //         }
-  //
-  //         return entidade;
-  //       });
-  //
-  //       return entesFederados;
-  //     }
-  //     ),
-  //     catchError(this.handleError<Entidade[]>('searchFilter', []))
-  //   );
-  // }
-
   /**
- * Handle Http operation that failed.
- * Let the app continue.
- * @param operation - name of the operation that failed
- * @param result - optional value to return as the observable result
- */
+   * Handle Http operation that failed.
+   * Let the app continue.
+   * @param operation - name of the operation that failed
+   * @param result - optional value to return as the observable result
+   */
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
 
@@ -180,34 +55,55 @@ export class SlcApiService {
   // }
 
   /** Entidades busca simplificada ETAPA:1 */
-  searchFilter(queries: { [query: string]: String; } ):
-    Observable<{ listaEntidades: [Entidade], count: number, total: number }> {
+  searchFilter(queries): Observable<any> {
+    return this.http.get(this.sncUrlHmgLocal, {params: queries})
+      .map(res => {
 
-      console.info(queries);
+        let count: Number = 0;
+        let entesFederados: Entidade[] = [];
+        count = res['count'];
 
+        entesFederados = res['_embedded']['items'].map((element, index) => {
+          const entidade: Entidade = {
+            'id': '', 'ente_federado': '', 'situacao_adesao': '',
+            'conselho': '', 'acoes_plano_trabalho': '', 'link_entidade': '',
+            'link_plano_trabalho_entidade': '', 'nome_municipio': '', 'criacao_lei_sistema': '',
+            'criacao_conselho_cultural': '', 'criacao_orgao_gestor': '', 'criacao_fundo_cultura': '',
+            'criacao_plano_cultura': '', 'sigla_estado': '', 'data_adesao': ''
+          };
 
-  const searchParams = this.serializeQueries(queries);
+          entidade.id = element['id'];
+          entidade.ente_federado = element['ente_federado'];
 
-    return this.http.get( this.sncUrlHmgLocal, { params: searchParams })
-      .map((res: Response) => ({ listaEntidades: res.json()['_embedded']['items'],
-        count: res['count'],
-        total: res['total ']}));
+          if (element['situacao_adesao'] !== null) {
+            entidade.situacao_adesao = String(element['situacao_adesao']['situacao_adesao']);
+          }
+
+          if (element['conselho'] !== null) {
+            entidade.conselho = element['conselho'];
+          }
+          entidade.acoes_plano_trabalho = element['_embedded']['acoes_plano_trabalho'];
+          entidade.link_entidade = String(element['_links']['self']['href']);
+          entidade.data_adesao = element['data_adesao'];
+
+          if (element['_embedded']['acoes_plano_trabalho'] !== null) {
+            entidade.link_plano_trabalho_entidade = String(element['_embedded']['acoes_plano_trabalho']['_links']['self']['href']);
+            // entidade.criacao_lei_sistema = String(element['_embedded']['acoes_plano_trabalho']['criacao_lei_sistema']['situacao']);
+            // entidade.criacao_conselho_cultural = String(element['_embedded']['acoes_plano_trabalho']['criacao_conselho_cultural']['situacao']);
+            // entidade.criacao_plano_cultura = String(element['_embedded']['acoes_plano_trabalho']['criacao_plano_cultura']['situacao']);
+            // entidade.criacao_fundo_cultura = String(element['_embedded']['acoes_plano_trabalho']['criacao_fundo_cultura']['situacao']);
+            // entidade.criacao_orgao_gestor = String(element['_embedded']['acoes_plano_trabalho']['criacao_orgao_gestor']['situacao']);
+          }
+
+          entidade.sigla_estado = element['ente_federado']['localizacao']['estado']['sigla'];
+          if (element['ente_federado']['localizacao']['cidade'] !== null) {
+            entidade.nome_municipio = String(element['ente_federado']['localizacao']['cidade']['nome_municipio']);
+          }
+          return entidade;
+        });
+        return { entesFederados , count };
+      });
   }
-
-// Converte queries de uma hash de parâmetros em uma URLSearchParam
-  private serializeQueries(obj: any): HttpParams {
-    const params: HttpParams = new HttpParams();
-
-    for (const key in obj) {
-      if (obj.hasOwnProperty(key)) {
-        const element = obj[key];
-        params.set(key, element);
-      }
-    }
-
-    return params;
-  }
-
 
 }
 

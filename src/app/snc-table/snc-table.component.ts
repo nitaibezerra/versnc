@@ -5,6 +5,7 @@ import { MatPaginator, MatTableDataSource, MatSort, MatSelectModule, MatChipsMod
 
 import { SlcApiService } from '../slc-api.service';
 import { Entidade } from '../models/entidade.model';
+import { BuscaComponent } from '../busca/busca.component';
 
 @Component({
   selector: 'snc-table',
@@ -13,38 +14,28 @@ import { Entidade } from '../models/entidade.model';
 })
 export class SncTableComponent implements OnInit {
 
-  panelOpenState: boolean = false;
-
-  //Trabalhando a busca: Count e Entidade estão retornando em any
   private count: Number;
-  private entidades: Entidade[];
 
   private sncDataSource: any;
-  private pageEvent: PageEvent;
 
   constructor(private slcApiService: SlcApiService) { }
+  queries: { [query: string]: String }
+    = {'limit': '', 'offset': '', 'nome_municipio': '', 'estado_sigla': '', 'cnpj_prefeitura': ''};
 
   @ViewChild(MatPaginator, ) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
 
   public getEntesFederados(event?: PageEvent): void {
 
-    let count: Number = 0;
     let index = 0;
-
-    const nomeMunicipio: String = '';
-    const uf: String = '';
-    const cnpjPrefeitura: String = '';
-
 
     if (event != null) {
       index = event.pageIndex;
     }
 
-    this.slcApiService.search(index * 10, count, nomeMunicipio, uf, cnpjPrefeitura).subscribe(
+    this.slcApiService.searchFilter(this.queries).subscribe(
       data => {
         this.sncDataSource = new MatTableDataSource<Entidade>(data['entesFederados'] as Entidade[]);
-        // console.info(this.entidades);
         this.sncDataSource.sort = this.sort;
         this.count = data['count'];
       });

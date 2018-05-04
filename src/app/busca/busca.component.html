@@ -11,7 +11,7 @@
     </mat-placeholder>
 
     <input #searchBox matInput type="search" id="search-box"
-           [(ngModel)]="queriesDeEntidades['nome_municipio']"
+           [(ngModel)]="queries['nome_municipio']"
            [ngModelOptions]="{standalone: true}"
            (keypress)="onRealizarBuscaComEnter($event)" />
 

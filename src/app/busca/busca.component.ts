@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { Entidade } from '../models/entidade.model';
-import { SlcApiService } from '../slc-api.service';
-import { Location } from '@angular/common';
+import {Component, OnInit} from '@angular/core';
+import {Entidade} from '../models/entidade.model';
+import {SlcApiService} from '../slc-api.service';
+import {Location} from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'snc-busca',
@@ -12,53 +13,49 @@ import { Location } from '@angular/common';
 export class BuscaComponent implements OnInit {
   listaEntidades: [Entidade];
 
+  carregandoDados: Boolean = false;
+  taxaDuracaoCarregamento = 0;
+
   // Paginacao
   offsetAtual = 0;
   numeroDeItems: number;
   totalDeItems: number;
   maximoBotoes = 4;
-  opcoesDePaginacao = [12, 24, 48, 100 ];
+  opcoesDePaginacao = [12, 24, 48, 100];
   paginaAtual = 1;
   paginaAnterior = 0;
 
+  constructor(private slcApiService: SlcApiService, private location: Location, private router: Router) { }
 
-  constructor(private slcApiService: SlcApiService, private location: Location) { }
-
-  queriesDeEntidades: { [query: string]: String }
-    = { 'limit': '', 'offset': '', 'nome_municipio?': '', 'estado_sigla?': '', 'cnpj_prefeitura?': '' };
-
+  queries: { [query: string]: String }
+    = {'limit': '', 'offset': '', 'nome_municipio': '', 'estado_sigla': '', 'cnpj_prefeitura': ''};
 
   ngOnInit(): void { }
 
-
   /* AQUI COMEÇA O TESTE DE REFATORAÇÃO DA BUSCA */
 
-
   onRealizarBuscaComEnter(event) {
-
-    if (event.keyCode === 13) { this.onRealizarBusca(); }
+    if (event.keyCode === 13) {
+      this.onRealizarBusca();
+    }
   }
 
   onRealizarBusca() {
-
     this.listaEntidades = undefined;
-
     this.carregarPagina(1);
   }
 
-  onTrocaPagina(indice: number) { this.carregarPagina(indice); }
-
-  carregarPagina(indice: number) {
-    const params = new URLSearchParams();
-
-    this.location.go('/tabela-uf-municipio');
-          this.slcApiService.searchFilter(this.queriesDeEntidades).subscribe(
-            resposta => {
-              this.totalDeItems = resposta.total;
-              this.numeroDeItems = resposta.count;
-              this.listaEntidades = resposta.listaEntidades;
-            });
-
+  onTrocaPagina(indice: number) {
+    this.carregarPagina(indice);
   }
 
+  carregarPagina(indice: number) {
+    this.carregandoDados = true;
+
+    this.slcApiService.searchFilter(this.queries).subscribe(
+      resposta => {
+        this.numeroDeItems = resposta['count'];
+        this.listaEntidades = resposta['entesFederados'];
+        });
+  }
 }
