@@ -3,7 +3,6 @@ import {HttpClient, HttpParams} from '@angular/common/http';
 import 'rxjs/add/operator/map';
 import {Observable} from 'rxjs/Observable';
 import {of} from 'rxjs/observable/of';
-import 'rxjs/add/operator/map';
 import {Response} from '@angular/http';
 
 import {MessageService} from './message.service';
