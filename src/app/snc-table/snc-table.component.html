@@ -1,5 +1,3 @@
-<snc-busca></snc-busca>
-
 <div class="container" id="filtros">
   <div fxLayout="row" fxLayoutAlign="start center" class="content">
     <div class="blocks" fxFlex="70%">
@@ -49,7 +47,6 @@
     <ng-container matColumnDef="plano_trabalho">
       <mat-header-cell *matHeaderCellDef>DETALHAR</mat-header-cell>
       <mat-cell *matCellDef="let entidade">
-        <!-- <a href="http://snchomolog.cultura.gov.br/adesao/detalhar/{{entidade.id}}" class="detalhe-municipio"> -->
         <a href="http://localhost:8000/adesao/detalhar/{{entidade.id}}" class="detalhe-municipio">
           <i class="material-icons">insert_drive_file</i>
         </a>

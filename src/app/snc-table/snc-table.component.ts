@@ -15,7 +15,7 @@ import { BuscaComponent } from '../busca/busca.component';
 export class SncTableComponent implements OnInit {
 
   private count: Number;
-
+  private listaRetorno = {};
   private sncDataSource: any;
 
   constructor(private slcApiService: SlcApiService) { }
@@ -32,17 +32,14 @@ export class SncTableComponent implements OnInit {
     if (event != null) {
       index = event.pageIndex;
     }
+    this.slcApiService.buscaAtual.subscribe(listaRetorno => this.listaRetorno = listaRetorno);
+    this.sncDataSource = new MatTableDataSource<Entidade>(this.listaRetorno[1] as Entidade[]);
+    this.sncDataSource.sort = this.sort;
+    this.count = this.listaRetorno[0];
 
-    this.slcApiService.searchFilter(this.queries).subscribe(
-      data => {
-        this.sncDataSource = new MatTableDataSource<Entidade>(data['entesFederados'] as Entidade[]);
-        this.sncDataSource.sort = this.sort;
-        this.count = data['count'];
-      });
   }
 
   ngOnInit() {
     this.getEntesFederados();
   }
 }
-

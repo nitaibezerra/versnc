@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit, Output} from '@angular/core';
 import {Entidade} from '../models/entidade.model';
 import {SlcApiService} from '../slc-api.service';
 import {Location} from '@angular/common';
@@ -11,6 +11,8 @@ import { Router } from '@angular/router';
 })
 
 export class BuscaComponent implements OnInit {
+
+  listaRetorno = {};
   listaEntidades: [Entidade];
 
   carregandoDados: Boolean = false;
@@ -30,7 +32,11 @@ export class BuscaComponent implements OnInit {
   queries: { [query: string]: String }
     = {'limit': '', 'offset': '', 'nome_municipio': '', 'estado_sigla': '', 'cnpj_prefeitura': ''};
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    this.slcApiService.buscaAtual.subscribe(listaRetorno => this.listaRetorno = listaRetorno);
+    console.log('RETORNO BUSCA');
+    console.log(this.listaRetorno);
+  }
 
   /* AQUI COMEÇA O TESTE DE REFATORAÇÃO DA BUSCA */
 
@@ -50,12 +56,15 @@ export class BuscaComponent implements OnInit {
   }
 
   carregarPagina(indice: number) {
+
     this.carregandoDados = true;
 
     this.slcApiService.searchFilter(this.queries).subscribe(
       resposta => {
         this.numeroDeItems = resposta['count'];
         this.listaEntidades = resposta['entesFederados'];
-        });
+        this.slcApiService.trocaBusca([this.numeroDeItems, this.listaEntidades]);
+        this.router.navigate(['/tabela-uf-municipio']);
+      });
   }
 }

@@ -28,7 +28,7 @@ describe('SlcApiService', () => {
   }));
 
   it('service tem o metodo search()', inject([SlcApiService], (service: SlcApiService) => {
-    expect(service.search()).toBeTruthy();
+    expect(service.searchFilter('')).toBeTruthy();
   }));
 
   it('retorna um unico elemento da API', (() => {

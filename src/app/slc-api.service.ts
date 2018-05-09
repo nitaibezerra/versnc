@@ -3,19 +3,26 @@ import {HttpClient, HttpParams} from '@angular/common/http';
 import 'rxjs/add/operator/map';
 import {Observable} from 'rxjs/Observable';
 import {of} from 'rxjs/observable/of';
-import 'rxjs/add/operator/map';
 import {Response} from '@angular/http';
 
 import {MessageService} from './message.service';
 
 import {Entidade} from './models/entidade.model';
 import {element} from 'protractor';
+import {BehaviorSubject} from 'rxjs/BehaviorSubject';
 
 @Injectable()
 export class SlcApiService {
 
   private sncUrlHmgLocal = 'http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/';
   private sncUrlLocal = 'http://localhost:8000/api/v1/sistemadeculturalocal';
+
+  private buscar = new BehaviorSubject<any>([]);
+  buscaAtual = this.buscar.asObservable();
+
+  trocaBusca(any) {
+    this.buscar.next(any);
+  }
 
   constructor(private http: HttpClient,
               private messageService: MessageService) {
@@ -45,14 +52,6 @@ export class SlcApiService {
   private log(message: string) {
     this.messageService.add('slc-api.service: ' + message);
   }
-
-  /** TRATATIVAS PARA A BUSCA MELHORADA */
-  // // Proposta
-  // getProposta(id: String): Observable<Proposta> {
-  //   return this.http.get(this.configuration.ApiUrl + 'propostas/' + id + '/')
-  //     .map((res: Response) => res.json())
-  //     .catch((error: any) => this.handleError(error));
-  // }
 
   /** Entidades busca simplificada ETAPA:1 */
   searchFilter(queries): Observable<any> {
@@ -106,4 +105,3 @@ export class SlcApiService {
   }
 
 }
-
