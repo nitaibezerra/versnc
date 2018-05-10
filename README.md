@@ -12,6 +12,8 @@ O código fonte da plataforma original e da API podem ser encontrados em [https:
 
 ## Servidor de Desenvolvimento
 
+Execute um `npm install` para instalar todas as dependências.
+
 Execute `ng serve` para usar o servidor de desenvolvimento. Navegue para `http://localhost:4200/`. A aplicação será recarregada automaticamente cada vez que algum arquivo for alterado.
 
 ## Code scaffolding
