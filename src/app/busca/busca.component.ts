@@ -14,26 +14,26 @@ import {SncTableComponent} from '../snc-table/snc-table.component';
 
 export class BuscaComponent implements OnInit {
 
-  listaRetorno = {};
-  listaEntidades: [Entidade];
-
-  carregandoDados: Boolean = false;
-  taxaDuracaoCarregamento = 0;
-
-  // Paginacao
-  offsetAtual = 0;
-  numeroDeItems: number;
-  totalDeItems: number;
-  maximoBotoes = 4;
-  opcoesDePaginacao = [12, 24, 48, 100];
-  paginaAtual = 1;
-  paginaAnterior = 0;
-
-  constructor(private slcApiService: SlcApiService, private location: Location, private router: Router, private sncTable: SncTableComponent) {
-  }
-
+  private listaRetorno = {};
+  private listaEntidades: [Entidade];
+  private seletorTipoBusca: boolean = false;
+  private carregandoDados: Boolean = false;
+  private taxaDuracaoCarregamento = 0;
   private termoSimples: String = '';
 
+  // Paginacao
+  private offsetAtual = 0;
+  private numeroDeItems: number;
+  private totalDeItems: number;
+  private maximoBotoes = 4;
+  private opcoesDePaginacao = [5, 10, 25, 50, 100];
+  private paginaAtual = 1;
+  private paginaAnterior = 0;
+
+  constructor(private slcApiService: SlcApiService,
+              private location: Location,
+              private router: Router) {
+  }
 
   queries: { [query: string]: String }
     = {'limit': '', 'offset': '', 'nome_municipio': '', 'estado_sigla': '', 'cnpj_prefeitura': ''};
@@ -45,16 +45,21 @@ export class BuscaComponent implements OnInit {
   /* AQUI COMEÇA O TESTE DE REFATORAÇÃO DA BUSCA */
 
   onRealizarBuscaComEnter(event) {
-
     if (event.keyCode === 13) {
-      if (this.termoSimples.length < 3) {
-        this.queries['nome_municipio'] = '';
-        this.queries['estado_sigla'] = this.termoSimples.toUpperCase();
-      } else if( this.termoSimples === '' || this.termoSimples.length > 2 ){
-        this.queries['estado_sigla'] = '';
-        this.queries['nome_municipio'] = this.termoSimples;
+      if (!this.seletorTipoBusca) {
+        if (this.termoSimples.length < 3) {
+          this.queries['nome_municipio'] = '';
+          this.queries['estado_sigla'] = this.termoSimples.toUpperCase();
+        } else if (this.termoSimples === '' || this.termoSimples.length > 2) {
+          this.queries['estado_sigla'] = '';
+          this.queries['nome_municipio'] = this.termoSimples;
+        }
+        this.onRealizarBusca();
+      } else {
+        this.queries['estado_sigla'] = this.queries['estado_sigla'].toUpperCase();
+        this.onRealizarBusca();
       }
-      this.onRealizarBusca();
+
     }
   }
 

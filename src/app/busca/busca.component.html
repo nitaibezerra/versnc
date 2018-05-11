@@ -1,10 +1,11 @@
 <div class="fit">
 <div class="busca">
-  <h4>
+  <h4 *ngIf="seletorTipoBusca == false">
     Consulte o seu Município ou UF
   </h4>
 </div>
-<form class="alinhamento">
+
+<form *ngIf="seletorTipoBusca == false" class="alinhamento">
   <mat-form-field class="layoutFill textCenter">
     <mat-placeholder>Informe o Estado, Município ou UF
       <mat-icon>search</mat-icon>
@@ -16,6 +17,44 @@
            (keypress)="onRealizarBuscaComEnter($event)" />
 
   </mat-form-field>
+
 </form>
 
+  <form *ngIf="seletorTipoBusca == true" class="alinhamento" (keypress)="onRealizarBuscaComEnter($event)">
+    <mat-form-field class="textCenter">
+      <mat-placeholder> Estado ou Município
+        <mat-icon>search</mat-icon>
+      </mat-placeholder>
+
+      <input #searchBox matInput type="search" id="search-box"
+             [(ngModel)]="queries['nome_municipio']"
+             [ngModelOptions]="{standalone: true}" />
+
+    </mat-form-field >
+    <mat-form-field class="textCenter">
+      <mat-placeholder> UF
+        <mat-icon>search</mat-icon>
+      </mat-placeholder>
+
+      <input #searchBox matInput type="search" id="search-box"
+             [(ngModel)]="queries['estado_sigla']"
+             [ngModelOptions]="{standalone: true}" />
+
+
+    </mat-form-field >
+
+    <mat-form-field class="textCenter">
+      <mat-placeholder>CNPJ
+        <mat-icon>search</mat-icon>
+      </mat-placeholder>
+
+      <input #searchBox matInput type="search" id="search-box"
+             [(ngModel)]="queries['cnpj_prefeitura']"
+             [ngModelOptions]="{standalone: true}" />
+
+    </mat-form-field >
+
+
+  </form >
+  <a class="alinhamento" (click)="seletorTipoBusca = !seletorTipoBusca">{{ seletorTipoBusca ? '&#x25B4; Busca Simples' : '&#x25B8; Busca Avançada' }}</a>
 </div>
