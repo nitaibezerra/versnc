@@ -2,14 +2,14 @@ import {ChangeDetectorRef, Component, Input, OnInit, Output} from '@angular/core
 import {Entidade} from '../models/entidade.model';
 import {SlcApiService} from '../slc-api.service';
 import {Location} from '@angular/common';
-import { Router } from '@angular/router';
+import {Router} from '@angular/router';
 import {SncTableComponent} from '../snc-table/snc-table.component';
 
 @Component({
   selector: 'snc-busca',
   templateUrl: './busca.component.html',
   styleUrls: ['./busca.component.css'],
-  providers: [SncTableComponent ]
+  providers: [SncTableComponent]
 })
 
 export class BuscaComponent implements OnInit {
@@ -29,7 +29,11 @@ export class BuscaComponent implements OnInit {
   paginaAtual = 1;
   paginaAnterior = 0;
 
-  constructor(private slcApiService: SlcApiService, private location: Location, private router: Router, private sncTable: SncTableComponent) { }
+  constructor(private slcApiService: SlcApiService, private location: Location, private router: Router, private sncTable: SncTableComponent) {
+  }
+
+  private termoSimples: String = '';
+
 
   queries: { [query: string]: String }
     = {'limit': '', 'offset': '', 'nome_municipio': '', 'estado_sigla': '', 'cnpj_prefeitura': ''};
@@ -41,7 +45,15 @@ export class BuscaComponent implements OnInit {
   /* AQUI COMEÇA O TESTE DE REFATORAÇÃO DA BUSCA */
 
   onRealizarBuscaComEnter(event) {
+
     if (event.keyCode === 13) {
+      if (this.termoSimples.length < 3) {
+        this.queries['nome_municipio'] = '';
+        this.queries['estado_sigla'] = this.termoSimples.toUpperCase();
+      } else if( this.termoSimples === '' || this.termoSimples.length > 2 ){
+        this.queries['estado_sigla'] = '';
+        this.queries['nome_municipio'] = this.termoSimples;
+      }
       this.onRealizarBusca();
     }
   }
@@ -57,10 +69,11 @@ export class BuscaComponent implements OnInit {
   }
 
   carregarPagina(indice: number) {
+    console.info(this.queries);
     this.carregandoDados = true;
     this.slcApiService.searchFilter(this.queries).subscribe(
       resposta => {
-        this.slcApiService.trocaBusca([resposta['count'], resposta['entesFederados']])
+        this.slcApiService.trocaBusca([resposta['count'], resposta['entesFederados']]);
         this.router.navigate(['/tabela-uf-municipio']);
       });
   }
