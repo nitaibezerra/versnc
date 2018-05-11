@@ -7,6 +7,7 @@ import { SlcApiService } from '../slc-api.service';
 import { Entidade } from '../models/entidade.model';
 import {NavigationEnd, Router} from '@angular/router';
 import {Subscription} from 'rxjs/Subscription';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 @Component({
   selector: 'snc-table',

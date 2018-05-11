@@ -4,6 +4,7 @@ import {SlcApiService} from '../slc-api.service';
 import {Location} from '@angular/common';
 import {Router} from '@angular/router';
 import {SncTableComponent} from '../snc-table/snc-table.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @Component({
   selector: 'snc-busca',

@@ -5,7 +5,7 @@
   </h4>
 </div>
 
-<form *ngIf="seletorTipoBusca == false" class="alinhamento">
+<form *ngIf="seletorTipoBusca == false" class="alinhamento card-busca">
   <mat-form-field class="layoutFill textCenter">
     <mat-placeholder>Informe o Estado, Município ou UF
       <mat-icon>search</mat-icon>
@@ -20,7 +20,7 @@
 
 </form>
 
-  <form *ngIf="seletorTipoBusca == true" class="alinhamento" (keypress)="onRealizarBuscaComEnter($event)">
+  <form *ngIf="seletorTipoBusca == true" class="alinhamento card-busca" (keypress)="onRealizarBuscaComEnter($event)">
     <mat-form-field class="textCenter">
       <mat-placeholder> Estado ou Município
         <mat-icon>search</mat-icon>
@@ -56,5 +56,6 @@
 
 
   </form >
+  
   <a class="alinhamento" (click)="seletorTipoBusca = !seletorTipoBusca">{{ seletorTipoBusca ? '&#x25B4; Busca Simples' : '&#x25B8; Busca Avançada' }}</a>
 </div>

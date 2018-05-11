@@ -5,7 +5,12 @@
     width: 50%;
     text-align:center;
     margin-left: 25%;
+}
 
+.card-busca {
+    background-color: #ededed66;
+    border-radius: 8px;
+    padding: 5px;
 }
 
 .layoutFill{
