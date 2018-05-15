@@ -1,45 +1,34 @@
 export class Estados {
 
-  public listaEstados: { UF: String, nome: String }[] =
+  public listaEstados: { UF: String, nome: String, regiao: String }[] =
     [
-      { UF: null, nome: 'Todos os estados' },
-      { UF: 'AC', nome: 'Acre' },
-      { UF: 'AL', nome: 'Alagoas' },
-      { UF: 'AP', nome: 'Amapá' },
-      { UF: 'AM', nome: 'Amazonas' },
-      { UF: 'BA', nome: 'Bahia' },
-      { UF: 'CE', nome: 'Ceará' },
-      { UF: 'DF', nome: 'Distrito Federal' },
-      { UF: 'ES', nome: 'Espírito Santo' },
-      { UF: 'GO', nome: 'Goiás' },
-      { UF: 'MA', nome: 'Maranhão' },
-      { UF: 'MT', nome: 'Mato Grosso' },
-      { UF: 'MS', nome: 'Mato Grosso do Sul' },
-      { UF: 'MG', nome: 'Minas Gerais' },
-      { UF: 'PA', nome: 'Pará' },
-      { UF: 'PB', nome: 'Paraíba' },
-      { UF: 'PR', nome: 'Paraná' },
-      { UF: 'PE', nome: 'Pernambuco' },
-      { UF: 'PI', nome: 'Piauí' },
-      { UF: 'RJ', nome: 'Rio de Janeiro' },
-      { UF: 'RN', nome: 'Rio Grande do Norte' },
-      { UF: 'RS', nome: 'Rio Grande do Sul' },
-      { UF: 'RO', nome: 'Rondônia' },
-      { UF: 'RR', nome: 'Roraima' },
-      { UF: 'SC', nome: 'Santa Catarina' },
-      { UF: 'SP', nome: 'São Paulo' },
-      { UF: 'SE', nome: 'Sergipe' },
-      { UF: 'TO', nome: 'Tocantins' }
+      {UF: null, nome: 'Todos os estados', regiao: ''},
+      {UF: 'AC', nome: 'Acre', regiao: 'Norte'},
+      {UF: 'AL', nome: 'Alagoas', regiao: 'Norte'},
+      {UF: 'AP', nome: 'Amapá', regiao: 'Norte'},
+      {UF: 'AM', nome: 'Amazonas', regiao: 'Norte'},
+      {UF: 'BA', nome: 'Bahia', regiao: 'Nordeste'},
+      {UF: 'CE', nome: 'Ceará', regiao: 'Nordeste'},
+      {UF: 'DF', nome: 'Distrito Federal', regiao: 'Centro-Oeste'},
+      {UF: 'ES', nome: 'Espírito Santo', regiao: 'Sudeste'},
+      {UF: 'GO', nome: 'Goiás', regiao: 'Centro-Oeste'},
+      {UF: 'MA', nome: 'Maranhão', regiao: 'Nordeste'},
+      {UF: 'MT', nome: 'Mato Grosso', regiao: 'Centro-Oeste'},
+      {UF: 'MS', nome: 'Mato Grosso do Sul', regiao: 'Centro-Oeste'},
+      {UF: 'MG', nome: 'Minas Gerais', regiao: 'Sudeste'},
+      {UF: 'PA', nome: 'Pará', regiao: 'Norte'},
+      {UF: 'PB', nome: 'Paraíba', regiao: 'Nordeste'},
+      {UF: 'PR', nome: 'Paraná', regiao: 'Sul'},
+      {UF: 'PE', nome: 'Pernambuco', regiao: 'Nordeste'},
+      {UF: 'PI', nome: 'Piauí', regiao: 'Nordeste'},
+      {UF: 'RJ', nome: 'Rio de Janeiro', regiao: 'Sudeste'},
+      {UF: 'RN', nome: 'Rio Grande do Norte', regiao: 'Nordeste'},
+      {UF: 'RS', nome: 'Rio Grande do Sul', regiao: 'Sul'},
+      {UF: 'RO', nome: 'Rondônia', regiao: 'Norte'},
+      {UF: 'RR', nome: 'Roraima', regiao: 'Norte'},
+      {UF: 'SC', nome: 'Santa Catarina', regiao: 'Sul'},
+      {UF: 'SP', nome: 'São Paulo', regiao: 'Sudeste'},
+      {UF: 'SE', nome: 'Sergipe', regiao: 'Nordeste'},
+      {UF: 'TO', nome: 'Tocantins', regiao: 'Norte'}
     ];
-
-  constructor() { }
-
-  obterNomePorUF(UF: String) {
-    for (const estado of this.listaEstados) {
-      if (estado.UF === UF) {
-        return estado.nome;
-      }
-    }
-    return null;
-  }
 }
