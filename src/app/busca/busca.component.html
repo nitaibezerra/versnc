@@ -28,7 +28,7 @@
 
       <input #searchBox matInput type="search" id="search-box"
              [(ngModel)]="queries['nome_municipio']"
-             [ngModelOptions]="{standalone: true}" />
+             [ngModelOptions]="{standalone: true}" autofocus/>
 
     </mat-form-field >
     <mat-form-field class="textCenter">
@@ -38,7 +38,7 @@
 
       <input #searchBox matInput type="search" id="search-box"
              [(ngModel)]="queries['estado_sigla']"
-             [ngModelOptions]="{standalone: true}" />
+             [ngModelOptions]="{standalone: true}" autofocus/>
 
 
     </mat-form-field >
@@ -59,3 +59,4 @@
   
   <a class="alinhamento" (click)="seletorTipoBusca = !seletorTipoBusca">{{ seletorTipoBusca ? '&#x25B4; Busca Simples' : '&#x25B8; Busca Avançada' }}</a>
 </div>
+<mat-paginator [length]="count" [pageSize]="10" (page)="pageEvent = onTrocaPagina($event)"></mat-paginator>

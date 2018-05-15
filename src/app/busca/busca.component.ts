@@ -30,6 +30,8 @@ export class BuscaComponent implements OnInit {
   private opcoesDePaginacao = [5, 10, 25, 50, 100];
   private paginaAtual = 1;
   private paginaAnterior = 0;
+  private count: Number;
+  private page: number = 0;
 
   constructor(private slcApiService: SlcApiService,
               private location: Location,
@@ -66,21 +68,28 @@ export class BuscaComponent implements OnInit {
 
   onRealizarBusca() {
     this.listaEntidades = undefined;
-
-    this.carregarPagina(1);
+    this.carregarPagina(this.page);
   }
 
-  onTrocaPagina(indice: number) {
-    this.carregarPagina(indice);
+  // onTrocaPagina(indice: number) {
+  //   this.carregarPagina(indice);
+  // }
+
+  onTrocaPagina(event) {
+    this.page = event.pageIndex*10;
+    this.queries['offset'] = this.page.toString();
+    this.carregarPagina(this.page);
   }
 
-  carregarPagina(indice: number) {
-    console.info(this.queries);
+  carregarPagina(index: number) {
     this.carregandoDados = true;
     this.slcApiService.searchFilter(this.queries).subscribe(
       resposta => {
         this.slcApiService.trocaBusca([resposta['count'], resposta['entesFederados']]);
         this.router.navigate(['/tabela-uf-municipio']);
+        this.count = resposta['count'];      
+        resposta['offset'] = index;
       });
+    
   }
 }
