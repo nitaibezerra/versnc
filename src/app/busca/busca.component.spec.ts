@@ -10,6 +10,8 @@ import { AppModule } from '../app.module';
 // import { MessageComponent } from '../message/message.component';
 import { MessageService} from '../message.service';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterTestingModule } from '@angular/router/testing';
+import { Location } from '@angular/common';
 
 describe('BuscaComponent', () => {
   let component: BuscaComponent;
@@ -17,9 +19,9 @@ describe('BuscaComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [MaterialModule, HttpClientModule, HttpClientTestingModule, NoopAnimationsModule],
+      imports: [MaterialModule, HttpClientModule, HttpClientTestingModule, NoopAnimationsModule, RouterTestingModule],
       declarations: [ BuscaComponent ],
-      providers: [SlcApiService, MessageService]
+      providers: [SlcApiService, MessageService, Location]
     })
     .compileComponents();
   }));
