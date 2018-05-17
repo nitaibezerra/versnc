@@ -76,7 +76,7 @@ export class BuscaComponent implements OnInit {
   // }
 
   onTrocaPagina(event) {
-    this.page = event.pageIndex*10;
+    this.page = event.pageIndex * 10;
     this.queries['offset'] = this.page.toString();
     this.carregarPagina(this.page);
   }
@@ -87,9 +87,9 @@ export class BuscaComponent implements OnInit {
       resposta => {
         this.slcApiService.trocaBusca([resposta['count'], resposta['entesFederados']]);
         this.router.navigate(['/tabela-uf-municipio']);
-        this.count = resposta['count'];      
+        this.count = resposta['count'];
         resposta['offset'] = index;
       });
-    
+
   }
 }
