@@ -8,7 +8,7 @@ import { MaterialModule } from '../material/material.module';
 import { SlcApiService } from '../slc-api.service';
 import { AppModule } from '../app.module';
 // import { MessageComponent } from '../message/message.component';
-import { MessageService} from '../message.service';
+import { MessageService } from '../message.service';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterTestingModule } from '@angular/router/testing';
 import { Location } from '@angular/common';
@@ -20,19 +20,47 @@ describe('BuscaComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [MaterialModule, HttpClientModule, HttpClientTestingModule, NoopAnimationsModule, RouterTestingModule],
-      declarations: [ BuscaComponent ],
+      declarations: [BuscaComponent],
       providers: [SlcApiService, MessageService, Location]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(BuscaComponent);
-   component = fixture.componentInstance;
+    component = fixture.componentInstance;
     fixture.detectChanges();
+
+    component.carregarPagina(1);
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('Verifica se a query de UF  é setada corretamente ao digitar string de tamanho menor que 3', () => {
+    var event;
+    event = document.createEvent("Events");
+    event.initEvent('keypress', true, false);
+    event.keyCode=13;
+
+    component['termoSimples']='df';
+    component.onRealizarBuscaComEnter(event);
+
+    expect(component['queries']['estado_sigla']).toEqual('DF');
+    expect(component['queries']['nome_municipio']).toEqual('');
+  });
+
+  it('Verifica se a query de Municipio é setada corretamente ao digitar string de tamanho maior que 2', () => {
+    var event;
+    event = document.createEvent("Events");
+    event.initEvent('keypress', true, false);
+    event.keyCode=13;
+
+    component['termoSimples']='Brasília';
+    component.onRealizarBuscaComEnter(event);
+
+    expect(component['queries']['nome_municipio']).toEqual('Brasília');
+    expect(component['queries']['estado_sigla']).toEqual('');    
   });
 });
