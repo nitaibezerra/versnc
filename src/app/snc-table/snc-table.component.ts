@@ -25,7 +25,7 @@ export class SncTableComponent implements OnInit, OnDestroy {
   private sncDataSource: any;
   private mySubscription: Subscription;
   private pages: number = 0;
-
+  
   constructor(private slcApiService: SlcApiService, private router: Router) {
 
     this.router.routeReuseStrategy.shouldReuseRoute = function () {
@@ -40,6 +40,7 @@ export class SncTableComponent implements OnInit, OnDestroy {
     });
   }
 
+  @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
 
   public getEntesFederados(): void {
@@ -56,14 +57,21 @@ export class SncTableComponent implements OnInit, OnDestroy {
       this.mySubscription.unsubscribe();
   }
 
-  onTrocaPagina(event){
+  onTrocaPagina(event?: PageEvent){
+    this.slcApiService['paginaAtual'] = this.paginator['_pageIndex']; // Página atual é armazenada na service
+    let index = this.slcApiService['paginaAtual'];
 
-      this.pages = event.pageIndex * 10;
-      this.listaRetorno[3] = this.pages;
-      this.listaRetorno[2]['offset'] = this.pages.toString();
-      this.slcApiService.carregarPagina(this.pages, this.listaRetorno[2]);
+    this.pages = index * 10; // Number offset que vai para a chamada da API
+    this.listaRetorno[3] = this.pages; 
+    this.listaRetorno[2]['offset'] = this.pages.toString(); // String 'offset' que vai para a chamada da API e realiza a paginação
+    
+    this.slcApiService.carregarPagina(index, this.listaRetorno[2]);
   }
-
+  
+  ngAfterViewInit() {
+    this.paginator['_pageIndex'] = this.slcApiService['paginaAtual']; // Atualiza o valor da página atual corretamente    
+  }
+  
   ngOnInit() {
     this.getEntesFederados();
   }

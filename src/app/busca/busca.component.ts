@@ -56,6 +56,7 @@ export class BuscaComponent implements OnInit {
 
   onRealizarBusca() {
     this.listaEntidades = undefined;
+    this.slcApiService['paginaAtual'] = 0; // Garante que a busca sempre seja vista inicialmente na primeira página
     this.slcApiService.carregarPagina(this.page, this.queries);
   }
 
