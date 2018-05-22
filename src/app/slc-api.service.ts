@@ -4,6 +4,8 @@ import 'rxjs/add/operator/map';
 import {Observable} from 'rxjs/Observable';
 import {of} from 'rxjs/observable/of';
 import {Response} from '@angular/http';
+import {Location} from '@angular/common';
+import {Router} from '@angular/router';
 
 import {MessageService} from './message.service';
 
@@ -16,7 +18,7 @@ export class SlcApiService {
 
   private sncUrlHmgLocal = 'http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/';
   private sncUrlLocal = 'http://localhost:8000/api/v1/sistemadeculturalocal';
-
+  private listaRetorno = {};
   private buscar = new BehaviorSubject<any>([]);
   buscaAtual = this.buscar.asObservable();
 
@@ -25,7 +27,9 @@ export class SlcApiService {
   }
 
   constructor(private http: HttpClient,
-              private messageService: MessageService) {
+              private messageService: MessageService,
+              private location: Location,
+              private router: Router) {
   }
 
   /**
@@ -102,6 +106,15 @@ export class SlcApiService {
         });
         return { entesFederados , count };
       });
+  }
+
+  carregarPagina(index: number, queries) {
+    this.searchFilter(queries).subscribe(
+      resposta => {
+        this.trocaBusca([resposta['count'], resposta['entesFederados'], queries, index]);
+        this.router.navigate(['/tabela-uf-municipio']);
+      });
+
   }
 
 }

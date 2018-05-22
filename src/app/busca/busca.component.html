@@ -56,7 +56,6 @@
 
 
   </form >
-  
+
   <a class="alinhamento" (click)="seletorTipoBusca = !seletorTipoBusca">{{ seletorTipoBusca ? '&#x25B4; Busca Simples' : '&#x25B8; Busca Avançada' }}</a>
 </div>
-<mat-paginator [length]="count" [pageSize]="10" (page)="pageEvent = onTrocaPagina($event)"></mat-paginator>

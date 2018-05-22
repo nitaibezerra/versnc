@@ -44,7 +44,7 @@ import {FormsModule} from '@angular/forms';
     HttpModule,
     FormsModule
   ],
-  providers: [SlcApiService, MessageService],
+  providers: [SlcApiService, MessageService, SncTableComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

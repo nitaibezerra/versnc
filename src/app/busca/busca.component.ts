@@ -1,8 +1,6 @@
-import {ChangeDetectorRef, Component, Input, OnInit, Output} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {Entidade} from '../models/entidade.model';
 import {SlcApiService} from '../slc-api.service';
-import {Location} from '@angular/common';
-import {Router} from '@angular/router';
 import {SncTableComponent} from '../snc-table/snc-table.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
@@ -18,24 +16,10 @@ export class BuscaComponent implements OnInit {
   private listaRetorno = {};
   private listaEntidades: [Entidade];
   private seletorTipoBusca: boolean = false;
-  private carregandoDados: Boolean = false;
-  private taxaDuracaoCarregamento = 0;
   private termoSimples: String = '';
-
-  // Paginacao
-  private offsetAtual = 0;
-  private numeroDeItems: number;
-  private totalDeItems: number;
-  private maximoBotoes = 4;
-  private opcoesDePaginacao = [5, 10, 25, 50, 100];
-  private paginaAtual = 1;
-  private paginaAnterior = 0;
-  private count: Number;
   private page: number = 0;
 
-  constructor(private slcApiService: SlcApiService,
-              private location: Location,
-              private router: Router) {
+  constructor(private slcApiService: SlcApiService) {
   }
 
   queries: { [query: string]: String }
@@ -52,13 +36,17 @@ export class BuscaComponent implements OnInit {
       if (!this.seletorTipoBusca) {
         if (this.termoSimples.length < 3) {
           this.queries['nome_municipio'] = '';
+          this.queries['offset'] = '';
           this.queries['estado_sigla'] = this.termoSimples.toUpperCase();
         } else if (this.termoSimples === '' || this.termoSimples.length > 2) {
           this.queries['estado_sigla'] = '';
+          this.queries['offset'] = '';
           this.queries['nome_municipio'] = this.termoSimples;
+
         }
         this.onRealizarBusca();
       } else {
+        this.queries['offset'] = '';
         this.queries['estado_sigla'] = this.queries['estado_sigla'].toUpperCase();
         this.onRealizarBusca();
       }
@@ -68,28 +56,7 @@ export class BuscaComponent implements OnInit {
 
   onRealizarBusca() {
     this.listaEntidades = undefined;
-    this.carregarPagina(this.page);
+    this.slcApiService.carregarPagina(this.page, this.queries);
   }
 
-  // onTrocaPagina(indice: number) {
-  //   this.carregarPagina(indice);
-  // }
-
-  onTrocaPagina(event) {
-    this.page = event.pageIndex * 10;
-    this.queries['offset'] = this.page.toString();
-    this.carregarPagina(this.page);
-  }
-
-  carregarPagina(index: number) {
-    this.carregandoDados = true;
-    this.slcApiService.searchFilter(this.queries).subscribe(
-      resposta => {
-        this.slcApiService.trocaBusca([resposta['count'], resposta['entesFederados']]);
-        this.router.navigate(['/tabela-uf-municipio']);
-        this.count = resposta['count'];
-        resposta['offset'] = index;
-      });
-
-  }
 }

@@ -7,7 +7,11 @@ import { SlcApiService } from '../slc-api.service';
 import { Entidade } from '../models/entidade.model';
 import {NavigationEnd, Router} from '@angular/router';
 import {Subscription} from 'rxjs/Subscription';
-import {MatTooltipModule} from '@angular/material/tooltip';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import {BuscaComponent} from '../busca/busca.component';
+import {noUndefined} from '@angular/compiler/src/util';
+
+
 
 @Component({
   selector: 'snc-table',
@@ -20,6 +24,7 @@ export class SncTableComponent implements OnInit, OnDestroy {
   private listaRetorno = {};
   private sncDataSource: any;
   private mySubscription: Subscription;
+  private pages: number = 0;
 
   constructor(private slcApiService: SlcApiService, private router: Router) {
 
@@ -35,33 +40,31 @@ export class SncTableComponent implements OnInit, OnDestroy {
     });
   }
 
-  queries: { [query: string]: String }
-    = {'limit': '', 'offset': '', 'nome_municipio': '', 'estado_sigla': '', 'cnpj_prefeitura': ''};
-
-  @ViewChild(MatPaginator, ) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
 
-  public getEntesFederados(event?: PageEvent): void {
-
-    let index = 0;
-
-    if (event != null) {
-      index = event.pageIndex;
-    }
+  public getEntesFederados(): void {
+    this.slcApiService.buscaAtual.subscribe(listaRetorno => this.listaRetorno = listaRetorno);
 
     this.sncDataSource = new MatTableDataSource<Entidade>(this.listaRetorno[1] as Entidade[]);
     this.sncDataSource.sort = this.sort;
     this.count = this.listaRetorno[0];
+    this.pages = this.listaRetorno[3];
   }
-
 
   ngOnDestroy() {
     if (this.mySubscription)
       this.mySubscription.unsubscribe();
   }
 
+  onTrocaPagina(event){
+
+      this.pages = event.pageIndex * 10;
+      this.listaRetorno[3] = this.pages;
+      this.listaRetorno[2]['offset'] = this.pages.toString();
+      this.slcApiService.carregarPagina(this.pages, this.listaRetorno[2]);
+  }
+
   ngOnInit() {
-    this.slcApiService.buscaAtual.subscribe(listaRetorno => this.listaRetorno = listaRetorno);
     this.getEntesFederados();
   }
 }
