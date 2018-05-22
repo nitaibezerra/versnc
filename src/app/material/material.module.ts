@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import {
   MatTableModule,
@@ -24,6 +25,7 @@ import {
     CommonModule,
     MatTableModule,
     MatPaginatorModule,
+    FormsModule,
   ],
   exports: [
     MatTableModule,
@@ -41,6 +43,7 @@ import {
     MatSortModule,
     MatSelectModule,
     MatTooltipModule,
+    FormsModule,
   ],
   declarations: []
 })
