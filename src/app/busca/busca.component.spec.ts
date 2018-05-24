@@ -7,11 +7,9 @@ import { BuscaComponent } from './busca.component';
 import { MaterialModule } from '../material/material.module';
 import { SlcApiService } from '../slc-api.service';
 import { AppModule } from '../app.module';
-// import { MessageComponent } from '../message/message.component';
 import { MessageService } from '../message.service';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterTestingModule } from '@angular/router/testing';
-import { Location } from '@angular/common';
 
 describe('BuscaComponent', () => {
   let component: BuscaComponent;
@@ -21,7 +19,7 @@ describe('BuscaComponent', () => {
     TestBed.configureTestingModule({
       imports: [MaterialModule, HttpClientModule, HttpClientTestingModule, NoopAnimationsModule, RouterTestingModule],
       declarations: [BuscaComponent],
-      providers: [SlcApiService, MessageService, Location]
+      providers: [SlcApiService, MessageService]
     })
       .compileComponents();
   }));
@@ -31,7 +29,6 @@ describe('BuscaComponent', () => {
     component = fixture.componentInstance;
     fixture.detectChanges();
 
-    component.carregarPagina(1);
   });
 
   it('should create', () => {

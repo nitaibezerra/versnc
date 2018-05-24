@@ -6,6 +6,9 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { SlcApiService } from './slc-api.service';
 import { MessageService } from './message.service';
 import { Entidade } from './models/entidade.model';
+import { Location } from '@angular/common';
+import { RouterTestingModule} from '@angular/router/testing';
+
 
 describe('SlcApiService', () => {
   let httpClient: HttpClient;
@@ -13,10 +16,11 @@ describe('SlcApiService', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule],
+      imports: [HttpClientTestingModule, RouterTestingModule],
       providers: [
         SlcApiService,
         MessageService,
+        Location,
       ]
     });
     httpClient = TestBed.get(HttpClient);
