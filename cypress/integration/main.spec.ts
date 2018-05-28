@@ -11,43 +11,43 @@ it('Apresenta descrição Consulte seu Município ou UF', () => {
 it('Apresenta Tabela na Pagina Inicial', () => {
   cy.visit('http://localhost:4200/');
   cy.get('input').type('{enter}');    
-  cy.get('app-root snc-table mat-card');
+  cy.get('app-root snc-table mat-card', { timeout: 10000 });
 });
 
 it('Apresenta título MUNICÍPIO na tabela da Página Inicial após pesquisa', () => {
   cy.visit('http://localhost:4200/');
   cy.get('input').type('{enter}');    
-  cy.get('.mat-sort-header-button').contains('MUNICÍPIO');
+  cy.get('.mat-sort-header-button').contains('MUNICÍPIO', { timeout: 10000 });
 });
 
 it('Apresenta título SITUAÇÃO DA ADESÃO na tabela da Página Inicial após pesquisa', () => {
   cy.visit('http://localhost:4200/');
   cy.get('input').type('{enter}');  
-  cy.get('.mat-sort-header-button').eq(1).contains('SITUAÇÂO DA ADESÃO');
+  cy.get('.mat-sort-header-button').eq(1).contains('SITUAÇÂO DA ADESÃO', { timeout: 10000 });
 });
 
 it('Apresenta título DATA DA ADESÃO na tabela da Página Inicial após pesquisa', () => {
   cy.visit('http://localhost:4200/');
   cy.get('input').type('{enter}');  
-  cy.get('.mat-sort-header-button').eq(2).contains('DATA DA ADESÃO');
+  cy.get('.mat-sort-header-button').eq(2).contains('DATA DA ADESÃO', { timeout: 10000 });
 });
 
 it('Apresenta título DETALHAR na tabela da Página Inicial após pesquisa', () => {
   cy.visit('http://localhost:4200/');
   cy.get('input').type('{enter}');  
-  cy.get('.mat-header-cell').eq(3).contains('DETALHAR');
+  cy.get('.mat-header-cell').eq(3).contains('DETALHAR', { timeout: 10000 });
 });
 
 it('Apresenta 10 elementos referentes aos municipios', () => {
   cy.visit('http://localhost:4200/');
   cy.get('input').type('{enter}');    
-  cy.get('app-root snc-table mat-card mat-table mat-row').should('have.length', 10);
+  cy.get('app-root snc-table mat-card mat-table mat-row', { timeout: 10000 }).should('have.length', 10);
 });
 
 it('Apresenta o componente de paginação', () => {
   cy.visit('http://localhost:4200/');
   cy.get('input').type('{enter}');    
-  cy.get('app-root snc-table mat-card mat-paginator');
+  cy.get('app-root snc-table mat-card mat-paginator', { timeout: 10000 });
 });
 
 it('Apresenta dados nas linhas da tabela', () => {
