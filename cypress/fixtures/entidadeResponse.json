@@ -1,0 +1,27 @@
+{"Entidade" : [{
+  "acoes_plano_trabalho": null,
+  "conselho": "",
+  "criacao_conselho_cultural": "",
+  "criacao_fundo_cultura": "",
+  "criacao_lei_sistema": "",
+  "criacao_orgao_gestor": "",
+  "criacao_plano_cultura": "",
+  "data_adesao": "",
+  "ente_federado": {
+    "cnpj_prefeitura": "",
+    "localizacao": { "bairro": "",
+      "cep": "",
+      "cidade": {"codigo_ibge": 170710, "nome_municipio": "Divinópolis do Tocantins"},
+      "complemento": "",
+      "endereco": "",
+      "estado": {"codigo_ibge": 17, "sigla": "TO"}
+    },
+    "telefones": { "telefone_um": "", "telefone_dois": "", "telefone_tres": "" },
+    "endereco_eletronico": null },
+  "id": 4456,
+  "link_entidade": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4456.json",
+  "link_plano_trabalho_entidade": "",
+  "nome_municipio": "Divinópolis do Tocantins",
+  "sigla_estado": "TO",
+  "situacao_adesao": "",
+}]};
