@@ -1,0 +1,5589 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "id": 4466,
+        "conselho": {
+          "conselheiros": []
+        },
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4466/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": {
+            "id": 6185,
+            "criacao_conselho_cultural": {
+              "ata_regimento_aprovado": null,
+              "situacao": "Em preenchimento"
+            },
+            "_links": {
+              "self": {
+                "href": "http://snchomolog.cultura.gov.br/api/v1/acoesplanotrabalho/6185/"
+              }
+            },
+            "criacao_plano_cultura": {
+              "ata_reuniao_aprovacao_plano": null,
+              "minuta_preparada": null,
+              "lei_plano_cultura": null,
+              "situacao": "Em preenchimento",
+              "ata_votacao_projeto_lei": null,
+              "relatorio_diretrizes_aprovadas": null
+            },
+            "criacao_orgao_gestor": {
+              "situacao": "Em preenchimento",
+              "relatorio_atividade_secretaria": null
+            },
+            "criacao_fundo_cultura": {
+              "lei_fundo_cultura": null,
+              "situacao": "Em preenchimento",
+              "cnpj_fundo_cultura": "18.851.446/0001-95"
+            },
+            "_embedded": {
+              "sistema_cultura_local": {
+                "_links": {
+                  "self": {
+                    "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4466/"
+                  }
+                }
+              }
+            },
+            "criacao_lei_sistema_cultura": {
+              "lei_sistema_cultura": null,
+              "situacao": "Em preenchimento"
+            }
+          }
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Publicado no DOU"
+        },
+        "governo": {
+          "nome_prefeito": "Chico Xavier",
+          "email_institucional_prefeito": "janaina.lima.df@gmail.com",
+          "termo_posse_prefeito": "/media/termo_posse/Chrysanthemum.jpg"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "18.761.172/0001-43",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 53,
+              "sigla": "DF"
+            },
+            "cidade": {
+              "codigo_ibge": 530010,
+              "nome_municipio": "Brasília"
+            },
+            "cep": "70.770-100",
+            "bairro": "Asa Norte",
+            "endereco": "Bla bla bla",
+            "complemento": "bla bla"
+          },
+          "telefones": {
+            "telefone_um": "99999999999",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "https://www.geradordecpf.org/"
+        }
+      },
+      {
+        "id": 4465,
+        "conselho": {
+          "conselheiros": [
+            {
+              "email": "teste@email.com",
+              "data_cadastro": "2018-03-29",
+              "data_situacao": "2018-03-29",
+              "nome": "TEste 123",
+              "segmento": "Circo",
+              "situacao": "1"
+            }
+          ]
+        },
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4465/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": {
+            "id": 6183,
+            "criacao_conselho_cultural": {
+              "ata_regimento_aprovado": null,
+              "situacao": "Em preenchimento"
+            },
+            "_links": {
+              "self": {
+                "href": "http://snchomolog.cultura.gov.br/api/v1/acoesplanotrabalho/6183/"
+              }
+            },
+            "criacao_plano_cultura": {
+              "ata_reuniao_aprovacao_plano": null,
+              "minuta_preparada": null,
+              "lei_plano_cultura": null,
+              "situacao": "Em preenchimento",
+              "ata_votacao_projeto_lei": null,
+              "relatorio_diretrizes_aprovadas": null
+            },
+            "criacao_orgao_gestor": {
+              "situacao": "Em preenchimento",
+              "relatorio_atividade_secretaria": null
+            },
+            "criacao_fundo_cultura": {
+              "lei_fundo_cultura": null,
+              "situacao": "Em preenchimento",
+              "cnpj_fundo_cultura": "96.384.155/0001-48"
+            },
+            "_embedded": {
+              "sistema_cultura_local": {
+                "_links": {
+                  "self": {
+                    "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4465/"
+                  }
+                }
+              }
+            },
+            "criacao_lei_sistema_cultura": {
+              "lei_sistema_cultura": null,
+              "situacao": "Em preenchimento"
+            }
+          }
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Publicado no DOU"
+        },
+        "governo": {
+          "nome_prefeito": "Prefeito do Teste",
+          "email_institucional_prefeito": "teste@email.com",
+          "termo_posse_prefeito": "/media/termo_posse/Modelo_1mdl3.png"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "66.537.377/0001-92",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 15,
+              "sigla": "PA"
+            },
+            "cidade": {
+              "codigo_ibge": 150140,
+              "nome_municipio": "Belém"
+            },
+            "cep": "71.000-000",
+            "bairro": "Rua de Cima",
+            "endereco": "Avenida Nao Importa",
+            "complemento": "Rua de Baixo"
+          },
+          "telefones": {
+            "telefone_um": "22020205950",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "http://www.cultura.gov.br/snc"
+        }
+      },
+      {
+        "id": 4464,
+        "conselho": {
+          "conselheiros": []
+        },
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4464/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": {
+            "id": 6182,
+            "criacao_conselho_cultural": {
+              "ata_regimento_aprovado": null,
+              "situacao": "Em preenchimento"
+            },
+            "_links": {
+              "self": {
+                "href": "http://snchomolog.cultura.gov.br/api/v1/acoesplanotrabalho/6182/"
+              }
+            },
+            "criacao_plano_cultura": {
+              "ata_reuniao_aprovacao_plano": null,
+              "minuta_preparada": null,
+              "lei_plano_cultura": null,
+              "situacao": "Em preenchimento",
+              "ata_votacao_projeto_lei": null,
+              "relatorio_diretrizes_aprovadas": null
+            },
+            "criacao_orgao_gestor": {
+              "situacao": "Em preenchimento",
+              "relatorio_atividade_secretaria": null
+            },
+            "criacao_fundo_cultura": {
+              "lei_fundo_cultura": null,
+              "situacao": "Em preenchimento",
+              "cnpj_fundo_cultura": null
+            },
+            "_embedded": {
+              "sistema_cultura_local": {
+                "_links": {
+                  "self": {
+                    "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4464/"
+                  }
+                }
+              }
+            },
+            "criacao_lei_sistema_cultura": {
+              "lei_sistema_cultura": null,
+              "situacao": "Em preenchimento"
+            }
+          }
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Publicado no DOU"
+        },
+        "governo": {
+          "nome_prefeito": "Fulano Cicrano",
+          "email_institucional_prefeito": "fulano.cicrano@cultura.gov.br",
+          "termo_posse_prefeito": "/media/termo_posse/Captura_de_tela_de_2017-04-13_01-28-59.png"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "95.876.554/0001-63",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 35,
+              "sigla": "SP"
+            },
+            "cidade": {
+              "codigo_ibge": 350460,
+              "nome_municipio": "Bady Bassitt"
+            },
+            "cep": "14.300-000",
+            "bairro": "Benjanmin Constant",
+            "endereco": "Rua 0",
+            "complemento": "Numero 0"
+          },
+          "telefones": {
+            "telefone_um": "61998246668",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": ""
+        }
+      },
+      {
+        "id": 4463,
+        "conselho": {
+          "conselheiros": []
+        },
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4463/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": {
+            "id": 6184,
+            "criacao_conselho_cultural": {
+              "ata_regimento_aprovado": null,
+              "situacao": "Em preenchimento"
+            },
+            "_links": {
+              "self": {
+                "href": "http://snchomolog.cultura.gov.br/api/v1/acoesplanotrabalho/6184/"
+              }
+            },
+            "criacao_plano_cultura": {
+              "ata_reuniao_aprovacao_plano": null,
+              "minuta_preparada": null,
+              "lei_plano_cultura": null,
+              "situacao": "Em preenchimento",
+              "ata_votacao_projeto_lei": null,
+              "relatorio_diretrizes_aprovadas": null
+            },
+            "criacao_orgao_gestor": {
+              "situacao": "Em preenchimento",
+              "relatorio_atividade_secretaria": null
+            },
+            "criacao_fundo_cultura": {
+              "lei_fundo_cultura": null,
+              "situacao": "Em preenchimento",
+              "cnpj_fundo_cultura": null
+            },
+            "_embedded": {
+              "sistema_cultura_local": {
+                "_links": {
+                  "self": {
+                    "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4463/"
+                  }
+                }
+              }
+            },
+            "criacao_lei_sistema_cultura": {
+              "lei_sistema_cultura": null,
+              "situacao": "Em preenchimento"
+            }
+          }
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Publicado no DOU"
+        },
+        "governo": {
+          "nome_prefeito": "João João",
+          "email_institucional_prefeito": "joao32@email.com",
+          "termo_posse_prefeito": "/media/termo_posse/Conte%C3%BAdos_Site.docx"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "10.869.193/0001-75",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 22,
+              "sigla": "PI"
+            },
+            "cidade": {
+              "codigo_ibge": 220240,
+              "nome_municipio": "Capitão de Campos"
+            },
+            "cep": "71.120-000",
+            "bairro": "Centro",
+            "endereco": "Rua 22 Praça Central",
+            "complemento": "Sem complemento"
+          },
+          "telefones": {
+            "telefone_um": "86999925496",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "http://www.cultura.gov.br/snc"
+        }
+      },
+      {
+        "id": 4462,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4462/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Aguardando envio da documentação"
+        },
+        "governo": {
+          "nome_prefeito": "João Silva",
+          "email_institucional_prefeito": "joao@email.com",
+          "termo_posse_prefeito": "/media/termo_posse/snc_puGZolm.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "17.777.239/0001-75",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 29,
+              "sigla": "BA"
+            },
+            "cidade": {
+              "codigo_ibge": 290225,
+              "nome_municipio": "Arataca"
+            },
+            "cep": "93.351-060",
+            "bairro": "graça",
+            "endereco": "rua dos santos",
+            "complemento": "12"
+          },
+          "telefones": {
+            "telefone_um": "61999999999",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "http://teste.com.br"
+        }
+      },
+      {
+        "id": 4461,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4461/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": "João Silva",
+          "email_institucional_prefeito": "joao@email.com",
+          "termo_posse_prefeito": "/media/termo_posse/snc.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "17.777.239/0001-75",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 29,
+              "sigla": "BA"
+            },
+            "cidade": {
+              "codigo_ibge": 290190,
+              "nome_municipio": "Aporá"
+            },
+            "cep": "93.351-060",
+            "bairro": "graça",
+            "endereco": "rua dos santos",
+            "complemento": "12"
+          },
+          "telefones": {
+            "telefone_um": "55999999999",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "http://teste.com.br"
+        }
+      },
+      {
+        "id": 4460,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4460/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Aguardando envio da documentação"
+        },
+        "governo": {
+          "nome_prefeito": "Valdemar Larceda  Silva Filho",
+          "email_institucional_prefeito": "administracao@malhada.ba.gov.br",
+          "termo_posse_prefeito": "/media/termo_posse/termo_OS7pAZV.docx"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "14.105.217/0001-70",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 29,
+              "sigla": "BA"
+            },
+            "cidade": {
+              "codigo_ibge": 292020,
+              "nome_municipio": "Malhada"
+            },
+            "cep": "46.440-000",
+            "bairro": "centro",
+            "endereco": "Praça Santa Cruz",
+            "complemento": "casa"
+          },
+          "telefones": {
+            "telefone_um": "7736912145",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "http://www.malhada.ba.gov.br"
+        }
+      },
+      {
+        "id": 4459,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4459/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Aguardando envio da documentação"
+        },
+        "governo": {
+          "nome_prefeito": "Hipoliton Sael Holanda Melo",
+          "email_institucional_prefeito": "gabinetecivil@portodomangue.rn.gov.br",
+          "termo_posse_prefeito": "/media/termo_posse/SCAN_20180108_105053728.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "01.612.371/0001-97",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 24,
+              "sigla": "RN"
+            },
+            "cidade": {
+              "codigo_ibge": 241025,
+              "nome_municipio": "Porto do Mangue"
+            },
+            "cep": "59.668-000",
+            "bairro": "Centro",
+            "endereco": "Rua Joca de Melo 96",
+            "complemento": "Centro"
+          },
+          "telefones": {
+            "telefone_um": "8435260047",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "http://portodomangue.rn.gov.br/"
+        }
+      },
+      {
+        "id": 4458,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4458/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 17,
+              "sigla": "TO"
+            },
+            "cidade": {
+              "codigo_ibge": 171270,
+              "nome_municipio": "Mateiros"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4457,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4457/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 17,
+              "sigla": "TO"
+            },
+            "cidade": {
+              "codigo_ibge": 170720,
+              "nome_municipio": "Dois Irmãos do Tocantins"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4456,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4456/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 17,
+              "sigla": "TO"
+            },
+            "cidade": {
+              "codigo_ibge": 170710,
+              "nome_municipio": "Divinópolis do Tocantins"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4455,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4455/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 17,
+              "sigla": "TO"
+            },
+            "cidade": {
+              "codigo_ibge": 170560,
+              "nome_municipio": "Conceição do Tocantins"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4454,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4454/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 17,
+              "sigla": "TO"
+            },
+            "cidade": {
+              "codigo_ibge": 170550,
+              "nome_municipio": "Colinas do Tocantins"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4453,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4453/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 17,
+              "sigla": "TO"
+            },
+            "cidade": {
+              "codigo_ibge": 170386,
+              "nome_municipio": "Cariri do Tocantins"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4452,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4452/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 35,
+              "sigla": "SP"
+            },
+            "cidade": {
+              "codigo_ibge": 354940,
+              "nome_municipio": "São Joaquim da Barra"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4451,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4451/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 35,
+              "sigla": "SP"
+            },
+            "cidade": {
+              "codigo_ibge": 354810,
+              "nome_municipio": "Santo Antônio do Jardim"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4450,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4450/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 35,
+              "sigla": "SP"
+            },
+            "cidade": {
+              "codigo_ibge": 313360,
+              "nome_municipio": "Itapeva"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4449,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4449/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 35,
+              "sigla": "SP"
+            },
+            "cidade": {
+              "codigo_ibge": 350620,
+              "nome_municipio": "Bento de Abreu"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4448,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4448/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 28,
+              "sigla": "SE"
+            },
+            "cidade": {
+              "codigo_ibge": 280740,
+              "nome_municipio": "Tobias Barreto"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4447,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4447/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 28,
+              "sigla": "SE"
+            },
+            "cidade": {
+              "codigo_ibge": 280710,
+              "nome_municipio": "Simão Dias"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4446,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4446/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 28,
+              "sigla": "SE"
+            },
+            "cidade": {
+              "codigo_ibge": 280460,
+              "nome_municipio": "Nossa Senhora das Dores"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4445,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4445/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 28,
+              "sigla": "SE"
+            },
+            "cidade": {
+              "codigo_ibge": 280120,
+              "nome_municipio": "Canindé de São Francisco"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4444,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4444/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 42,
+              "sigla": "SC"
+            },
+            "cidade": {
+              "codigo_ibge": 421605,
+              "nome_municipio": "São Cristovão do Sul"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4443,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4443/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 42,
+              "sigla": "SC"
+            },
+            "cidade": {
+              "codigo_ibge": 421568,
+              "nome_municipio": "Santa Terezinha do Progresso"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4442,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4442/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 42,
+              "sigla": "SC"
+            },
+            "cidade": {
+              "codigo_ibge": 420960,
+              "nome_municipio": "Lauro Muller"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4441,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4441/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 42,
+              "sigla": "SC"
+            },
+            "cidade": {
+              "codigo_ibge": 420075,
+              "nome_municipio": "Alto Bela Vista"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4440,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4440/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 43,
+              "sigla": "RS"
+            },
+            "cidade": {
+              "codigo_ibge": 431980,
+              "nome_municipio": "São Vicente do Sul"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4439,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4439/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 43,
+              "sigla": "RS"
+            },
+            "cidade": {
+              "codigo_ibge": 431475,
+              "nome_municipio": "Poço das Antas"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4438,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4438/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 43,
+              "sigla": "RS"
+            },
+            "cidade": {
+              "codigo_ibge": 4314548,
+              "nome_municipio": "Pinto Bandeira"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4437,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4437/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 43,
+              "sigla": "RS"
+            },
+            "cidade": {
+              "codigo_ibge": 430550,
+              "nome_municipio": "Ciríaco"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4436,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4436/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 11,
+              "sigla": "RO"
+            },
+            "cidade": {
+              "codigo_ibge": 110012,
+              "nome_municipio": "Ji-Paraná"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4435,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4435/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 24,
+              "sigla": "RN"
+            },
+            "cidade": {
+              "codigo_ibge": 240990,
+              "nome_municipio": "Pendências"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4434,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4434/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 24,
+              "sigla": "RN"
+            },
+            "cidade": {
+              "codigo_ibge": 2408409,
+              "nome_municipio": "Olho D'água dos Borges"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4433,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4433/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 24,
+              "sigla": "RN"
+            },
+            "cidade": {
+              "codigo_ibge": 240130,
+              "nome_municipio": "Augusto Severo"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4432,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4432/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 41,
+              "sigla": "PR"
+            },
+            "cidade": {
+              "codigo_ibge": 411900,
+              "nome_municipio": "Pérola d'Oeste"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4431,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4431/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 26,
+              "sigla": "PE"
+            },
+            "cidade": {
+              "codigo_ibge": 261153,
+              "nome_municipio": "Quixaba"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4430,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4430/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 26,
+              "sigla": "PE"
+            },
+            "cidade": {
+              "codigo_ibge": 260970,
+              "nome_municipio": "Orobó"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4429,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4429/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 26,
+              "sigla": "PE"
+            },
+            "cidade": {
+              "codigo_ibge": 2601607,
+              "nome_municipio": "Belém do São Francisco"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4428,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4428/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 25,
+              "sigla": "PB"
+            },
+            "cidade": {
+              "codigo_ibge": 251610,
+              "nome_municipio": "Soledade"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4427,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4427/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 25,
+              "sigla": "PB"
+            },
+            "cidade": {
+              "codigo_ibge": 251210,
+              "nome_municipio": "Pombal"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4426,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4426/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 50,
+              "sigla": "MS"
+            },
+            "cidade": {
+              "codigo_ibge": 5006275,
+              "nome_municipio": "Paraíso das Águas"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4425,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4425/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 50,
+              "sigla": "MS"
+            },
+            "cidade": {
+              "codigo_ibge": 500470,
+              "nome_municipio": "Ivinhema"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4424,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4424/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 50,
+              "sigla": "MS"
+            },
+            "cidade": {
+              "codigo_ibge": 500190,
+              "nome_municipio": "Bataguassu"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4423,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4423/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 31,
+              "sigla": "MG"
+            },
+            "cidade": {
+              "codigo_ibge": 316520,
+              "nome_municipio": "São Thomé das Letras"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4422,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4422/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 31,
+              "sigla": "MG"
+            },
+            "cidade": {
+              "codigo_ibge": 314100,
+              "nome_municipio": "Mato Verde"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4421,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4421/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 21,
+              "sigla": "MA"
+            },
+            "cidade": {
+              "codigo_ibge": 210825,
+              "nome_municipio": "Pedro do Rosário"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4420,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4420/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 21,
+              "sigla": "MA"
+            },
+            "cidade": {
+              "codigo_ibge": 210760,
+              "nome_municipio": "Palmeirândia"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4419,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4419/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 21,
+              "sigla": "MA"
+            },
+            "cidade": {
+              "codigo_ibge": 210400,
+              "nome_municipio": "Esperantinópolis"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4418,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4418/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 21,
+              "sigla": "MA"
+            },
+            "cidade": {
+              "codigo_ibge": 210310,
+              "nome_municipio": "Cedral"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4417,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4417/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 21,
+              "sigla": "MA"
+            },
+            "cidade": {
+              "codigo_ibge": 210090,
+              "nome_municipio": "Araioses"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4416,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4416/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 52,
+              "sigla": "GO"
+            },
+            "cidade": {
+              "codigo_ibge": 520390,
+              "nome_municipio": "Buriti Alegre"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4415,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4415/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 23,
+              "sigla": "CE"
+            },
+            "cidade": {
+              "codigo_ibge": 231050,
+              "nome_municipio": "Pedra Branca"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4414,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4414/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 23,
+              "sigla": "CE"
+            },
+            "cidade": {
+              "codigo_ibge": 230530,
+              "nome_municipio": "Ibiapina"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4413,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4413/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 29,
+              "sigla": "BA"
+            },
+            "cidade": {
+              "codigo_ibge": 291005,
+              "nome_municipio": "Dias D'Ávila"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4412,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4412/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 29,
+              "sigla": "BA"
+            },
+            "cidade": {
+              "codigo_ibge": 290140,
+              "nome_municipio": "Angical"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4411,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4411/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 13,
+              "sigla": "AM"
+            },
+            "cidade": {
+              "codigo_ibge": 130250,
+              "nome_municipio": "Manacapuru"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4410,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4410/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": null,
+        "governo": {
+          "nome_prefeito": " ",
+          "email_institucional_prefeito": " ",
+          "termo_posse_prefeito": null
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": " ",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 27,
+              "sigla": "AL"
+            },
+            "cidade": {
+              "codigo_ibge": 270410,
+              "nome_municipio": "Lagoa da Canoa"
+            },
+            "cep": " ",
+            "bairro": " ",
+            "endereco": " ",
+            "complemento": " "
+          },
+          "telefones": {
+            "telefone_um": " ",
+            "telefone_dois": " ",
+            "telefone_tres": " "
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4409,
+        "conselho": {
+          "conselheiros": []
+        },
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4409/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": {
+            "id": 6179,
+            "criacao_conselho_cultural": {
+              "ata_regimento_aprovado": null,
+              "situacao": "Em preenchimento"
+            },
+            "_links": {
+              "self": {
+                "href": "http://snchomolog.cultura.gov.br/api/v1/acoesplanotrabalho/6179/"
+              }
+            },
+            "criacao_plano_cultura": {
+              "ata_reuniao_aprovacao_plano": null,
+              "minuta_preparada": null,
+              "lei_plano_cultura": null,
+              "situacao": "Em preenchimento",
+              "ata_votacao_projeto_lei": null,
+              "relatorio_diretrizes_aprovadas": null
+            },
+            "criacao_orgao_gestor": {
+              "situacao": "Em preenchimento",
+              "relatorio_atividade_secretaria": null
+            },
+            "criacao_fundo_cultura": {
+              "lei_fundo_cultura": null,
+              "situacao": "Em preenchimento",
+              "cnpj_fundo_cultura": null
+            },
+            "_embedded": {
+              "sistema_cultura_local": {
+                "_links": {
+                  "self": {
+                    "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4409/"
+                  }
+                }
+              }
+            },
+            "criacao_lei_sistema_cultura": {
+              "lei_sistema_cultura": null,
+              "situacao": "Em preenchimento"
+            }
+          }
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Publicado no DOU"
+        },
+        "governo": {
+          "nome_prefeito": "Daniel Alonso",
+          "email_institucional_prefeito": "alonsodaniel.marilia@gmail.com",
+          "termo_posse_prefeito": "/media/termo_posse/Termo_de_Posse_BKL8x6N.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "44.477.909/0001-00",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 35,
+              "sigla": "SP"
+            },
+            "cidade": null,
+            "cep": "17.501-080",
+            "bairro": "Centro",
+            "endereco": "Rua Bahia, 40",
+            "complemento": "2º Andar"
+          },
+          "telefones": {
+            "telefone_um": "1434026000",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": null
+        }
+      },
+      {
+        "id": 4408,
+        "conselho": {
+          "conselheiros": []
+        },
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4408/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": {
+            "id": 6175,
+            "criacao_conselho_cultural": {
+              "ata_regimento_aprovado": null,
+              "situacao": "Em preenchimento"
+            },
+            "_links": {
+              "self": {
+                "href": "http://snchomolog.cultura.gov.br/api/v1/acoesplanotrabalho/6175/"
+              }
+            },
+            "criacao_plano_cultura": {
+              "ata_reuniao_aprovacao_plano": null,
+              "minuta_preparada": null,
+              "lei_plano_cultura": null,
+              "situacao": "Em preenchimento",
+              "ata_votacao_projeto_lei": null,
+              "relatorio_diretrizes_aprovadas": null
+            },
+            "criacao_orgao_gestor": {
+              "situacao": "Em preenchimento",
+              "relatorio_atividade_secretaria": null
+            },
+            "criacao_fundo_cultura": {
+              "lei_fundo_cultura": null,
+              "situacao": "Em preenchimento",
+              "cnpj_fundo_cultura": null
+            },
+            "_embedded": {
+              "sistema_cultura_local": {
+                "_links": {
+                  "self": {
+                    "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4408/"
+                  }
+                }
+              }
+            },
+            "criacao_lei_sistema_cultura": {
+              "lei_sistema_cultura": null,
+              "situacao": "Em preenchimento"
+            }
+          }
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Publicado no DOU"
+        },
+        "governo": {
+          "nome_prefeito": "Marco Antônio de Assis",
+          "email_institucional_prefeito": "gabinete@lamim.mg.gov.br",
+          "termo_posse_prefeito": "/media/termo_posse/termo_posse_prefeito_lamim_2017_pdf.io.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "24.179.426/0001-12",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 31,
+              "sigla": "MG"
+            },
+            "cidade": {
+              "codigo_ibge": 313790,
+              "nome_municipio": "Lamim"
+            },
+            "cep": "36.455-000",
+            "bairro": "Centro",
+            "endereco": "Praça Divino Espírito Santo, 06",
+            "complemento": "sede"
+          },
+          "telefones": {
+            "telefone_um": "3137541238",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "http://www.lamim.mg.gov.br"
+        }
+      },
+      {
+        "id": 4407,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4407/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Aguardando preenchimento dos dados cadastrais"
+        },
+        "governo": {
+          "nome_prefeito": "Célio Santana",
+          "email_institucional_prefeito": "gabinete@buenopolis.mg.gov.br",
+          "termo_posse_prefeito": "/media/termo_posse/Termo_de_Posse_oB5iwcy.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "17.694.852/0001-29",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 31,
+              "sigla": "MG"
+            },
+            "cidade": {
+              "codigo_ibge": 310920,
+              "nome_municipio": "Buenópolis"
+            },
+            "cep": "39.230-000",
+            "bairro": "Centro",
+            "endereco": "Rua Ataliba Pereira, n 99",
+            "complemento": "prédio"
+          },
+          "telefones": {
+            "telefone_um": "3837561546",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "http://buenopolis.mg.gov.br/"
+        }
+      },
+      {
+        "id": 4406,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4406/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Aguardando envio da documentação"
+        },
+        "governo": {
+          "nome_prefeito": "edilson tavares de lima ",
+          "email_institucional_prefeito": "edilsontavares@globo.com",
+          "termo_posse_prefeito": "/media/termo_posse/diploma_Edilson_R0f03gX.jpg"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "11.256.054/0001-39",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 26,
+              "sigla": "PE"
+            },
+            "cidade": {
+              "codigo_ibge": 261540,
+              "nome_municipio": "Toritama"
+            },
+            "cep": "55.125-000",
+            "bairro": "parque das pedras ",
+            "endereco": "edilsontavares@globo.com",
+            "complemento": "prédio "
+          },
+          "telefones": {
+            "telefone_um": "81994396724",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "https://www.capitaldojeans.org/"
+        }
+      },
+      {
+        "id": 4405,
+        "conselho": {
+          "conselheiros": []
+        },
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4405/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": {
+            "id": 6167,
+            "criacao_conselho_cultural": {
+              "ata_regimento_aprovado": null,
+              "situacao": "Em preenchimento"
+            },
+            "_links": {
+              "self": {
+                "href": "http://snchomolog.cultura.gov.br/api/v1/acoesplanotrabalho/6167/"
+              }
+            },
+            "criacao_plano_cultura": {
+              "ata_reuniao_aprovacao_plano": null,
+              "minuta_preparada": null,
+              "lei_plano_cultura": null,
+              "situacao": "Em preenchimento",
+              "ata_votacao_projeto_lei": null,
+              "relatorio_diretrizes_aprovadas": null
+            },
+            "criacao_orgao_gestor": {
+              "situacao": "Em preenchimento",
+              "relatorio_atividade_secretaria": null
+            },
+            "criacao_fundo_cultura": {
+              "lei_fundo_cultura": null,
+              "situacao": "Em preenchimento",
+              "cnpj_fundo_cultura": null
+            },
+            "_embedded": {
+              "sistema_cultura_local": {
+                "_links": {
+                  "self": {
+                    "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4405/"
+                  }
+                }
+              }
+            },
+            "criacao_lei_sistema_cultura": {
+              "lei_sistema_cultura": null,
+              "situacao": "Em preenchimento"
+            }
+          }
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Publicado no DOU"
+        },
+        "governo": {
+          "nome_prefeito": "RAFAEL ANTONIO CAVALCANTI",
+          "email_institucional_prefeito": "gabinetepma2017@gmail.com",
+          "termo_posse_prefeito": "/media/termo_posse/Ata_de_Posse_1.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "10.358.174/0001-84",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 26,
+              "sigla": "PE"
+            },
+            "cidade": {
+              "codigo_ibge": 260020,
+              "nome_municipio": "Afrânio"
+            },
+            "cep": "56.360-000",
+            "bairro": "CENTRO",
+            "endereco": "RUA CORONEL CEMENTINO COELHO, 203",
+            "complemento": "PRÓXIMO AO BANCO DO BRASIL"
+          },
+          "telefones": {
+            "telefone_um": "8738681054",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "http://afranio.pe.gov.br/"
+        }
+      },
+      {
+        "id": 4404,
+        "conselho": {
+          "conselheiros": []
+        },
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4404/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": {
+            "id": 6171,
+            "criacao_conselho_cultural": {
+              "ata_regimento_aprovado": null,
+              "situacao": "Em preenchimento"
+            },
+            "_links": {
+              "self": {
+                "href": "http://snchomolog.cultura.gov.br/api/v1/acoesplanotrabalho/6171/"
+              }
+            },
+            "criacao_plano_cultura": {
+              "ata_reuniao_aprovacao_plano": null,
+              "minuta_preparada": null,
+              "lei_plano_cultura": null,
+              "situacao": "Em preenchimento",
+              "ata_votacao_projeto_lei": null,
+              "relatorio_diretrizes_aprovadas": null
+            },
+            "criacao_orgao_gestor": {
+              "situacao": "Em preenchimento",
+              "relatorio_atividade_secretaria": null
+            },
+            "criacao_fundo_cultura": {
+              "lei_fundo_cultura": null,
+              "situacao": "Em preenchimento",
+              "cnpj_fundo_cultura": null
+            },
+            "_embedded": {
+              "sistema_cultura_local": {
+                "_links": {
+                  "self": {
+                    "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4404/"
+                  }
+                }
+              }
+            },
+            "criacao_lei_sistema_cultura": {
+              "lei_sistema_cultura": null,
+              "situacao": "Em preenchimento"
+            }
+          }
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Publicado no DOU"
+        },
+        "governo": {
+          "nome_prefeito": "ANTONIO AUGUSTO RESENDE MAIA",
+          "email_institucional_prefeito": "gab.prefeito@saojoaquimdebicas.mg.gov.br",
+          "termo_posse_prefeito": "/media/termo_posse/Termo_de_Posse_do_Prefeito_rVQlm4k.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "01.612.516/0001-50",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 31,
+              "sigla": "MG"
+            },
+            "cidade": {
+              "codigo_ibge": 316292,
+              "nome_municipio": "São Joaquim de Bicas"
+            },
+            "cep": "32.920-000",
+            "bairro": "TEREZA CRISTINA",
+            "endereco": "AVENIDA JOSÉ GABRIEL DE RESENDE, 340",
+            "complemento": "CENTRO ADMINISTRATIVO"
+          },
+          "telefones": {
+            "telefone_um": "3135349000",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": ""
+        }
+      },
+      {
+        "id": 4403,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4403/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Aguardando envio da documentação"
+        },
+        "governo": {
+          "nome_prefeito": "FIDEL CARLOS SOUZA DANTAS",
+          "email_institucional_prefeito": "fideldantas.advogado@yahoo.com.br",
+          "termo_posse_prefeito": "/media/termo_posse/Fidel_Dantas_-_Diploma.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "13.646.740/0001-41",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 29,
+              "sigla": "BA"
+            },
+            "cidade": {
+              "codigo_ibge": 290220,
+              "nome_municipio": "Aramari"
+            },
+            "cep": "48.130-000",
+            "bairro": "Sede",
+            "endereco": "Rua do Bendengó, 175",
+            "complemento": "CAM - Centro Administrativo Municipal"
+          },
+          "telefones": {
+            "telefone_um": "7534321175",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "http://aramari.ba.gov.br/"
+        }
+      },
+      {
+        "id": 4402,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4402/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Aguardando envio da documentação"
+        },
+        "governo": {
+          "nome_prefeito": "REGINALDO ANTONIO DA SILVA",
+          "email_institucional_prefeito": "gabinete@jaiba.mg.gov.br",
+          "termo_posse_prefeito": "/media/termo_posse/kit_prefeito_pdf.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "25.209.149/0001-06",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 31,
+              "sigla": "MG"
+            },
+            "cidade": {
+              "codigo_ibge": 313505,
+              "nome_municipio": "Jaíba"
+            },
+            "cep": "39.508-000",
+            "bairro": "CENTRO",
+            "endereco": "Av. João Teixeira Filho, 335",
+            "complemento": "."
+          },
+          "telefones": {
+            "telefone_um": "3838331252",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "http://www.jaiba.mg.gov.br"
+        }
+      },
+      {
+        "id": 4401,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4401/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Aguardando envio da documentação"
+        },
+        "governo": {
+          "nome_prefeito": "ANA PEREIRA NETA",
+          "email_institucional_prefeito": "gabineteprefeita@botumirim.mg.gov.br",
+          "termo_posse_prefeito": "/media/termo_posse/ATA_PDF.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "18.017.418/0001-77",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 31,
+              "sigla": "MG"
+            },
+            "cidade": {
+              "codigo_ibge": 310850,
+              "nome_municipio": "Botumirim"
+            },
+            "cep": "39.596-000",
+            "bairro": "centro",
+            "endereco": "Rua José da Cruz nº 09 ",
+            "complemento": "Prefeitura"
+          },
+          "telefones": {
+            "telefone_um": "3832551133",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": ""
+        }
+      },
+      {
+        "id": 4400,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4400/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Aguardando envio da documentação"
+        },
+        "governo": {
+          "nome_prefeito": "Atail Marques do Amaral",
+          "email_institucional_prefeito": "tapocone@gmail.com",
+          "termo_posse_prefeito": "/media/termo_posse/ATA_DE_POSSE_6B8AQ49.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "03.162.872/0001-44",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 51,
+              "sigla": "MT"
+            },
+            "cidade": {
+              "codigo_ibge": 510650,
+              "nome_municipio": "Poconé"
+            },
+            "cep": "78.175-000",
+            "bairro": "Centro",
+            "endereco": "Rua Anibal de Toledo",
+            "complemento": "s/n"
+          },
+          "telefones": {
+            "telefone_um": "6533451694",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": ""
+        }
+      },
+      {
+        "id": 4399,
+        "conselho": {
+          "conselheiros": []
+        },
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4399/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": {
+            "id": 6168,
+            "criacao_conselho_cultural": {
+              "ata_regimento_aprovado": null,
+              "situacao": "Em preenchimento"
+            },
+            "_links": {
+              "self": {
+                "href": "http://snchomolog.cultura.gov.br/api/v1/acoesplanotrabalho/6168/"
+              }
+            },
+            "criacao_plano_cultura": {
+              "ata_reuniao_aprovacao_plano": null,
+              "minuta_preparada": null,
+              "lei_plano_cultura": null,
+              "situacao": "Em preenchimento",
+              "ata_votacao_projeto_lei": null,
+              "relatorio_diretrizes_aprovadas": null
+            },
+            "criacao_orgao_gestor": {
+              "situacao": "Em preenchimento",
+              "relatorio_atividade_secretaria": null
+            },
+            "criacao_fundo_cultura": {
+              "lei_fundo_cultura": null,
+              "situacao": "Em preenchimento",
+              "cnpj_fundo_cultura": null
+            },
+            "_embedded": {
+              "sistema_cultura_local": {
+                "_links": {
+                  "self": {
+                    "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4399/"
+                  }
+                }
+              }
+            },
+            "criacao_lei_sistema_cultura": {
+              "lei_sistema_cultura": null,
+              "situacao": "Em preenchimento"
+            }
+          }
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Publicado no DOU"
+        },
+        "governo": {
+          "nome_prefeito": "DIEGO LAMARTINE SOARES TEIXEIRADIEGO",
+          "email_institucional_prefeito": "diego_larmatine@hotmail.com",
+          "termo_posse_prefeito": "/media/termo_posse/WhatsApp_Image_2017-11-24_at_12.17.33.jpeg"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "06.554.802/0001-20",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 22,
+              "sigla": "PI"
+            },
+            "cidade": {
+              "codigo_ibge": 220050,
+              "nome_municipio": "Amarante"
+            },
+            "cep": "64.400-000",
+            "bairro": "CENTRO",
+            "endereco": "Praça Quincas Castro \\15",
+            "complemento": "numero 15"
+          },
+          "telefones": {
+            "telefone_um": "86995394407",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": ""
+        }
+      },
+      {
+        "id": 4398,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4398/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Aguardando envio da documentação"
+        },
+        "governo": {
+          "nome_prefeito": "Edson Edinho Coelho Araujo",
+          "email_institucional_prefeito": "gabpref@riopreto.sp.gov.br",
+          "termo_posse_prefeito": "/media/termo_posse/Termo_de_Posse_p7vWoLm.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "46.588.950/0001-80",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 35,
+              "sigla": "SP"
+            },
+            "cidade": {
+              "codigo_ibge": 354980,
+              "nome_municipio": "São José do Rio Preto"
+            },
+            "cep": "15.015-000",
+            "bairro": "Centro",
+            "endereco": "Avenida Alberto Andaló, 3030",
+            "complemento": "8º andar"
+          },
+          "telefones": {
+            "telefone_um": "1732022315",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "http://www.riopreto.sp.gov.br"
+        }
+      },
+      {
+        "id": 4397,
+        "conselho": {
+          "conselheiros": []
+        },
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4397/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": {
+            "id": 6160,
+            "criacao_conselho_cultural": {
+              "ata_regimento_aprovado": null,
+              "situacao": "Em preenchimento"
+            },
+            "_links": {
+              "self": {
+                "href": "http://snchomolog.cultura.gov.br/api/v1/acoesplanotrabalho/6160/"
+              }
+            },
+            "criacao_plano_cultura": {
+              "ata_reuniao_aprovacao_plano": null,
+              "minuta_preparada": null,
+              "lei_plano_cultura": null,
+              "situacao": "Em preenchimento",
+              "ata_votacao_projeto_lei": null,
+              "relatorio_diretrizes_aprovadas": null
+            },
+            "criacao_orgao_gestor": {
+              "situacao": "Em preenchimento",
+              "relatorio_atividade_secretaria": null
+            },
+            "criacao_fundo_cultura": {
+              "lei_fundo_cultura": null,
+              "situacao": "Em preenchimento",
+              "cnpj_fundo_cultura": null
+            },
+            "_embedded": {
+              "sistema_cultura_local": {
+                "_links": {
+                  "self": {
+                    "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4397/"
+                  }
+                }
+              }
+            },
+            "criacao_lei_sistema_cultura": {
+              "lei_sistema_cultura": null,
+              "situacao": "Em preenchimento"
+            }
+          }
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Publicado no DOU"
+        },
+        "governo": {
+          "nome_prefeito": "Carlos Gustavo Schuch",
+          "email_institucional_prefeito": "gabineteprefeito@valeverde.rs.gov.br",
+          "termo_posse_prefeito": "/media/termo_posse/TERMO_DE_POSSE.png"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "01.624.729/0001-00",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 43,
+              "sigla": "RS"
+            },
+            "cidade": {
+              "codigo_ibge": 432252,
+              "nome_municipio": "Vale Verde"
+            },
+            "cep": "95.833-000",
+            "bairro": "Centro",
+            "endereco": "Rua Frederico Trarbach, 655 ",
+            "complemento": "Prefeitura"
+          },
+          "telefones": {
+            "telefone_um": "5136559085",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": ""
+        }
+      },
+      {
+        "id": 4396,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4396/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Aguardando preenchimento dos dados cadastrais"
+        },
+        "governo": {
+          "nome_prefeito": "Angelo Andreatta",
+          "email_institucional_prefeito": "gabinete@quatrobarras.pr.gov.br",
+          "termo_posse_prefeito": "/media/termo_posse/Termo_de_posse_Prefeito_Angelo_Andreatta_3.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "76.105.568/0001-39",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 41,
+              "sigla": "PR"
+            },
+            "cidade": {
+              "codigo_ibge": 412080,
+              "nome_municipio": "Quatro Barras"
+            },
+            "cep": "83.420-000",
+            "bairro": "Centro ",
+            "endereco": "Avenida Dom Pedro II, 110",
+            "complemento": "Prédio Da Prefeitura "
+          },
+          "telefones": {
+            "telefone_um": "4136718843",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "http://www.quatrobarras.pr.gov.br/"
+        }
+      },
+      {
+        "id": 4395,
+        "conselho": {
+          "conselheiros": []
+        },
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4395/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": {
+            "id": 6163,
+            "criacao_conselho_cultural": {
+              "ata_regimento_aprovado": null,
+              "situacao": "Em preenchimento"
+            },
+            "_links": {
+              "self": {
+                "href": "http://snchomolog.cultura.gov.br/api/v1/acoesplanotrabalho/6163/"
+              }
+            },
+            "criacao_plano_cultura": {
+              "ata_reuniao_aprovacao_plano": null,
+              "minuta_preparada": null,
+              "lei_plano_cultura": null,
+              "situacao": "Em preenchimento",
+              "ata_votacao_projeto_lei": null,
+              "relatorio_diretrizes_aprovadas": null
+            },
+            "criacao_orgao_gestor": {
+              "situacao": "Em preenchimento",
+              "relatorio_atividade_secretaria": null
+            },
+            "criacao_fundo_cultura": {
+              "lei_fundo_cultura": null,
+              "situacao": "Em preenchimento",
+              "cnpj_fundo_cultura": null
+            },
+            "_embedded": {
+              "sistema_cultura_local": {
+                "_links": {
+                  "self": {
+                    "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4395/"
+                  }
+                }
+              }
+            },
+            "criacao_lei_sistema_cultura": {
+              "lei_sistema_cultura": null,
+              "situacao": "Em preenchimento"
+            }
+          }
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Publicado no DOU"
+        },
+        "governo": {
+          "nome_prefeito": "Patrick Campos Diniz",
+          "email_institucional_prefeito": "culturaeturismo@fortunademinas.mg.gov.br",
+          "termo_posse_prefeito": "/media/termo_posse/Termo_de_Posse_Knm1vpm.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "18.116.145/0001-18",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 31,
+              "sigla": "MG"
+            },
+            "cidade": {
+              "codigo_ibge": 312640,
+              "nome_municipio": "Fortuna de Minas"
+            },
+            "cep": "35.760-000",
+            "bairro": "Centro",
+            "endereco": "Av. Renato Azeredo,210",
+            "complemento": "Prédio"
+          },
+          "telefones": {
+            "telefone_um": "31371671111",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "http://www.fortunademinas.mg.gov.br/"
+        }
+      },
+      {
+        "id": 4394,
+        "conselho": {
+          "conselheiros": []
+        },
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4394/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": {
+            "id": 6164,
+            "criacao_conselho_cultural": {
+              "ata_regimento_aprovado": null,
+              "situacao": "Em preenchimento"
+            },
+            "_links": {
+              "self": {
+                "href": "http://snchomolog.cultura.gov.br/api/v1/acoesplanotrabalho/6164/"
+              }
+            },
+            "criacao_plano_cultura": {
+              "ata_reuniao_aprovacao_plano": null,
+              "minuta_preparada": null,
+              "lei_plano_cultura": null,
+              "situacao": "Em preenchimento",
+              "ata_votacao_projeto_lei": null,
+              "relatorio_diretrizes_aprovadas": null
+            },
+            "criacao_orgao_gestor": {
+              "situacao": "Em preenchimento",
+              "relatorio_atividade_secretaria": null
+            },
+            "criacao_fundo_cultura": {
+              "lei_fundo_cultura": null,
+              "situacao": "Em preenchimento",
+              "cnpj_fundo_cultura": null
+            },
+            "_embedded": {
+              "sistema_cultura_local": {
+                "_links": {
+                  "self": {
+                    "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4394/"
+                  }
+                }
+              }
+            },
+            "criacao_lei_sistema_cultura": {
+              "lei_sistema_cultura": null,
+              "situacao": "Em preenchimento"
+            }
+          }
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Publicado no DOU"
+        },
+        "governo": {
+          "nome_prefeito": "Severino Ananias Dias Filho",
+          "email_institucional_prefeito": "severinodiasfilho@bol.com.br",
+          "termo_posse_prefeito": "/media/termo_posse/Ata_de_Posse_do_Prefeito_ETrkiBH.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "32.412.819/0001-52",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 33,
+              "sigla": "RJ"
+            },
+            "cidade": {
+              "codigo_ibge": 330620,
+              "nome_municipio": "Vassouras"
+            },
+            "cep": "27.700-000",
+            "bairro": "Centro",
+            "endereco": "Avenida Otávio Gomes 395",
+            "complemento": "Centro da Cidadania"
+          },
+          "telefones": {
+            "telefone_um": "2424919000",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "http://www.vassouras.rj.gov.br"
+        }
+      },
+      {
+        "id": 4393,
+        "conselho": {
+          "conselheiros": []
+        },
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4393/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": {
+            "id": 6157,
+            "criacao_conselho_cultural": {
+              "ata_regimento_aprovado": null,
+              "situacao": "Em preenchimento"
+            },
+            "_links": {
+              "self": {
+                "href": "http://snchomolog.cultura.gov.br/api/v1/acoesplanotrabalho/6157/"
+              }
+            },
+            "criacao_plano_cultura": {
+              "ata_reuniao_aprovacao_plano": null,
+              "minuta_preparada": null,
+              "lei_plano_cultura": null,
+              "situacao": "Em preenchimento",
+              "ata_votacao_projeto_lei": null,
+              "relatorio_diretrizes_aprovadas": null
+            },
+            "criacao_orgao_gestor": {
+              "situacao": "Em preenchimento",
+              "relatorio_atividade_secretaria": null
+            },
+            "criacao_fundo_cultura": {
+              "lei_fundo_cultura": null,
+              "situacao": "Em preenchimento",
+              "cnpj_fundo_cultura": null
+            },
+            "_embedded": {
+              "sistema_cultura_local": {
+                "_links": {
+                  "self": {
+                    "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4393/"
+                  }
+                }
+              }
+            },
+            "criacao_lei_sistema_cultura": {
+              "lei_sistema_cultura": null,
+              "situacao": "Em preenchimento"
+            }
+          }
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Publicado no DOU"
+        },
+        "governo": {
+          "nome_prefeito": "Vando Vitor Alves",
+          "email_institucional_prefeito": "gabineteidelfonso@gmail.com",
+          "termo_posse_prefeito": "/media/termo_posse/Termo_de_Posse_j4TcNwC.PDF"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "02.394.757/0001-32",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 52,
+              "sigla": "GO"
+            },
+            "cidade": {
+              "codigo_ibge": 521570,
+              "nome_municipio": "Palmeiras de Goiás"
+            },
+            "cep": "76.190-000",
+            "bairro": "Centro",
+            "endereco": "Rua Americano do Brasil",
+            "complemento": "N° 149"
+          },
+          "telefones": {
+            "telefone_um": "6439544017",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "http://www.palmeirasdegoias.go.gov.br/"
+        }
+      },
+      {
+        "id": 4392,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4392/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Aguardando envio da documentação"
+        },
+        "governo": {
+          "nome_prefeito": "Jadina Paiva Silva",
+          "email_institucional_prefeito": "prefeituramedeirosneto@gmail.com",
+          "termo_posse_prefeito": "/media/termo_posse/termo_de_posse_jadina.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "13.786.520/0001-13",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 29,
+              "sigla": "BA"
+            },
+            "cidade": {
+              "codigo_ibge": 292110,
+              "nome_municipio": "Medeiros Neto"
+            },
+            "cep": "45.960-000",
+            "bairro": "Centro",
+            "endereco": "Av.: Oscar Cardoso, 135",
+            "complemento": "Casa"
+          },
+          "telefones": {
+            "telefone_um": "7332961521",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": ""
+        }
+      },
+      {
+        "id": 4391,
+        "conselho": {
+          "conselheiros": []
+        },
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4391/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": {
+            "id": 6150,
+            "criacao_conselho_cultural": {
+              "ata_regimento_aprovado": null,
+              "situacao": "Em preenchimento"
+            },
+            "_links": {
+              "self": {
+                "href": "http://snchomolog.cultura.gov.br/api/v1/acoesplanotrabalho/6150/"
+              }
+            },
+            "criacao_plano_cultura": {
+              "ata_reuniao_aprovacao_plano": null,
+              "minuta_preparada": null,
+              "lei_plano_cultura": null,
+              "situacao": "Em preenchimento",
+              "ata_votacao_projeto_lei": null,
+              "relatorio_diretrizes_aprovadas": null
+            },
+            "criacao_orgao_gestor": {
+              "situacao": "Em preenchimento",
+              "relatorio_atividade_secretaria": null
+            },
+            "criacao_fundo_cultura": {
+              "lei_fundo_cultura": null,
+              "situacao": "Em preenchimento",
+              "cnpj_fundo_cultura": null
+            },
+            "_embedded": {
+              "sistema_cultura_local": {
+                "_links": {
+                  "self": {
+                    "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4391/"
+                  }
+                }
+              }
+            },
+            "criacao_lei_sistema_cultura": {
+              "lei_sistema_cultura": null,
+              "situacao": "Em preenchimento"
+            }
+          }
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Publicado no DOU"
+        },
+        "governo": {
+          "nome_prefeito": "klautenis Deline Oliveira Nussrala",
+          "email_institucional_prefeito": "prefeituramoncao@gmail.com",
+          "termo_posse_prefeito": "/media/termo_posse/CCI05012017_0009.jpg"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "06.190.243/0001-16",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 21,
+              "sigla": "MA"
+            },
+            "cidade": {
+              "codigo_ibge": 210690,
+              "nome_municipio": "Monção"
+            },
+            "cep": "65.360-000",
+            "bairro": " Centro",
+            "endereco": "Praça Presidente Kennedy, s/n",
+            "complemento": "Próximo a igreja São francisco Xavier"
+          },
+          "telefones": {
+            "telefone_um": "98988423551",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": ""
+        }
+      },
+      {
+        "id": 4390,
+        "conselho": {
+          "conselheiros": []
+        },
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4390/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": {
+            "id": 6156,
+            "criacao_conselho_cultural": {
+              "ata_regimento_aprovado": null,
+              "situacao": "Em preenchimento"
+            },
+            "_links": {
+              "self": {
+                "href": "http://snchomolog.cultura.gov.br/api/v1/acoesplanotrabalho/6156/"
+              }
+            },
+            "criacao_plano_cultura": {
+              "ata_reuniao_aprovacao_plano": null,
+              "minuta_preparada": null,
+              "lei_plano_cultura": null,
+              "situacao": "Em preenchimento",
+              "ata_votacao_projeto_lei": null,
+              "relatorio_diretrizes_aprovadas": null
+            },
+            "criacao_orgao_gestor": {
+              "situacao": "Em preenchimento",
+              "relatorio_atividade_secretaria": null
+            },
+            "criacao_fundo_cultura": {
+              "lei_fundo_cultura": null,
+              "situacao": "Em preenchimento",
+              "cnpj_fundo_cultura": null
+            },
+            "_embedded": {
+              "sistema_cultura_local": {
+                "_links": {
+                  "self": {
+                    "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4390/"
+                  }
+                }
+              }
+            },
+            "criacao_lei_sistema_cultura": {
+              "lei_sistema_cultura": null,
+              "situacao": "Em preenchimento"
+            }
+          }
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Publicado no DOU"
+        },
+        "governo": {
+          "nome_prefeito": "MANOEL PEREIRA DE SOUSA JÚNIOR",
+          "email_institucional_prefeito": "pref.manoeljr@hotmail.com",
+          "termo_posse_prefeito": "/media/termo_posse/Kit_prefeito.PDF"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "06.554.364/0001-08",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 22,
+              "sigla": "PI"
+            },
+            "cidade": {
+              "codigo_ibge": 220310,
+              "nome_municipio": "Cristino Castro"
+            },
+            "cep": "64.920-000",
+            "bairro": "Centro",
+            "endereco": "Rua Antônio Leite, S/N",
+            "complemento": "prédio institucional"
+          },
+          "telefones": {
+            "telefone_um": "8999919137",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "http://www.cristinocastro.pi.gov.br"
+        }
+      },
+      {
+        "id": 4389,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4389/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Aguardando envio da documentação"
+        },
+        "governo": {
+          "nome_prefeito": "Deonísio Ferreira de Assis",
+          "email_institucional_prefeito": "gabinete@barra.ba.gov.br",
+          "termo_posse_prefeito": "/media/termo_posse/termo_de_posse_do_prefeito_Deonisio.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "13.880.703/0001-01",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 29,
+              "sigla": "BA"
+            },
+            "cidade": {
+              "codigo_ibge": 290270,
+              "nome_municipio": "Barra"
+            },
+            "cep": "47.100-000",
+            "bairro": "Centro",
+            "endereco": "Avenida 02 de julho nº 70",
+            "complemento": "Prédio"
+          },
+          "telefones": {
+            "telefone_um": "7436622101",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "http://www.barra.ba.gov.br"
+        }
+      },
+      {
+        "id": 4388,
+        "conselho": {
+          "conselheiros": [
+            {
+              "email": "pmsjmant@gmail.com",
+              "data_cadastro": "2017-12-12",
+              "data_situacao": "2017-12-12",
+              "nome": "Cleyde da Silva Praxedes",
+              "segmento": " SECRETARIA MUNICIPAL DE CULTURA",
+              "situacao": "1"
+            },
+            {
+              "email": "pmsjmant@gmail.com",
+              "data_cadastro": "2017-12-12",
+              "data_situacao": "2017-12-12",
+              "nome": "Talianda Andrade Corrêa",
+              "segmento": "SECRETARIA MUNICIPAL DE CULTURA",
+              "situacao": "1"
+            },
+            {
+              "email": "pmsjmant@gmail.com",
+              "data_cadastro": "2017-12-12",
+              "data_situacao": "2017-12-12",
+              "nome": "Silvana Aparecida Guerra Baéssa",
+              "segmento": "SECRETARIA MUNICIPAL DE EDUCAÇÃO",
+              "situacao": "1"
+            },
+            {
+              "email": "pmsjmant@gmail.com",
+              "data_cadastro": "2017-12-12",
+              "data_situacao": "2017-12-12",
+              "nome": "Maria das Dores Sabino Leal",
+              "segmento": "SECRETARIA MUNICIPAL DE EDUCAÇÃO",
+              "situacao": "1"
+            },
+            {
+              "email": "pmsjmant@gmail.com",
+              "data_cadastro": "2017-12-12",
+              "data_situacao": "2017-12-12",
+              "nome": "Marilda Louback Praxedes",
+              "segmento": "SECRETARIA MUNICIPAL DE ASSISTÊNCIA SOCIAL",
+              "situacao": "1"
+            },
+            {
+              "email": "pmsjmant@gmail.com",
+              "data_cadastro": "2017-12-12",
+              "data_situacao": "2017-12-12",
+              "nome": "Davi Júnior dos Santos",
+              "segmento": "SECRETARIA MUNICIPAL DE ASSISTÊNCIA SOCIAL",
+              "situacao": "1"
+            },
+            {
+              "email": "pmsjmant@gmail.com",
+              "data_cadastro": "2017-12-12",
+              "data_situacao": "2017-12-12",
+              "nome": "Márcio Geraldo Jordan ",
+              "segmento": "SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO",
+              "situacao": "1"
+            },
+            {
+              "email": "pmsjmant@gmail.com",
+              "data_cadastro": "2017-12-12",
+              "data_situacao": "2017-12-12",
+              "nome": "Adair Dias Rodrigues",
+              "segmento": "SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO",
+              "situacao": "1"
+            },
+            {
+              "email": "pmsjmant@gmail.com",
+              "data_cadastro": "2017-12-12",
+              "data_situacao": "2017-12-12",
+              "nome": "Joana Darc de Lima Neves",
+              "segmento": "PODER LEGISLATIVO",
+              "situacao": "1"
+            },
+            {
+              "email": "pmsjmant@gmail.com",
+              "data_cadastro": "2017-12-12",
+              "data_situacao": "2017-12-12",
+              "nome": "Rondinelli Vieira dos Reis",
+              "segmento": "PODER LEGISLATIVO",
+              "situacao": "1"
+            },
+            {
+              "email": "pmsjmant@gmail.com",
+              "data_cadastro": "2017-12-12",
+              "data_situacao": "2017-12-12",
+              "nome": "Cleyde Maria Aparecida Sabino",
+              "segmento": "SOCIEDADE CIVIL",
+              "situacao": "1"
+            },
+            {
+              "email": "pmsjmant@gmail.com",
+              "data_cadastro": "2017-12-12",
+              "data_situacao": "2017-12-12",
+              "nome": "Eliana Catarina Guerra Soares",
+              "segmento": "SOCIEDADE CIVIL",
+              "situacao": "1"
+            },
+            {
+              "email": "pmsjmant@gmail.com",
+              "data_cadastro": "2017-12-12",
+              "data_situacao": "2017-12-12",
+              "nome": "Emílio Braum",
+              "segmento": "SOCIEDADE CIVIL",
+              "situacao": "1"
+            },
+            {
+              "email": "pmsjmant@gmail.com",
+              "data_cadastro": "2017-12-12",
+              "data_situacao": "2017-12-12",
+              "nome": " João Batista de Sousa",
+              "segmento": "SOCIEDADE CIVIL",
+              "situacao": "1"
+            },
+            {
+              "email": "pmsjmant@gmail.com",
+              "data_cadastro": "2017-12-12",
+              "data_situacao": "2017-12-12",
+              "nome": "Andréia Sélos Lima Nascimento",
+              "segmento": "SOCIEDADE CIVIL",
+              "situacao": "1"
+            },
+            {
+              "email": "pmsjmant@gmail.com",
+              "data_cadastro": "2017-12-12",
+              "data_situacao": "2017-12-12",
+              "nome": "Welinton Gomes Nascimento",
+              "segmento": "SOCIEDADE CIVIL",
+              "situacao": "1"
+            },
+            {
+              "email": "pmsjmant@gmail.com",
+              "data_cadastro": "2017-12-12",
+              "data_situacao": "2017-12-12",
+              "nome": "Júlio Coelho Teixeira",
+              "segmento": "SOCIEDADE CIVIL",
+              "situacao": "1"
+            },
+            {
+              "email": "pmsjmant@gmail.com",
+              "data_cadastro": "2017-12-12",
+              "data_situacao": "2017-12-12",
+              "nome": "Rafael Teixeira Barbosa",
+              "segmento": "SOCIEDADE CIVIL",
+              "situacao": "1"
+            }
+          ]
+        },
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4388/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": {
+            "id": 6158,
+            "criacao_conselho_cultural": {
+              "ata_regimento_aprovado": "/media/regimentos/DECRETO_24_2017_assinado_digitalmente.pdf",
+              "situacao": "Concluída"
+            },
+            "_links": {
+              "self": {
+                "href": "http://snchomolog.cultura.gov.br/api/v1/acoesplanotrabalho/6158/"
+              }
+            },
+            "criacao_plano_cultura": {
+              "ata_reuniao_aprovacao_plano": null,
+              "minuta_preparada": null,
+              "lei_plano_cultura": "/media/lei_plano_cultura/Em_elabora%C3%A7%C3%A3o.pdf",
+              "situacao": "Em preenchimento",
+              "ata_votacao_projeto_lei": null,
+              "relatorio_diretrizes_aprovadas": null
+            },
+            "criacao_orgao_gestor": {
+              "situacao": "Arquivo incorreto",
+              "relatorio_atividade_secretaria": "/media/relatorio_atividades/Lei_382_14_Sistema_Municipal_de_Cultura_assinado_digitalmente.pdf"
+            },
+            "criacao_fundo_cultura": {
+              "lei_fundo_cultura": "/media/lei_fundo_cultura/Lei_382_14_Sistema_Municipal_de_Cultura_assinado_digitalmente.pdf",
+              "situacao": "Concluída",
+              "cnpj_fundo_cultura": "18.392.514/0001-03"
+            },
+            "_embedded": {
+              "sistema_cultura_local": {
+                "_links": {
+                  "self": {
+                    "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4388/"
+                  }
+                }
+              }
+            },
+            "criacao_lei_sistema_cultura": {
+              "lei_sistema_cultura": "/media/leis_sistema_cultura/Lei_382_14_Sistema_Municipal_de_Cultura_assinado_digitalmente.pdf",
+              "situacao": "Concluída"
+            }
+          }
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Publicado no DOU"
+        },
+        "governo": {
+          "nome_prefeito": "CLEBER DA MATA SABINO",
+          "email_institucional_prefeito": "PMSJMANT@GMAIL.COM",
+          "termo_posse_prefeito": "/media/termo_posse/TERMO_DE_POSSE_2017-aasinado_por_certificado_digital.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "18.392.514/0001-03",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 31,
+              "sigla": "MG"
+            },
+            "cidade": {
+              "codigo_ibge": 316360,
+              "nome_municipio": "São José do Mantimento"
+            },
+            "cep": "36.990-000",
+            "bairro": "CENTRO",
+            "endereco": "PRAÇA MARCIONIL LOUBACK,25",
+            "complemento": "CASA"
+          },
+          "telefones": {
+            "telefone_um": "3333351121",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": ""
+        }
+      },
+      {
+        "id": 4387,
+        "conselho": {
+          "conselheiros": []
+        },
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4387/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": {
+            "id": 6159,
+            "criacao_conselho_cultural": {
+              "ata_regimento_aprovado": null,
+              "situacao": "Em preenchimento"
+            },
+            "_links": {
+              "self": {
+                "href": "http://snchomolog.cultura.gov.br/api/v1/acoesplanotrabalho/6159/"
+              }
+            },
+            "criacao_plano_cultura": {
+              "ata_reuniao_aprovacao_plano": null,
+              "minuta_preparada": null,
+              "lei_plano_cultura": null,
+              "situacao": "Em preenchimento",
+              "ata_votacao_projeto_lei": null,
+              "relatorio_diretrizes_aprovadas": null
+            },
+            "criacao_orgao_gestor": {
+              "situacao": "Em preenchimento",
+              "relatorio_atividade_secretaria": null
+            },
+            "criacao_fundo_cultura": {
+              "lei_fundo_cultura": null,
+              "situacao": "Em preenchimento",
+              "cnpj_fundo_cultura": null
+            },
+            "_embedded": {
+              "sistema_cultura_local": {
+                "_links": {
+                  "self": {
+                    "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4387/"
+                  }
+                }
+              }
+            },
+            "criacao_lei_sistema_cultura": {
+              "lei_sistema_cultura": null,
+              "situacao": "Em preenchimento"
+            }
+          }
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Publicado no DOU"
+        },
+        "governo": {
+          "nome_prefeito": "DIRCEU BIANCARDI",
+          "email_institucional_prefeito": "jhonatanlimasoares1988@gmail.com",
+          "termo_posse_prefeito": "/media/termo_posse/Termo_de_Posse_GNZzBVJ.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "05.421.110/0001-40",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 15,
+              "sigla": "PA"
+            },
+            "cidade": {
+              "codigo_ibge": 150780,
+              "nome_municipio": "Senador José Porfírio"
+            },
+            "cep": "68.360-000",
+            "bairro": "CENTRO",
+            "endereco": "RUA MARECHAL ASSUNÇÃO, Nº 116",
+            "complemento": "PREDIO DA PREFEITURA"
+          },
+          "telefones": {
+            "telefone_um": "93991394252",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": ""
+        }
+      },
+      {
+        "id": 4386,
+        "conselho": {
+          "conselheiros": []
+        },
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4386/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": {
+            "id": 6146,
+            "criacao_conselho_cultural": {
+              "ata_regimento_aprovado": null,
+              "situacao": "Em preenchimento"
+            },
+            "_links": {
+              "self": {
+                "href": "http://snchomolog.cultura.gov.br/api/v1/acoesplanotrabalho/6146/"
+              }
+            },
+            "criacao_plano_cultura": {
+              "ata_reuniao_aprovacao_plano": null,
+              "minuta_preparada": null,
+              "lei_plano_cultura": null,
+              "situacao": "Em preenchimento",
+              "ata_votacao_projeto_lei": null,
+              "relatorio_diretrizes_aprovadas": null
+            },
+            "criacao_orgao_gestor": {
+              "situacao": "Em preenchimento",
+              "relatorio_atividade_secretaria": null
+            },
+            "criacao_fundo_cultura": {
+              "lei_fundo_cultura": null,
+              "situacao": "Em preenchimento",
+              "cnpj_fundo_cultura": null
+            },
+            "_embedded": {
+              "sistema_cultura_local": {
+                "_links": {
+                  "self": {
+                    "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4386/"
+                  }
+                }
+              }
+            },
+            "criacao_lei_sistema_cultura": {
+              "lei_sistema_cultura": null,
+              "situacao": "Em preenchimento"
+            }
+          }
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Publicado no DOU"
+        },
+        "governo": {
+          "nome_prefeito": "Geraldo Donizeti de Carvalho",
+          "email_institucional_prefeito": "prefgeraldosrc@gmail.com",
+          "termo_posse_prefeito": "/media/termo_posse/TERMO_DE_POSSE_1_4HC2qDm.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "17.857.442/0001-51",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 31,
+              "sigla": "MG"
+            },
+            "cidade": {
+              "codigo_ibge": 315920,
+              "nome_municipio": "Santa Rita de Caldas"
+            },
+            "cep": "37.775-000",
+            "bairro": "Centro",
+            "endereco": "Praça Pe. Alderige ",
+            "complemento": "216"
+          },
+          "telefones": {
+            "telefone_um": "35373411209",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "http://www.prefeiturasrc.mg.gov.br"
+        }
+      },
+      {
+        "id": 4385,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4385/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Aguardando envio da documentação"
+        },
+        "governo": {
+          "nome_prefeito": "Antonio Sartori",
+          "email_institucional_prefeito": "smec@camponovo.rs.gov.br",
+          "termo_posse_prefeito": "/media/termo_posse/ata_de_posse_tbQgeb9.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "87.613.162/0001-83",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 43,
+              "sigla": "RS"
+            },
+            "cidade": {
+              "codigo_ibge": 430400,
+              "nome_municipio": "Campo Novo"
+            },
+            "cep": "98.570-000",
+            "bairro": "centro",
+            "endereco": "Avenida Bento Gonçalves 564",
+            "complemento": "predio"
+          },
+          "telefones": {
+            "telefone_um": "5535281328",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": ""
+        }
+      },
+      {
+        "id": 4384,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4384/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Aguardando preenchimento dos dados cadastrais"
+        },
+        "governo": {
+          "nome_prefeito": "Edson Figueiredo Magalhães",
+          "email_institucional_prefeito": "gabinete@guarapari.es.gov.br",
+          "termo_posse_prefeito": "/media/termo_posse/Ata_de_posse_RSHyyIn.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "27.165.190/0001-53",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 32,
+              "sigla": "ES"
+            },
+            "cidade": {
+              "codigo_ibge": 320240,
+              "nome_municipio": "Guarapari"
+            },
+            "cep": "29.217-900",
+            "bairro": "Jardim Boa Vista",
+            "endereco": "Rua Alencar Moraes de Rezende nª 100",
+            "complemento": "Prefeitura Municipal de Guarapari"
+          },
+          "telefones": {
+            "telefone_um": "2733618200",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "http://www.guarapari.es.gov.br"
+        }
+      },
+      {
+        "id": 4383,
+        "conselho": {
+          "conselheiros": []
+        },
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4383/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": {
+            "id": 6145,
+            "criacao_conselho_cultural": {
+              "ata_regimento_aprovado": "/media/regimentos/Conselho_de_Cultura_-_nomea%C3%A7%C3%A3o.pdf",
+              "situacao": "Avaliando anexo"
+            },
+            "_links": {
+              "self": {
+                "href": "http://snchomolog.cultura.gov.br/api/v1/acoesplanotrabalho/6145/"
+              }
+            },
+            "criacao_plano_cultura": {
+              "ata_reuniao_aprovacao_plano": null,
+              "minuta_preparada": null,
+              "lei_plano_cultura": null,
+              "situacao": "Em preenchimento",
+              "ata_votacao_projeto_lei": null,
+              "relatorio_diretrizes_aprovadas": null
+            },
+            "criacao_orgao_gestor": {
+              "situacao": "Avaliando anexo",
+              "relatorio_atividade_secretaria": "/media/relatorio_atividades/%C3%93rg%C3%A3o_Gestor.pdf"
+            },
+            "criacao_fundo_cultura": {
+              "lei_fundo_cultura": "/media/lei_fundo_cultura/Fundo_de_Cultura_final.pdf",
+              "situacao": "Avaliando anexo",
+              "cnpj_fundo_cultura": "18.602.011/0001-07"
+            },
+            "_embedded": {
+              "sistema_cultura_local": {
+                "_links": {
+                  "self": {
+                    "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4383/"
+                  }
+                }
+              }
+            },
+            "criacao_lei_sistema_cultura": {
+              "lei_sistema_cultura": null,
+              "situacao": "Em preenchimento"
+            }
+          }
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Publicado no DOU"
+        },
+        "governo": {
+          "nome_prefeito": "José Eustáquio Rodrigues  Alves",
+          "email_institucional_prefeito": "gabinete@patosdeminas.mg.gov.br",
+          "termo_posse_prefeito": "/media/termo_posse/Prefeito_-_Termo_de_Posse_8x8rR8x.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "18.602.011/0001-07",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 31,
+              "sigla": "MG"
+            },
+            "cidade": {
+              "codigo_ibge": 314800,
+              "nome_municipio": "Patos de Minas"
+            },
+            "cep": "38.700-900",
+            "bairro": "Eldorado",
+            "endereco": "Rua Doutor José Olympio de Mello",
+            "complemento": "151"
+          },
+          "telefones": {
+            "telefone_um": "3438229828",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "http://www.patosdeminas.mg.gov.br/home/"
+        }
+      },
+      {
+        "id": 4382,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4382/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Aguardando preenchimento dos dados cadastrais"
+        },
+        "governo": {
+          "nome_prefeito": "CRISTIANO XAVIER DA COSTA",
+          "email_institucional_prefeito": "PREFEITOCAPARAO-MG@OUTLOOK.COM",
+          "termo_posse_prefeito": "/media/termo_posse/ATA_DE_POSSE_CRISTIANO_XAVIER.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "18.114.249/0001-93",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 31,
+              "sigla": "MG"
+            },
+            "cidade": {
+              "codigo_ibge": 311210,
+              "nome_municipio": "Caparaó"
+            },
+            "cep": "36.834-000",
+            "bairro": "CENTRO",
+            "endereco": "AVENIDA AMÉRICO VESPÚCIO DE CARVALHO",
+            "complemento": "CASA"
+          },
+          "telefones": {
+            "telefone_um": "3237471286",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": ""
+        }
+      },
+      {
+        "id": 4381,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4381/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Aguardando envio da documentação"
+        },
+        "governo": {
+          "nome_prefeito": "Joao Eber Barreto Noman",
+          "email_institucional_prefeito": "desenvolvimento@doresdeguanhaes.mg.gov.br",
+          "termo_posse_prefeito": "/media/termo_posse/07111700.PDF"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "18.307.413/0001-89",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 31,
+              "sigla": "MG"
+            },
+            "cidade": {
+              "codigo_ibge": 312310,
+              "nome_municipio": "Dores de Guanhães"
+            },
+            "cep": "35.894-000",
+            "bairro": "centro",
+            "endereco": "desenvolvimento@doresdeguanhaes.mg.gov.br",
+            "complemento": "prefeitura"
+          },
+          "telefones": {
+            "telefone_um": "3334261210",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "http://doresdeguanhaes.mg.gov.br/site/"
+        }
+      },
+      {
+        "id": 4380,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4380/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Aguardando envio da documentação"
+        },
+        "governo": {
+          "nome_prefeito": "EDSON DE SOUZA VILELA",
+          "email_institucional_prefeito": "gabinete@carmodocajuru.mg.gov.br",
+          "termo_posse_prefeito": "/media/termo_posse/25101700.PDF"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "18.291.377/0001-02",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 31,
+              "sigla": "MG"
+            },
+            "cidade": {
+              "codigo_ibge": 311420,
+              "nome_municipio": "Carmo do Cajuru"
+            },
+            "cep": "35.557-000",
+            "bairro": "Centro",
+            "endereco": "Praça primeiro de janeiro, 90",
+            "complemento": "predio"
+          },
+          "telefones": {
+            "telefone_um": "3732447000",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "http://www.carmodocajuru.com.br"
+        }
+      },
+      {
+        "id": 4379,
+        "conselho": {
+          "conselheiros": []
+        },
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4379/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": {
+            "id": 6137,
+            "criacao_conselho_cultural": {
+              "ata_regimento_aprovado": null,
+              "situacao": "Em preenchimento"
+            },
+            "_links": {
+              "self": {
+                "href": "http://snchomolog.cultura.gov.br/api/v1/acoesplanotrabalho/6137/"
+              }
+            },
+            "criacao_plano_cultura": {
+              "ata_reuniao_aprovacao_plano": null,
+              "minuta_preparada": null,
+              "lei_plano_cultura": null,
+              "situacao": "Em preenchimento",
+              "ata_votacao_projeto_lei": null,
+              "relatorio_diretrizes_aprovadas": null
+            },
+            "criacao_orgao_gestor": {
+              "situacao": "Em preenchimento",
+              "relatorio_atividade_secretaria": null
+            },
+            "criacao_fundo_cultura": {
+              "lei_fundo_cultura": null,
+              "situacao": "Em preenchimento",
+              "cnpj_fundo_cultura": null
+            },
+            "_embedded": {
+              "sistema_cultura_local": {
+                "_links": {
+                  "self": {
+                    "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4379/"
+                  }
+                }
+              }
+            },
+            "criacao_lei_sistema_cultura": {
+              "lei_sistema_cultura": null,
+              "situacao": "Em preenchimento"
+            }
+          }
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Publicado no DOU"
+        },
+        "governo": {
+          "nome_prefeito": "VIRGILIO TACITO PENALVA COSTA",
+          "email_institucional_prefeito": "cultura@vargemgrandedoriopardo.mg.gov.br",
+          "termo_posse_prefeito": "/media/termo_posse/VIRGILIO_ATA_3_001.jpg"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "01.612.885/0001-42",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 31,
+              "sigla": "MG"
+            },
+            "cidade": {
+              "codigo_ibge": 317065,
+              "nome_municipio": "Vargem Grande do Rio Pardo"
+            },
+            "cep": "39.535-000",
+            "bairro": "CENTRO",
+            "endereco": "RUA DOS ESPORTE 63",
+            "complemento": "cultura@vargemgrandedoriopardo.mg.gov.br"
+          },
+          "telefones": {
+            "telefone_um": "383824701",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": ""
+        }
+      },
+      {
+        "id": 4378,
+        "conselho": {
+          "conselheiros": []
+        },
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4378/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": {
+            "id": 6136,
+            "criacao_conselho_cultural": {
+              "ata_regimento_aprovado": null,
+              "situacao": "Em preenchimento"
+            },
+            "_links": {
+              "self": {
+                "href": "http://snchomolog.cultura.gov.br/api/v1/acoesplanotrabalho/6136/"
+              }
+            },
+            "criacao_plano_cultura": {
+              "ata_reuniao_aprovacao_plano": null,
+              "minuta_preparada": null,
+              "lei_plano_cultura": null,
+              "situacao": "Em preenchimento",
+              "ata_votacao_projeto_lei": null,
+              "relatorio_diretrizes_aprovadas": null
+            },
+            "criacao_orgao_gestor": {
+              "situacao": "Em preenchimento",
+              "relatorio_atividade_secretaria": null
+            },
+            "criacao_fundo_cultura": {
+              "lei_fundo_cultura": null,
+              "situacao": "Em preenchimento",
+              "cnpj_fundo_cultura": null
+            },
+            "_embedded": {
+              "sistema_cultura_local": {
+                "_links": {
+                  "self": {
+                    "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4378/"
+                  }
+                }
+              }
+            },
+            "criacao_lei_sistema_cultura": {
+              "lei_sistema_cultura": null,
+              "situacao": "Em preenchimento"
+            }
+          }
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Publicado no DOU"
+        },
+        "governo": {
+          "nome_prefeito": "Carlomano Gomes Marques",
+          "email_institucional_prefeito": "secult@pacatuba.ce.gov.br",
+          "termo_posse_prefeito": "/media/termo_posse/Diploma_a_Prefeito_do_Municipio_de_Pacatuba.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "07.963.861/0001-14",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 23,
+              "sigla": "CE"
+            },
+            "cidade": {
+              "codigo_ibge": 230970,
+              "nome_municipio": "Pacatuba"
+            },
+            "cep": "61.801-225",
+            "bairro": "Centro",
+            "endereco": "Rua - Cel. João Carlos, Nº 345",
+            "complemento": "Sem complemento"
+          },
+          "telefones": {
+            "telefone_um": "8533452310",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "http://www.pacatuba.ce.gov.br"
+        }
+      },
+      {
+        "id": 4377,
+        "conselho": {
+          "conselheiros": []
+        },
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4377/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": {
+            "id": 6172,
+            "criacao_conselho_cultural": {
+              "ata_regimento_aprovado": null,
+              "situacao": "Em preenchimento"
+            },
+            "_links": {
+              "self": {
+                "href": "http://snchomolog.cultura.gov.br/api/v1/acoesplanotrabalho/6172/"
+              }
+            },
+            "criacao_plano_cultura": {
+              "ata_reuniao_aprovacao_plano": null,
+              "minuta_preparada": null,
+              "lei_plano_cultura": null,
+              "situacao": "Em preenchimento",
+              "ata_votacao_projeto_lei": null,
+              "relatorio_diretrizes_aprovadas": null
+            },
+            "criacao_orgao_gestor": {
+              "situacao": "Em preenchimento",
+              "relatorio_atividade_secretaria": null
+            },
+            "criacao_fundo_cultura": {
+              "lei_fundo_cultura": null,
+              "situacao": "Em preenchimento",
+              "cnpj_fundo_cultura": null
+            },
+            "_embedded": {
+              "sistema_cultura_local": {
+                "_links": {
+                  "self": {
+                    "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4377/"
+                  }
+                }
+              }
+            },
+            "criacao_lei_sistema_cultura": {
+              "lei_sistema_cultura": null,
+              "situacao": "Em preenchimento"
+            }
+          }
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Publicado no DOU"
+        },
+        "governo": {
+          "nome_prefeito": "José Gomes Branquinho",
+          "email_institucional_prefeito": "contato@prefeituraunai.mg.gov.br",
+          "termo_posse_prefeito": "/media/termo_posse/Termo_de_Posse_eT8LpGN.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "18.125.161/0001-77",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 31,
+              "sigla": "MG"
+            },
+            "cidade": {
+              "codigo_ibge": 317040,
+              "nome_municipio": "Unaí"
+            },
+            "cep": "38.610-000",
+            "bairro": "Centro",
+            "endereco": "Praça JK S/N",
+            "complemento": "Praça"
+          },
+          "telefones": {
+            "telefone_um": "3836779610",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "https://www.prefeituraunai.mg.gov.br"
+        }
+      },
+      {
+        "id": 4376,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4376/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Aguardando envio da documentação"
+        },
+        "governo": {
+          "nome_prefeito": "Renata Torres de Sene",
+          "email_institucional_prefeito": "gabinete@franciscomorato.sp.gov.br",
+          "termo_posse_prefeito": "/media/termo_posse/RG_Renata.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "46.523.072/0001-14",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 35,
+              "sigla": "SP"
+            },
+            "cidade": {
+              "codigo_ibge": 351630,
+              "nome_municipio": "Francisco Morato"
+            },
+            "cep": "07.901-170",
+            "bairro": "Centro",
+            "endereco": "Rua Progresso, 700",
+            "complemento": "2º andar"
+          },
+          "telefones": {
+            "telefone_um": "1144883305",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "http://www.franciscomorato.sp.gov.br/"
+        }
+      },
+      {
+        "id": 4375,
+        "conselho": {
+          "conselheiros": []
+        },
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4375/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": {
+            "id": 6173,
+            "criacao_conselho_cultural": {
+              "ata_regimento_aprovado": null,
+              "situacao": "Em preenchimento"
+            },
+            "_links": {
+              "self": {
+                "href": "http://snchomolog.cultura.gov.br/api/v1/acoesplanotrabalho/6173/"
+              }
+            },
+            "criacao_plano_cultura": {
+              "ata_reuniao_aprovacao_plano": null,
+              "minuta_preparada": null,
+              "lei_plano_cultura": null,
+              "situacao": "Em preenchimento",
+              "ata_votacao_projeto_lei": null,
+              "relatorio_diretrizes_aprovadas": null
+            },
+            "criacao_orgao_gestor": {
+              "situacao": "Em preenchimento",
+              "relatorio_atividade_secretaria": null
+            },
+            "criacao_fundo_cultura": {
+              "lei_fundo_cultura": null,
+              "situacao": "Em preenchimento",
+              "cnpj_fundo_cultura": null
+            },
+            "_embedded": {
+              "sistema_cultura_local": {
+                "_links": {
+                  "self": {
+                    "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4375/"
+                  }
+                }
+              }
+            },
+            "criacao_lei_sistema_cultura": {
+              "lei_sistema_cultura": null,
+              "situacao": "Em preenchimento"
+            }
+          }
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Publicado no DOU"
+        },
+        "governo": {
+          "nome_prefeito": "Claudio Henrique Gomes Pereira",
+          "email_institucional_prefeito": "culturasbn55@gmail.com",
+          "termo_posse_prefeito": "/media/termo_posse/Kit_-_SBN_-_Cultura.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "08.114.514/0001-80",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 24,
+              "sigla": "RN"
+            },
+            "cidade": {
+              "codigo_ibge": 241160,
+              "nome_municipio": "São Bento do Norte"
+            },
+            "cep": "59.590-000",
+            "bairro": "Centro",
+            "endereco": "Rua Ursulino Silvestre da Silva, 448",
+            "complemento": "ao lado da Unidade Básica de Saúde"
+          },
+          "telefones": {
+            "telefone_um": "84991271719",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": ""
+        }
+      },
+      {
+        "id": 4374,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4374/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Aguardando envio da documentação"
+        },
+        "governo": {
+          "nome_prefeito": "Ruberci Casagrande",
+          "email_institucional_prefeito": "gabinete@jaguare.es.gov.br",
+          "termo_posse_prefeito": "/media/termo_posse/Certid%C3%A3o_de_posse_1.jpeg"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "27.744.184/0001-50",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 32,
+              "sigla": "ES"
+            },
+            "cidade": {
+              "codigo_ibge": 320305,
+              "nome_municipio": "Jaguaré"
+            },
+            "cep": "29.950-000",
+            "bairro": "Centro",
+            "endereco": "Av. 09 de Agosto nº 2326",
+            "complemento": "Prédio"
+          },
+          "telefones": {
+            "telefone_um": "2737692900",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "https://www.jaguare.com.br"
+        }
+      },
+      {
+        "id": 4373,
+        "conselho": {
+          "conselheiros": []
+        },
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4373/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": {
+            "id": 6162,
+            "criacao_conselho_cultural": {
+              "ata_regimento_aprovado": null,
+              "situacao": "Em preenchimento"
+            },
+            "_links": {
+              "self": {
+                "href": "http://snchomolog.cultura.gov.br/api/v1/acoesplanotrabalho/6162/"
+              }
+            },
+            "criacao_plano_cultura": {
+              "ata_reuniao_aprovacao_plano": null,
+              "minuta_preparada": null,
+              "lei_plano_cultura": null,
+              "situacao": "Em preenchimento",
+              "ata_votacao_projeto_lei": null,
+              "relatorio_diretrizes_aprovadas": null
+            },
+            "criacao_orgao_gestor": {
+              "situacao": "Em preenchimento",
+              "relatorio_atividade_secretaria": null
+            },
+            "criacao_fundo_cultura": {
+              "lei_fundo_cultura": null,
+              "situacao": "Em preenchimento",
+              "cnpj_fundo_cultura": null
+            },
+            "_embedded": {
+              "sistema_cultura_local": {
+                "_links": {
+                  "self": {
+                    "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4373/"
+                  }
+                }
+              }
+            },
+            "criacao_lei_sistema_cultura": {
+              "lei_sistema_cultura": null,
+              "situacao": "Em preenchimento"
+            }
+          }
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Publicado no DOU"
+        },
+        "governo": {
+          "nome_prefeito": "HELIO PALMEIRA DE CARVALHO",
+          "email_institucional_prefeito": "esporteculturaelazerpindoba@gmail.com",
+          "termo_posse_prefeito": "/media/termo_posse/Ata_2.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "13.908.710/0001-66",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 29,
+              "sigla": "BA"
+            },
+            "cidade": {
+              "codigo_ibge": 292460,
+              "nome_municipio": "Pindobaçu"
+            },
+            "cep": "44.770-000",
+            "bairro": "centro",
+            "endereco": "Rua Oscar Cardoso 32",
+            "complemento": "casa"
+          },
+          "telefones": {
+            "telefone_um": "7435482159",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": ""
+        }
+      },
+      {
+        "id": 4372,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4372/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Aguardando envio da documentação"
+        },
+        "governo": {
+          "nome_prefeito": "GILSON GUIMARAES BARROZO JUNIOR",
+          "email_institucional_prefeito": "SECULTSSF@GMAIL.COM",
+          "termo_posse_prefeito": "/media/termo_posse/Novo_Documento_2017-10-26.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "32.846.347/0001-46",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 28,
+              "sigla": "SE"
+            },
+            "cidade": {
+              "codigo_ibge": 280640,
+              "nome_municipio": "Santana do São Francisco"
+            },
+            "cep": "49.985-000",
+            "bairro": "CENTRO",
+            "endereco": "PRAÇA SETE DE SETEMBRO",
+            "complemento": "PREFEITURA MUNICIPAL"
+          },
+          "telefones": {
+            "telefone_um": "7933391309",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "http://www.santanadosaofrancisco.se.gov.br"
+        }
+      },
+      {
+        "id": 4371,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4371/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Aguardando envio da documentação"
+        },
+        "governo": {
+          "nome_prefeito": "Ana Paula Polotto Oliveira Ribas de Andrade",
+          "email_institucional_prefeito": "gabinete@cajamar.sp.gov.br",
+          "termo_posse_prefeito": "/media/termo_posse/Termo_de_Posse_Prefeita.jpg"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "46.523.023/0001-81",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 35,
+              "sigla": "SP"
+            },
+            "cidade": {
+              "codigo_ibge": 350920,
+              "nome_municipio": "Cajamar"
+            },
+            "cep": "07.777-520",
+            "bairro": "Agua Fria",
+            "endereco": "Praça José Rodrigues do Nascimento, 30 ",
+            "complemento": "Paço Municipal "
+          },
+          "telefones": {
+            "telefone_um": "1144467699",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "http://cajamar.sp.gov.br"
+        }
+      },
+      {
+        "id": 4370,
+        "conselho": {
+          "conselheiros": [
+            {
+              "email": "son.luz@hotmail.com",
+              "data_cadastro": null,
+              "data_situacao": null,
+              "nome": "Raimundo Gérson Luzeiro Cardoso",
+              "segmento": "Folclore e Literatura",
+              "situacao": "1"
+            },
+            {
+              "email": "anguloclaudir@hotmail.com",
+              "data_cadastro": "2017-12-28",
+              "data_situacao": "2017-12-28",
+              "nome": "Claudir Saraiva Ângulo",
+              "segmento": "Música Popular",
+              "situacao": "1"
+            },
+            {
+              "email": "solano_guereiro@outlook.com",
+              "data_cadastro": "2017-12-28",
+              "data_situacao": "2017-12-28",
+              "nome": "Solano da Silva Guerreiro",
+              "segmento": "Insituto de Natureza e Cultura- INC/BC-UFAM",
+              "situacao": "1"
+            },
+            {
+              "email": "antoniaamarante@gmail.com",
+              "data_cadastro": "2017-12-28",
+              "data_situacao": "2017-12-28",
+              "nome": "Antônia Pinheiro Amarante",
+              "segmento": "Secretaria Municipal de Saúde- SEMSA",
+              "situacao": "1"
+            },
+            {
+              "email": "anneipuchima@gmail.com",
+              "data_cadastro": "2017-12-28",
+              "data_situacao": "2017-12-28",
+              "nome": "Fernanda Susane Ipuchima dos Santos  ",
+              "segmento": "Dança",
+              "situacao": "1"
+            },
+            {
+              "email": "widneylima@gmail.com",
+              "data_cadastro": "2017-12-28",
+              "data_situacao": "2017-12-28",
+              "nome": "Widney Pereira de Almeida",
+              "segmento": "Insituto de Natureza e Cultura- INC/BC-UFAM",
+              "situacao": "1"
+            },
+            {
+              "email": "ferreirabatistagenilda@gmail.com",
+              "data_cadastro": "2017-12-28",
+              "data_situacao": "2017-12-28",
+              "nome": "Genilda Ferreira Batista ",
+              "segmento": "Secretaria Municipal de Saúde- SEMSA",
+              "situacao": "1"
+            }
+          ]
+        },
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4370/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": {
+            "id": 6151,
+            "criacao_conselho_cultural": {
+              "ata_regimento_aprovado": null,
+              "situacao": "Em preenchimento"
+            },
+            "_links": {
+              "self": {
+                "href": "http://snchomolog.cultura.gov.br/api/v1/acoesplanotrabalho/6151/"
+              }
+            },
+            "criacao_plano_cultura": {
+              "ata_reuniao_aprovacao_plano": null,
+              "minuta_preparada": null,
+              "lei_plano_cultura": null,
+              "situacao": "Em preenchimento",
+              "ata_votacao_projeto_lei": null,
+              "relatorio_diretrizes_aprovadas": null
+            },
+            "criacao_orgao_gestor": {
+              "situacao": "Em preenchimento",
+              "relatorio_atividade_secretaria": null
+            },
+            "criacao_fundo_cultura": {
+              "lei_fundo_cultura": null,
+              "situacao": "Em preenchimento",
+              "cnpj_fundo_cultura": null
+            },
+            "_embedded": {
+              "sistema_cultura_local": {
+                "_links": {
+                  "self": {
+                    "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4370/"
+                  }
+                }
+              }
+            },
+            "criacao_lei_sistema_cultura": {
+              "lei_sistema_cultura": null,
+              "situacao": "Em preenchimento"
+            }
+          }
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Publicado no DOU"
+        },
+        "governo": {
+          "nome_prefeito": "David Nunes Bemerguy",
+          "email_institucional_prefeito": "gab.pmbc@gmail.com",
+          "termo_posse_prefeito": "/media/termo_posse/TERMO_DE_POSSE_1j1a7c4.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "04.243.978/0001-35",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 13,
+              "sigla": "AM"
+            },
+            "cidade": {
+              "codigo_ibge": 130060,
+              "nome_municipio": "Benjamin Constant"
+            },
+            "cep": "69.630-000",
+            "bairro": "Coimbra",
+            "endereco": "Rua Frei Ludovico",
+            "complemento": "Próximo ao Centro Cultural Alcino Castelo Branco"
+          },
+          "telefones": {
+            "telefone_um": "34155288",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": ""
+        }
+      },
+      {
+        "id": 4369,
+        "conselho": {
+          "conselheiros": []
+        },
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4369/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": {
+            "id": 6141,
+            "criacao_conselho_cultural": {
+              "ata_regimento_aprovado": null,
+              "situacao": "Em preenchimento"
+            },
+            "_links": {
+              "self": {
+                "href": "http://snchomolog.cultura.gov.br/api/v1/acoesplanotrabalho/6141/"
+              }
+            },
+            "criacao_plano_cultura": {
+              "ata_reuniao_aprovacao_plano": null,
+              "minuta_preparada": null,
+              "lei_plano_cultura": null,
+              "situacao": "Em preenchimento",
+              "ata_votacao_projeto_lei": null,
+              "relatorio_diretrizes_aprovadas": null
+            },
+            "criacao_orgao_gestor": {
+              "situacao": "Em preenchimento",
+              "relatorio_atividade_secretaria": null
+            },
+            "criacao_fundo_cultura": {
+              "lei_fundo_cultura": null,
+              "situacao": "Em preenchimento",
+              "cnpj_fundo_cultura": null
+            },
+            "_embedded": {
+              "sistema_cultura_local": {
+                "_links": {
+                  "self": {
+                    "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4369/"
+                  }
+                }
+              }
+            },
+            "criacao_lei_sistema_cultura": {
+              "lei_sistema_cultura": null,
+              "situacao": "Em preenchimento"
+            }
+          }
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Publicado no DOU"
+        },
+        "governo": {
+          "nome_prefeito": "José Francisco Rodrigues de Almeida",
+          "email_institucional_prefeito": "gabinete@ibertioga.mg.gov.br",
+          "termo_posse_prefeito": "/media/termo_posse/ATO_POSSE0001.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "18.094.839/0001-00",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 31,
+              "sigla": "MG"
+            },
+            "cidade": {
+              "codigo_ibge": 312940,
+              "nome_municipio": "Ibertioga"
+            },
+            "cep": "36.225-000",
+            "bairro": "Centro",
+            "endereco": "Rua Evaristo de Carvalho",
+            "complemento": "56"
+          },
+          "telefones": {
+            "telefone_um": "3233471286",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "http://www.ibertioga.mg.gov.br/"
+        }
+      },
+      {
+        "id": 4368,
+        "conselho": null,
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4368/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": null
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Aguardando preenchimento dos dados cadastrais"
+        },
+        "governo": {
+          "nome_prefeito": "Araiano Messias Nogueira Paranagua",
+          "email_institucional_prefeito": "prefeituracristalandia11@hotmail.com",
+          "termo_posse_prefeito": "/media/termo_posse/Posse_PDF.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "06.554.299/0001-02",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 22,
+              "sigla": "PI"
+            },
+            "cidade": {
+              "codigo_ibge": 220300,
+              "nome_municipio": "Cristalândia do Piauí"
+            },
+            "cep": "64.995-000",
+            "bairro": "Centro",
+            "endereco": "Av. Luiz Cunha Nogueira",
+            "complemento": "casa"
+          },
+          "telefones": {
+            "telefone_um": "8935761102",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": ""
+        }
+      },
+      {
+        "id": 4367,
+        "conselho": {
+          "conselheiros": []
+        },
+        "_links": {
+          "self": {
+            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4367/"
+          }
+        },
+        "_embedded": {
+          "acoes_plano_trabalho": {
+            "id": 6110,
+            "criacao_conselho_cultural": {
+              "ata_regimento_aprovado": null,
+              "situacao": "Em preenchimento"
+            },
+            "_links": {
+              "self": {
+                "href": "http://snchomolog.cultura.gov.br/api/v1/acoesplanotrabalho/6110/"
+              }
+            },
+            "criacao_plano_cultura": {
+              "ata_reuniao_aprovacao_plano": null,
+              "minuta_preparada": null,
+              "lei_plano_cultura": null,
+              "situacao": "Em preenchimento",
+              "ata_votacao_projeto_lei": null,
+              "relatorio_diretrizes_aprovadas": null
+            },
+            "criacao_orgao_gestor": {
+              "situacao": "Em preenchimento",
+              "relatorio_atividade_secretaria": null
+            },
+            "criacao_fundo_cultura": {
+              "lei_fundo_cultura": null,
+              "situacao": "Em preenchimento",
+              "cnpj_fundo_cultura": null
+            },
+            "_embedded": {
+              "sistema_cultura_local": {
+                "_links": {
+                  "self": {
+                    "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4367/"
+                  }
+                }
+              }
+            },
+            "criacao_lei_sistema_cultura": {
+              "lei_sistema_cultura": null,
+              "situacao": "Em preenchimento"
+            }
+          }
+        },
+        "situacao_adesao": {
+          "situacao_adesao": "Publicado no DOU"
+        },
+        "governo": {
+          "nome_prefeito": "JOÃO FLORENTINO NETO ",
+          "email_institucional_prefeito": "prefeitura@macaubal.sp.gov.br",
+          "termo_posse_prefeito": "/media/termo_posse/macaubal.pdf"
+        },
+        "ente_federado": {
+          "cnpj_prefeitura": "51.848.943/0001-00",
+          "localizacao": {
+            "estado": {
+              "codigo_ibge": 35,
+              "sigla": "SP"
+            },
+            "cidade": {
+              "codigo_ibge": 352810,
+              "nome_municipio": "Macaubal"
+            },
+            "cep": "15.270-000",
+            "bairro": "Centro",
+            "endereco": "Praça Deputado Arlindo Antonio dos Santos",
+            "complemento": "235"
+          },
+          "telefones": {
+            "telefone_um": "1738741183",
+            "telefone_dois": "",
+            "telefone_tres": ""
+          },
+          "endereco_eletronico": "http://macaubal.sp.gov.br/"
+        }
+      }
+    ]
+  },
+  "_links": {
+    "self": {
+      "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/?limit=1000"
+    },
+    "page": {
+      "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/?limit={?page}",
+      "templated": true
+    },
+    "next": {
+      "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/?limit=100&offset=100"
+    }
+  },
+  "count": 2967,
+  "page_size": 100
+}
