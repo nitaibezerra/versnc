@@ -8,7 +8,11 @@
 // https://on.cypress.io/custom-commands
 // ***********************************************
 //
+// PARA ABRIR NO MODO WEB O CYPRESS EXECUTE O COMANDO
 //
+// node_modules/.bin/cypress open
+//
+//************************************************
 // -- This is a parent command --
 // Cypress.Commands.add("login", (email, password) => { ... })
 //
@@ -32,5 +36,5 @@ Cypress.Commands.add('api', () => {
     response: 'fixture:entidadeResponse'        // and force the response to be: []
   })
  });
-//  node_modules/.bin/cypress open
+
 
