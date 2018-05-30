@@ -23,3 +23,14 @@
 //
 // -- This is will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('api', () => {
+  cy.server()           // enable response stubbing
+  cy.route({
+    method: 'GET',      // Route all GET requests
+    url: 'http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/?limit=&offset=&nome_municipio=&estado_sigla=&cnpj_prefeitura=',    // that have a URL that matches '/users/*'
+    response: 'fixture:entidadeResponse'        // and force the response to be: []
+  })
+ });
+//  node_modules/.bin/cypress open
+
