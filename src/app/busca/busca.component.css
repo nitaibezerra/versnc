@@ -1,0 +1,33 @@
+.fit{
+    height: 250px;
+}
+.alinhamento{
+    width: 50%;
+    text-align:center;
+    margin-left: 25%;
+}
+
+.card-busca {
+    background-color: #ededed66;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.layoutFill{
+    width: 60%;
+}
+
+.textCenter{
+    text-align: center
+}
+
+.busca h4 {
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 36px;
+    color: #2B9087;
+    text-align: center;
+    margin-bottom: 2px;
+  }
+ 

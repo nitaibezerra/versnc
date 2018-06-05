@@ -10,7 +10,7 @@ addons:
 language: node_js
 
 node_js:
-  - "6"
+  - "8"
 
 before_script:
   - sudo chown root /opt/google/chrome/chrome-sandbox

@@ -1,0 +1,44 @@
+.detalhe-municipio{
+    color: #0006;
+}
+#tabela{
+    padding-bottom: 100px;
+    padding-left: 80px;
+    padding-right: 80px; 
+    padding-top: 0px;
+    background-color: #F2F2F2;
+}
+.mat-table, .mat-paginator{
+    background-color: #F2F2F2;    
+}
+
+.mat-header-cell{
+    font-size: 14px;
+    color: rgba(0,0,0,.87);    
+}
+.mat-cell{
+    color: rgba(0, 0, 0, 0.65);
+}
+#filtros {
+    background-color: #00A697;
+    padding-bottom: 20px;
+    padding: 10px;
+}
+.mat-chip {
+    font-size: 11px;
+    background-color: white;
+}
+
+.filtrar {
+    max-height: 38px;
+    margin-top: -20px;
+}
+.order {
+    height: 32px;
+    width: 39px;
+    padding-right: 4px;
+}
+
+.order.up {
+    transform: rotate(-180deg);
+}

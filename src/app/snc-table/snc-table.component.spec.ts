@@ -7,6 +7,10 @@ import { MaterialModule } from '../material/material.module';
 
 import { SncTableComponent } from './snc-table.component';
 import { SlcApiService } from '../slc-api.service';
+import { BuscaComponent } from '../busca/busca.component';
+import { MessageService } from '../message.service';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('SncTableComponent', () => {
   let component: SncTableComponent;
@@ -14,9 +18,9 @@ describe('SncTableComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [ HttpClientModule, MaterialModule ],
-      declarations: [ SncTableComponent ],
-      providers: [ SlcApiService ],
+      imports: [ HttpClientModule, MaterialModule, NoopAnimationsModule, RouterTestingModule ],
+      declarations: [ SncTableComponent, BuscaComponent ],
+      providers: [ SlcApiService, MessageService ],
     })
     .compileComponents();
     TestBed.get(SlcApiService);

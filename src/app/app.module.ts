@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-
+import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -15,12 +15,23 @@ import { SlcApiService } from './slc-api.service';
 
 import { AppComponent } from './app.component';
 import { SncTableComponent } from './snc-table/snc-table.component';
+import { HomeComponent } from './home/home.component';
+import { BuscaComponent } from './busca/busca.component';
+import { MenuComponent } from './menu/menu.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MessageComponent } from './message/message.component';
+import { MessageService } from './message.service';
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SncTableComponent
+    SncTableComponent,
+    HomeComponent,
+    BuscaComponent,
+    MenuComponent,
+    MessageComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,8 +40,11 @@ import { SncTableComponent } from './snc-table/snc-table.component';
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     HttpClientModule,
     MaterialModule,
+    FlexLayoutModule,
+    HttpModule,
+    FormsModule
   ],
-  providers: [SlcApiService],
+  providers: [SlcApiService, MessageService, SncTableComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
