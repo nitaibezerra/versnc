@@ -10,7 +10,8 @@
     "test:partial": "jest -o src/",
     "test:coverage": "jest --coverage src/",
     "lint": "ng lint",
-    "e2e": "cypress run"
+    "e2e": "cypress run",
+    "pre-push-action": "sh git_hooks/pre-push.sh"
   },
   "private": true,
   "dependencies": {
@@ -63,9 +64,6 @@
   "jest": {
     "preset": "jest-preset-angular",
     "setupTestFrameworkScriptFile": "<rootDir>/src/setupJest.ts"
-  },
-  "scripts": {
-    "pre-push-action": "sh git_hooks/pre-push.sh"
   },
   "husky": {
     "hooks": {
