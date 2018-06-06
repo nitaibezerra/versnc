@@ -62,5 +62,16 @@ describe('' +
     cy.get('app-root snc-table mat-card mat-table mat-row').should('not.be.empty');
   });
 
+  it('Testa mudança da Busca Simples p/ Busca Avançada após click no botão de Busca Avançada', () => {
+    cy.visit('http://localhost:4200/');
+    cy.get('.alinhamento').eq(1).click();
+    cy.get('.alinhamento').eq(1).contains('Busca Simples');   
+  });
+
+  // it('Testa mudança da Busca Simples p/ Busca Avançada após click no botão de Busca Avançada', () => {
+  //   cy.visit('http://localhost:4200/');
+  //   cy.get('.alinhamento').eq(1).click();
+  //   cy.get('.alinhamento').eq(1).contains('Busca Simples');   
+  // });
 
 });
