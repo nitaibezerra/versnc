@@ -66,7 +66,7 @@ describe('' +
     cy.visit('http://localhost:4200/');
     cy.get('input').type('Malhada{enter}');
 
-    cy.get('app-root snc-table mat-card mat-table mat-row mat-cell').contains('Malhada - BA');
+    cy.get('mat-cell').eq(0).contains('Malhada - BA');
   });
 
   it('Testa mudança da Busca Simples p/ Busca Avançada após click no botão de Busca Avançada', () => {
@@ -80,7 +80,7 @@ describe('' +
     cy.get('.alinhamento').eq(1).click();
     cy.get('input').eq(0).type('Brasília{enter}');
 
-    cy.get('app-root snc-table mat-card mat-table mat-row mat-cell').contains('Brasília - DF');
+    cy.get('mat-cell').eq(0).contains('Brasília - DF');
   });
 
   it('Testa input UF da Busca Avançada e retorno respectivo na tabela', () => {
@@ -88,7 +88,7 @@ describe('' +
     cy.get('.alinhamento').eq(1).click();
     cy.get('input').eq(1).type('DF{enter}');
 
-    cy.get('app-root snc-table mat-card mat-table mat-row mat-cell').contains('Brasília - DF');
+    cy.get('mat-cell').eq(0).contains('Brasília - DF');
   });
 
   it('Testa input CNPJ da Busca Avançada e retorno respectivo na tabela', () => {
@@ -96,9 +96,24 @@ describe('' +
     cy.get('.alinhamento').eq(1).click();
     cy.get('input').eq(2).type('14.105.217/0001-70{enter}');
 
-    cy.get('app-root snc-table mat-card mat-table mat-row mat-cell').contains('Malhada - BA');
+    cy.get('mat-cell').eq(0).contains('Malhada - BA');
   });
 
+  it('Testa ordenação alfabética ASC da tabela ao clicar no titulo MUNICÍPIO', () => {
+    cy.visit('http://localhost:4200/');
+    cy.get('input').type('{enter}');
+    cy.get('.mat-sort-header-button').eq(0).contains('MUNICÍPIO').click();
+    
+    cy.get('mat-cell').eq(0).contains('Aporá - BA');
+    // cy.get('mat-cell').eq(0).contains(/^A\w+\s-\s\w+/);      
+  });
 
-  
+  it('Testa ordenação alfabética DESC da tabela ao clicar no titulo MUNICÍPIO', () => {
+    cy.visit('http://localhost:4200/');
+    cy.get('input').type('{enter}');
+    cy.get('.mat-sort-header-button').eq(0).contains('MUNICÍPIO').click().click();
+    
+    cy.get('mat-cell').eq(0).contains('Porto do Mangue - RN');
+  });
+
 });
