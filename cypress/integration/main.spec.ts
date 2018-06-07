@@ -62,16 +62,43 @@ describe('' +
     cy.get('app-root snc-table mat-card mat-table mat-row').should('not.be.empty');
   });
 
+  it('Testa input Estado/Municipio da Busca Simples e retorno respectivo na tabela', () => {
+    cy.visit('http://localhost:4200/');
+    cy.get('input').type('Malhada{enter}');
+
+    cy.get('app-root snc-table mat-card mat-table mat-row mat-cell').contains('Malhada - BA');
+  });
+
   it('Testa mudança da Busca Simples p/ Busca Avançada após click no botão de Busca Avançada', () => {
     cy.visit('http://localhost:4200/');
     cy.get('.alinhamento').eq(1).click();
     cy.get('.alinhamento').eq(1).contains('Busca Simples');   
   });
 
-  // it('Testa mudança da Busca Simples p/ Busca Avançada após click no botão de Busca Avançada', () => {
-  //   cy.visit('http://localhost:4200/');
-  //   cy.get('.alinhamento').eq(1).click();
-  //   cy.get('.alinhamento').eq(1).contains('Busca Simples');   
-  // });
+  it('Testa input Estado/Municipio da Busca Avançada e retorno respectivo na tabela', () => {
+    cy.visit('http://localhost:4200/');
+    cy.get('.alinhamento').eq(1).click();
+    cy.get('input').eq(0).type('Brasília{enter}');
 
+    cy.get('app-root snc-table mat-card mat-table mat-row mat-cell').contains('Brasília - DF');
+  });
+
+  it('Testa input UF da Busca Avançada e retorno respectivo na tabela', () => {
+    cy.visit('http://localhost:4200/');
+    cy.get('.alinhamento').eq(1).click();
+    cy.get('input').eq(1).type('DF{enter}');
+
+    cy.get('app-root snc-table mat-card mat-table mat-row mat-cell').contains('Brasília - DF');
+  });
+
+  it('Testa input CNPJ da Busca Avançada e retorno respectivo na tabela', () => {
+    cy.visit('http://localhost:4200/');
+    cy.get('.alinhamento').eq(1).click();
+    cy.get('input').eq(2).type('14.105.217/0001-70{enter}');
+
+    cy.get('app-root snc-table mat-card mat-table mat-row mat-cell').contains('Malhada - BA');
+  });
+
+
+  
 });
