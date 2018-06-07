@@ -17,44 +17,43 @@ describe('' +
   it('Apresenta Tabela na Pagina Inicial', () => {
     cy.visit('http://localhost:4200/');
     cy.get('input').type('{enter}');
-    cy.get('app-root snc-table mat-card', {timeout: 10000});
+    cy.get('app-root snc-table mat-card');
   });
 
   it('Apresenta título MUNICÍPIO na tabela da Página Inicial após pesquisa', () => {
     cy.visit('http://localhost:4200/');
     cy.get('input').type('{enter}');
-    cy.get('.mat-sort-header-button').contains('MUNICÍPIO', {timeout: 10000});
+    cy.get('.mat-sort-header-button').contains('MUNICÍPIO');
   });
 
   it('Apresenta título SITUAÇÃO DA ADESÃO na tabela da Página Inicial após pesquisa', () => {
     cy.visit('http://localhost:4200/');
     cy.get('input').type('{enter}');
-    cy.get('.mat-sort-header-button').eq(1).contains('SITUAÇÂO DA ADESÃO', {timeout: 10000});
+    cy.get('.mat-sort-header-button').eq(1).contains('SITUAÇÂO DA ADESÃO');
   });
 
   it('Apresenta título DATA DA ADESÃO na tabela da Página Inicial após pesquisa', () => {
-    cy.api();
     cy.visit('http://localhost:4200/');
     cy.get('input').type('{enter}');
-    cy.get('.mat-sort-header-button').eq(2).contains('DATA DA ADESÃO', {timeout: 10000});
+    cy.get('.mat-sort-header-button').eq(2).contains('DATA DA ADESÃO');
   });
 
   it('Apresenta título DETALHAR na tabela da Página Inicial após pesquisa', () => {
     cy.visit('http://localhost:4200/');
     cy.get('input').type('{enter}');
-    cy.get('.mat-header-cell').eq(3).contains('DETALHAR', {timeout: 10000});
+    cy.get('.mat-header-cell').eq(3).contains('DETALHAR');
   });
 
   it('Apresenta 10 elementos referentes aos municipios', () => {
     cy.visit('http://localhost:4200/');
     cy.get('input').type('{enter}');
-    cy.get('app-root snc-table mat-card mat-table mat-row', {timeout: 10000}).should('have.length', 10);
+    cy.get('app-root snc-table mat-card mat-table mat-row').should('have.length', 10);
   });
 
   it('Apresenta o componente de paginação', () => {
     cy.visit('http://localhost:4200/');
     cy.get('input').type('{enter}');
-    cy.get('app-root snc-table mat-card mat-paginator', {timeout: 10000});
+    cy.get('app-root snc-table mat-card mat-paginator');
   });
 
   it('Apresenta dados nas linhas da tabela', () => {
@@ -66,7 +65,7 @@ describe('' +
     cy.visit('http://localhost:4200/');
     cy.get('input').type('Malhada{enter}');
 
-    cy.get('mat-cell').eq(0).contains('Malhada - BA');
+    cy.get('app-root snc-table mat-card mat-table mat-row mat-cell').eq(0).contains('Malhada - BA');
   });
 
   it('Testa mudança da Busca Simples p/ Busca Avançada após click no botão de Busca Avançada', () => {
@@ -80,7 +79,7 @@ describe('' +
     cy.get('.alinhamento').eq(1).click();
     cy.get('input').eq(0).type('Brasília{enter}');
 
-    cy.get('mat-cell').eq(0).contains('Brasília - DF');
+    cy.get('app-root snc-table mat-card mat-table mat-row mat-cell').eq(0).contains('Brasília - DF');
   });
 
   it('Testa input UF da Busca Avançada e retorno respectivo na tabela', () => {
@@ -88,7 +87,7 @@ describe('' +
     cy.get('.alinhamento').eq(1).click();
     cy.get('input').eq(1).type('DF{enter}');
 
-    cy.get('mat-cell').eq(0).contains('Brasília - DF');
+    cy.get('app-root snc-table mat-card mat-table mat-row mat-cell').eq(0).contains('Brasília - DF');
   });
 
   it('Testa input CNPJ da Busca Avançada e retorno respectivo na tabela', () => {
@@ -96,7 +95,7 @@ describe('' +
     cy.get('.alinhamento').eq(1).click();
     cy.get('input').eq(2).type('14.105.217/0001-70{enter}');
 
-    cy.get('mat-cell').eq(0).contains('Malhada - BA');
+    cy.get('app-root snc-table mat-card mat-table mat-row mat-cell').eq(0).contains('Malhada - BA');
   });
 
   it('Testa ordenação alfabética ASC da tabela ao clicar no titulo MUNICÍPIO', () => {
