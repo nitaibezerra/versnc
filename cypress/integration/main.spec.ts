@@ -2,7 +2,7 @@ describe('' +
   'Teste E2E Versnc Frontend', function() {
 
   beforeEach(function () {
-    cy.api();
+    // cy.api();
   });
 
   it('Retorna 200 OK ao acessar a raiz', () => {
@@ -62,6 +62,7 @@ describe('' +
   });
 
   it('Testa input Estado/Municipio da Busca Simples e retorno respectivo na tabela', () => {
+    cy.apiSimples();
     cy.visit('http://localhost:4200/');
     cy.get('input').type('Malhada{enter}');
     cy.get('app-root snc-table mat-card mat-table mat-row mat-cell').eq(0).contains('Malhada - BA');
@@ -74,14 +75,16 @@ describe('' +
   });
 
   it('Testa input Estado/Municipio da Busca Avançada e retorno respectivo na tabela', () => {
+    cy.apiSimples();    
     cy.visit('http://localhost:4200/');
     cy.get('.alinhamento').eq(1).click();
-    cy.get('input').eq(0).type('Brasília{enter}');
+    cy.get('input').eq(0).type('Malhada{enter}');
 
-    cy.get('app-root snc-table mat-card mat-table mat-row mat-cell').eq(0).contains('Brasília - DF');
+    cy.get('app-root snc-table mat-card mat-table mat-row mat-cell').eq(0).contains('Malhada - BA');
   });
 
   it('Testa input UF da Busca Avançada e retorno respectivo na tabela', () => {
+    cy.api_busca_uf();    
     cy.visit('http://localhost:4200/');
     cy.get('.alinhamento').eq(1).click();
     cy.get('input').eq(1).type('DF{enter}');
@@ -90,6 +93,7 @@ describe('' +
   });
 
   it('Testa input CNPJ da Busca Avançada e retorno respectivo na tabela', () => {
+    cy.api_busca_cnpj();        
     cy.visit('http://localhost:4200/');
     cy.get('.alinhamento').eq(1).click();
     cy.get('input').eq(2).type('14.105.217/0001-70{enter}');
