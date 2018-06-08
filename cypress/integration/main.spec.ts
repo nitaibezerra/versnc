@@ -129,4 +129,22 @@ describe('' +
     cy.get('mat-cell').eq(0).contains('Porto do Mangue - RN');
   });
 
+  it('Testa ordenação alfabética ASC da tabela por SITUAÇÃO DA ADESÃO', () => {
+    cy.api(); 
+    cy.visit('http://localhost:4200/');
+    cy.get('input').type('{enter}');
+    cy.get('.mat-sort-header-button').eq(1).contains('SITUAÇÂO DA ADESÃO').click();
+
+    cy.get('mat-row').eq(3).contains('mat-cell',' Aguardando envio da documentação ');
+  });
+
+  it('Testa ordenação alfabética DESC da tabela por SITUAÇÃO DA ADESÃO', () => {
+    cy.api(); 
+    cy.visit('http://localhost:4200/');
+    cy.get('input').type('{enter}');
+    cy.get('.mat-sort-header-button').eq(1).contains('SITUAÇÂO DA ADESÃO').click().click();
+
+    cy.get('mat-row').eq(0).contains('mat-cell',' Publicado no DOU ');
+  });
+
 });
