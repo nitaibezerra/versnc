@@ -15,48 +15,56 @@ describe('' +
   });
 
   it('Apresenta Tabela na Pagina Inicial', () => {
+    cy.api(); 
     cy.visit('http://localhost:4200/');
     cy.get('input').type('{enter}');
     cy.get('app-root snc-table mat-card');
   });
 
   it('Apresenta título MUNICÍPIO na tabela da Página Inicial após pesquisa', () => {
+    cy.api(); 
     cy.visit('http://localhost:4200/');
     cy.get('input').type('{enter}');
     cy.get('.mat-sort-header-button').contains('MUNICÍPIO');
   });
 
   it('Apresenta título SITUAÇÃO DA ADESÃO na tabela da Página Inicial após pesquisa', () => {
+    cy.api(); 
     cy.visit('http://localhost:4200/');
     cy.get('input').type('{enter}');
     cy.get('.mat-sort-header-button').eq(1).contains('SITUAÇÂO DA ADESÃO');
   });
 
   it('Apresenta título DATA DA ADESÃO na tabela da Página Inicial após pesquisa', () => {
+    cy.api(); 
     cy.visit('http://localhost:4200/');
     cy.get('input').type('{enter}');
     cy.get('.mat-sort-header-button').eq(2).contains('DATA DA ADESÃO');
   });
 
   it('Apresenta título DETALHAR na tabela da Página Inicial após pesquisa', () => {
+    cy.api(); 
     cy.visit('http://localhost:4200/');
     cy.get('input').type('{enter}');
     cy.get('.mat-header-cell').eq(3).contains('DETALHAR');
   });
 
   it('Apresenta 10 elementos referentes aos municipios', () => {
+    cy.api(); 
     cy.visit('http://localhost:4200/');
     cy.get('input').type('{enter}');
     cy.get('app-root snc-table mat-card mat-table mat-row').should('have.length', 10);
   });
 
   it('Apresenta o componente de paginação', () => {
+    cy.api(); 
     cy.visit('http://localhost:4200/');
     cy.get('input').type('{enter}');
     cy.get('app-root snc-table mat-card mat-paginator');
   });
 
   it('Apresenta dados nas linhas da tabela', () => {
+    cy.api(); 
     cy.visit('http://localhost:4200/tabela-uf-municipio');
     cy.get('app-root snc-table mat-card mat-table mat-row').should('not.be.empty');
   });
@@ -69,6 +77,7 @@ describe('' +
   });
 
   it('Testa mudança da Busca Simples p/ Busca Avançada após click no botão de Busca Avançada', () => {
+    cy.api(); 
     cy.visit('http://localhost:4200/');
     cy.get('.alinhamento').eq(1).click();
     cy.get('.alinhamento').eq(1).contains('Busca Simples');
@@ -102,6 +111,7 @@ describe('' +
   });
 
   it('Testa ordenação alfabética ASC da tabela ao clicar no titulo MUNICÍPIO', () => {
+    cy.api(); 
     cy.visit('http://localhost:4200/');
     cy.get('input').type('{enter}');
     cy.get('.mat-sort-header-button').eq(0).contains('MUNICÍPIO').click();
@@ -111,6 +121,7 @@ describe('' +
   });
 
   it('Testa ordenação alfabética DESC da tabela ao clicar no titulo MUNICÍPIO', () => {
+    cy.api(); 
     cy.visit('http://localhost:4200/');
     cy.get('input').type('{enter}');
     cy.get('.mat-sort-header-button').eq(0).contains('MUNICÍPIO').click().click();
