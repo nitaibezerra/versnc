@@ -3,6 +3,7 @@ import {Entidade} from '../models/entidade.model';
 import {SlcApiService} from '../slc-api.service';
 import {SncTableComponent} from '../snc-table/snc-table.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatDatepickerModule, MAT_DATEPICKER_VALUE_ACCESSOR} from '@angular/material/datepicker';
 
 @Component({
   selector: 'snc-busca',
@@ -32,6 +33,7 @@ export class BuscaComponent implements OnInit {
   /* AQUI COMEÇA O TESTE DE REFATORAÇÃO DA BUSCA */
 
   onRealizarBuscaComEnter(event) {
+    console.log(MAT_DATEPICKER_VALUE_ACCESSOR);
     if (event.keyCode === 13) {
       if (!this.seletorTipoBusca) {
         if (this.termoSimples.length < 3) {

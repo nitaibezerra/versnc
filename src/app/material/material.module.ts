@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-
 import {
   MatTableModule,
   MatIconModule,
@@ -18,6 +17,9 @@ import {
   MatSortModule,
   MatSelectModule,
   MatTooltipModule,
+  MatDatepickerModule,
+  NativeDateAdapter,
+  MatNativeDateModule,
 } from '@angular/material';
 
 @NgModule({
@@ -26,6 +28,7 @@ import {
     MatTableModule,
     MatPaginatorModule,
     FormsModule,
+    MatNativeDateModule
   ],
   exports: [
     MatTableModule,
@@ -44,7 +47,9 @@ import {
     MatSelectModule,
     MatTooltipModule,
     FormsModule,
-  ],
+    MatDatepickerModule,
+    MatNativeDateModule
+    ],
   declarations: []
 })
 export class MaterialModule { }
