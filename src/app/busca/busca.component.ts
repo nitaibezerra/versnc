@@ -3,13 +3,14 @@ import {Entidade} from '../models/entidade.model';
 import {SlcApiService} from '../slc-api.service';
 import {SncTableComponent} from '../snc-table/snc-table.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import {MatDatepickerModule, MAT_DATEPICKER_VALUE_ACCESSOR} from '@angular/material/datepicker';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MAT_DATE_LOCALE } from '@angular/material/';
 
 @Component({
   selector: 'snc-busca',
   templateUrl: './busca.component.html',
   styleUrls: ['./busca.component.css'],
-  providers: [SncTableComponent]
+  providers: [SncTableComponent, {provide: MAT_DATE_LOCALE, useValue: 'pt-BR'}]
 })
 
 export class BuscaComponent implements OnInit {
@@ -19,12 +20,14 @@ export class BuscaComponent implements OnInit {
   private seletorTipoBusca: boolean = false;
   private termoSimples: String = '';
   private page: number = 0;
-
+  private data_adesao_min;
+  
   constructor(private slcApiService: SlcApiService) {
   }
 
   queries: { [query: string]: String }
-    = {'limit': '', 'offset': '', 'nome_municipio': '', 'estado_sigla': '', 'cnpj_prefeitura': ''};
+    = {'limit': '', 'offset': '', 'nome_municipio': '', 'estado_sigla': '', 'cnpj_prefeitura': ''
+      ,'data_adesao_min': '', 'data_adesao_max': ''};
 
   ngOnInit(): void {
     this.slcApiService.buscaAtual.subscribe(listaRetorno => this.listaRetorno = listaRetorno);
@@ -33,7 +36,6 @@ export class BuscaComponent implements OnInit {
   /* AQUI COMEÇA O TESTE DE REFATORAÇÃO DA BUSCA */
 
   onRealizarBuscaComEnter(event) {
-    console.log(MAT_DATEPICKER_VALUE_ACCESSOR);
     if (event.keyCode === 13) {
       if (!this.seletorTipoBusca) {
         this.queries['limit'] = this.slcApiService['pageSize'].toString();
