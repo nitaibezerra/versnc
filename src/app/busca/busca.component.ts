@@ -39,12 +39,7 @@ export class BuscaComponent implements OnInit {
 
   ngOnInit(): void {
     this.slcApiService.buscaAtual.subscribe(listaRetorno => this.listaRetorno = listaRetorno);
-    // this.slcApiService['data_adesao_min'] = this.data_adesao_min;    
   }
-
-  // ngAfterViewInit() {
-  //   this.data_adesao_min=this.slcApiService['data_adesao_min'];
-  // }
 
 
   /* AQUI COMEÇA O TESTE DE REFATORAÇÃO DA BUSCA */
@@ -67,9 +62,9 @@ export class BuscaComponent implements OnInit {
 
       } else { // BUSCA AVANÇADA
         this.queries['estado_sigla'] = this.queries['estado_sigla'].toUpperCase()
-
         this.queries['data_adesao_min']=this.getDatePicker(this.data_adesao_min);
-        console.log(this.queries)
+        this.queries['data_adesao_max']=this.getDatePicker(this.data_adesao_max);
+        console.log(this.queries);
         this.onRealizarBusca();
       }
 
