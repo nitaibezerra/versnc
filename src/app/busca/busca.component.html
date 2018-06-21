@@ -40,19 +40,15 @@
     </mat-form-field>
 
     <mat-form-field class="textCenter">
-      <mat-placeholder>CNPJ
-        <mat-icon>search</mat-icon>
-      </mat-placeholder>
-
-      <input #searchBox matInput type="search" id="search-box" [(ngModel)]="queries['cnpj_prefeitura']" [ngModelOptions]="{standalone: true}"
-      />
-
-    </mat-form-field>
-
-    <mat-form-field class="textCenter">
       <input #searchBox matInput [matDatepicker]="picker" [(ngModel)]="data_adesao_min" [ngModelOptions]="{standalone: true}" placeholder="Adesão a partir de" >
       <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
       <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field class="textCenter">
+      <input #searchBox matInput [matDatepicker]="picker1" [(ngModel)]="data_adesao_max" [ngModelOptions]="{standalone: true}" placeholder="Adesão até a data" >
+      <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+      <mat-datepicker #picker1></mat-datepicker>
     </mat-form-field>
 
 
