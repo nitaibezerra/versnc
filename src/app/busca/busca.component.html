@@ -40,17 +40,16 @@
     </mat-form-field>
 
     <mat-form-field class="textCenter">
-      <input #searchBox matInput [matDatepicker]="picker" [(ngModel)]="data_adesao_min" [ngModelOptions]="{standalone: true}" placeholder="Adesão a partir de" >
+      <input #searchBox matInput [matDatepicker]="picker" [(ngModel)]="data_adesao_min" [ngModelOptions]="{standalone: true}" placeholder="Adesão a partir de">
       <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
       <mat-datepicker #picker></mat-datepicker>
     </mat-form-field>
 
     <mat-form-field class="textCenter">
-      <input #searchBox matInput [matDatepicker]="picker1" [(ngModel)]="data_adesao_max" [ngModelOptions]="{standalone: true}" placeholder="Adesão até a data" >
-      <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
-      <mat-datepicker #picker1></mat-datepicker>
+      <input #searchBox matInput [matDatepicker]="picker2" [(ngModel)]="data_adesao_max" [ngModelOptions]="{standalone: true}" placeholder="Adesão até a data">
+      <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+      <mat-datepicker #picker2></mat-datepicker>
     </mat-form-field>
-
 
   </form>
 
