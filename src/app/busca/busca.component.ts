@@ -24,9 +24,9 @@ export class BuscaComponent implements OnInit {
   private seletorTipoBusca: boolean = false;
   private termoSimples: String = '';
   private page: number = 0;
-  private data_adesao_min: String;
-  private data_adesao_max: String;  
-  
+  private data_adesao_min: String = "";
+  private data_adesao_max: String;
+
   constructor(private slcApiService: SlcApiService) {
   }
 
@@ -62,8 +62,8 @@ export class BuscaComponent implements OnInit {
 
       } else { // BUSCA AVANÇADA
         this.queries['estado_sigla'] = this.queries['estado_sigla'].toUpperCase()
-        this.queries['data_adesao_min']=this.getDatePicker(this.data_adesao_min);
-        this.queries['data_adesao_max']=this.getDatePicker(this.data_adesao_max);
+        this.queries['data_adesao_min'] = this.getDatePicker(this.data_adesao_min);
+        // this.queries['data_adesao_max']=this.getDatePicker(this.data_adesao_max);
         console.log(this.queries);
         this.onRealizarBusca();
       }
@@ -77,15 +77,18 @@ export class BuscaComponent implements OnInit {
     this.slcApiService.carregarPagina(this.page, this.queries);
   }
 
-  getDatePicker(datepicker: String){ // recebe um objeto Datepicker e retorna somente a data
-    if(datepicker['_i']['date']){
+  getDatePicker(datepicker: String) { // recebe um objeto Datepicker e retorna somente a data
+    if (!datepicker) {
+      return "";
+    }
+    else if (datepicker['_i']['date']) {
       var dd = datepicker['_i']['date'];
       var mm = datepicker['_i']['month']; // objeto tem as posições 0-11 por default 
       var yy = datepicker['_i']['year'];
-      
-      return(dd + '/' + (mm+1) + '/' + yy);
-    } else {
 
+      return (dd + '/' + (mm + 1) + '/' + yy);
+    }
+    else {
       return datepicker['_i']
     }
   }
