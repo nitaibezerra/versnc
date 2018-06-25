@@ -32,8 +32,7 @@ export class BuscaComponent implements OnInit {
 
   queries: { [query: string]: String }
     = {
-      'limit': '', 'offset': '', 'nome_municipio': '', 'estado_sigla': '', 'cnpj_prefeitura': ''
-      , 'data_adesao_min': '', 'data_adesao_max': ''
+      'limit': '', 'offset': '', 'nome_municipio': '', 'estado_sigla': '', 'data_adesao_min': '', 'data_adesao_max': ''
     };
 
 
