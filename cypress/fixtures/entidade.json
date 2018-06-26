@@ -6,7 +6,7 @@
         "conselho": null,
         "_links": {
           "self": {
-            "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4460/"
+            "href": "http://hmg.snc.cultura.gov.br/api/v1/sistemadeculturalocal/4460/"
           }
         },
         "_embedded": {
@@ -48,14 +48,14 @@
   },
   "_links": {
     "self": {
-      "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/?limit=1000"
+      "href": "http://hmg.snc.cultura.gov.br/api/v1/sistemadeculturalocal/?limit=1000"
     },
     "page": {
-      "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/?limit={?page}",
+      "href": "http://hmg.snc.cultura.gov.br/api/v1/sistemadeculturalocal/?limit={?page}",
       "templated": true
     },
     "next": {
-      "href": "http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/?limit=100&offset=100"
+      "href": "http://hmg.snc.cultura.gov.br/api/v1/sistemadeculturalocal/?limit=100&offset=100"
     }
   },
   "count": 2967,
