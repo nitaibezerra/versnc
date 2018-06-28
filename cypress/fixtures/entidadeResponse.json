@@ -1,1 +1,625 @@
-{"_embedded":{"items":[{"id":4466,"conselho":{"conselheiros":[]},"_links":{"self":{"href":"http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4466/"}},"_embedded":{"acoes_plano_trabalho":{"id":6185,"criacao_conselho_cultural":{"ata_regimento_aprovado":null,"situacao":"Em preenchimento"},"_links":{"self":{"href":"http://snchomolog.cultura.gov.br/api/v1/acoesplanotrabalho/6185/"}},"criacao_plano_cultura":{"ata_reuniao_aprovacao_plano":null,"minuta_preparada":null,"lei_plano_cultura":null,"situacao":"Em preenchimento","ata_votacao_projeto_lei":null,"relatorio_diretrizes_aprovadas":null},"criacao_orgao_gestor":{"situacao":"Em preenchimento","relatorio_atividade_secretaria":null},"criacao_fundo_cultura":{"lei_fundo_cultura":null,"situacao":"Em preenchimento","cnpj_fundo_cultura":"18.851.446/0001-95"},"_embedded":{"sistema_cultura_local":{"_links":{"self":{"href":"http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4466/"}}}},"criacao_lei_sistema_cultura":{"lei_sistema_cultura":null,"situacao":"Em preenchimento"}}},"situacao_adesao":{"situacao_adesao":"Publicado no DOU"},"governo":{"nome_prefeito":"Chico Xavier","email_institucional_prefeito":"janaina.lima.df@gmail.com","termo_posse_prefeito":"/media/termo_posse/Chrysanthemum.jpg"},"ente_federado":{"cnpj_prefeitura":"18.761.172/0001-43","localizacao":{"estado":{"codigo_ibge":53,"sigla":"DF"},"cidade":{"codigo_ibge":530010,"nome_municipio":"Brasília"},"cep":"70.770-100","bairro":"Asa Norte","endereco":"Bla bla bla","complemento":"bla bla"},"telefones":{"telefone_um":"99999999999","telefone_dois":"","telefone_tres":""},"endereco_eletronico":"https://www.geradordecpf.org/"}},{"id":4465,"conselho":{"conselheiros":[{"email":"teste@email.com","data_cadastro":"2018-03-29","data_situacao":"2018-03-29","nome":"TEste 123","segmento":"Circo","situacao":"1"}]},"_links":{"self":{"href":"http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4465/"}},"_embedded":{"acoes_plano_trabalho":{"id":6183,"criacao_conselho_cultural":{"ata_regimento_aprovado":null,"situacao":"Em preenchimento"},"_links":{"self":{"href":"http://snchomolog.cultura.gov.br/api/v1/acoesplanotrabalho/6183/"}},"criacao_plano_cultura":{"ata_reuniao_aprovacao_plano":null,"minuta_preparada":null,"lei_plano_cultura":null,"situacao":"Em preenchimento","ata_votacao_projeto_lei":null,"relatorio_diretrizes_aprovadas":null},"criacao_orgao_gestor":{"situacao":"Em preenchimento","relatorio_atividade_secretaria":null},"criacao_fundo_cultura":{"lei_fundo_cultura":null,"situacao":"Em preenchimento","cnpj_fundo_cultura":"96.384.155/0001-48"},"_embedded":{"sistema_cultura_local":{"_links":{"self":{"href":"http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4465/"}}}},"criacao_lei_sistema_cultura":{"lei_sistema_cultura":null,"situacao":"Em preenchimento"}}},"situacao_adesao":{"situacao_adesao":"Publicado no DOU"},"governo":{"nome_prefeito":"Prefeito do Teste","email_institucional_prefeito":"teste@email.com","termo_posse_prefeito":"/media/termo_posse/Modelo_1mdl3.png"},"ente_federado":{"cnpj_prefeitura":"66.537.377/0001-92","localizacao":{"estado":{"codigo_ibge":15,"sigla":"PA"},"cidade":{"codigo_ibge":150140,"nome_municipio":"Belém"},"cep":"71.000-000","bairro":"Rua de Cima","endereco":"Avenida Nao Importa","complemento":"Rua de Baixo"},"telefones":{"telefone_um":"22020205950","telefone_dois":"","telefone_tres":""},"endereco_eletronico":"http://www.cultura.gov.br/snc"}},{"id":4464,"conselho":{"conselheiros":[]},"_links":{"self":{"href":"http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4464/"}},"_embedded":{"acoes_plano_trabalho":{"id":6182,"criacao_conselho_cultural":{"ata_regimento_aprovado":null,"situacao":"Em preenchimento"},"_links":{"self":{"href":"http://snchomolog.cultura.gov.br/api/v1/acoesplanotrabalho/6182/"}},"criacao_plano_cultura":{"ata_reuniao_aprovacao_plano":null,"minuta_preparada":null,"lei_plano_cultura":null,"situacao":"Em preenchimento","ata_votacao_projeto_lei":null,"relatorio_diretrizes_aprovadas":null},"criacao_orgao_gestor":{"situacao":"Em preenchimento","relatorio_atividade_secretaria":null},"criacao_fundo_cultura":{"lei_fundo_cultura":null,"situacao":"Em preenchimento","cnpj_fundo_cultura":null},"_embedded":{"sistema_cultura_local":{"_links":{"self":{"href":"http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4464/"}}}},"criacao_lei_sistema_cultura":{"lei_sistema_cultura":null,"situacao":"Em preenchimento"}}},"situacao_adesao":{"situacao_adesao":"Publicado no DOU"},"governo":{"nome_prefeito":"Fulano Cicrano","email_institucional_prefeito":"fulano.cicrano@cultura.gov.br","termo_posse_prefeito":"/media/termo_posse/Captura_de_tela_de_2017-04-13_01-28-59.png"},"ente_federado":{"cnpj_prefeitura":"95.876.554/0001-63","localizacao":{"estado":{"codigo_ibge":35,"sigla":"SP"},"cidade":{"codigo_ibge":350460,"nome_municipio":"Bady Bassitt"},"cep":"14.300-000","bairro":"Benjanmin Constant","endereco":"Rua 0","complemento":"Numero 0"},"telefones":{"telefone_um":"61998246668","telefone_dois":"","telefone_tres":""},"endereco_eletronico":""}},{"id":4463,"conselho":{"conselheiros":[]},"_links":{"self":{"href":"http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4463/"}},"_embedded":{"acoes_plano_trabalho":{"id":6184,"criacao_conselho_cultural":{"ata_regimento_aprovado":null,"situacao":"Em preenchimento"},"_links":{"self":{"href":"http://snchomolog.cultura.gov.br/api/v1/acoesplanotrabalho/6184/"}},"criacao_plano_cultura":{"ata_reuniao_aprovacao_plano":null,"minuta_preparada":null,"lei_plano_cultura":null,"situacao":"Em preenchimento","ata_votacao_projeto_lei":null,"relatorio_diretrizes_aprovadas":null},"criacao_orgao_gestor":{"situacao":"Em preenchimento","relatorio_atividade_secretaria":null},"criacao_fundo_cultura":{"lei_fundo_cultura":null,"situacao":"Em preenchimento","cnpj_fundo_cultura":null},"_embedded":{"sistema_cultura_local":{"_links":{"self":{"href":"http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4463/"}}}},"criacao_lei_sistema_cultura":{"lei_sistema_cultura":null,"situacao":"Em preenchimento"}}},"situacao_adesao":{"situacao_adesao":"Publicado no DOU"},"governo":{"nome_prefeito":"João João","email_institucional_prefeito":"joao32@email.com","termo_posse_prefeito":"/media/termo_posse/Conte%C3%BAdos_Site.docx"},"ente_federado":{"cnpj_prefeitura":"10.869.193/0001-75","localizacao":{"estado":{"codigo_ibge":22,"sigla":"PI"},"cidade":{"codigo_ibge":220240,"nome_municipio":"Capitão de Campos"},"cep":"71.120-000","bairro":"Centro","endereco":"Rua 22 Praça Central","complemento":"Sem complemento"},"telefones":{"telefone_um":"86999925496","telefone_dois":"","telefone_tres":""},"endereco_eletronico":"http://www.cultura.gov.br/snc"}},{"id":4462,"conselho":null,"_links":{"self":{"href":"http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4462/"}},"_embedded":{"acoes_plano_trabalho":null},"situacao_adesao":{"situacao_adesao":"Aguardando envio da documentação"},"governo":{"nome_prefeito":"João Silva","email_institucional_prefeito":"joao@email.com","termo_posse_prefeito":"/media/termo_posse/snc_puGZolm.pdf"},"ente_federado":{"cnpj_prefeitura":"17.777.239/0001-75","localizacao":{"estado":{"codigo_ibge":29,"sigla":"BA"},"cidade":{"codigo_ibge":290225,"nome_municipio":"Arataca"},"cep":"93.351-060","bairro":"graça","endereco":"rua dos santos","complemento":"12"},"telefones":{"telefone_um":"61999999999","telefone_dois":"","telefone_tres":""},"endereco_eletronico":"http://teste.com.br"}},{"id":4461,"conselho":null,"_links":{"self":{"href":"http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4461/"}},"_embedded":{"acoes_plano_trabalho":null},"situacao_adesao":null,"governo":{"nome_prefeito":"João Silva","email_institucional_prefeito":"joao@email.com","termo_posse_prefeito":"/media/termo_posse/snc.pdf"},"ente_federado":{"cnpj_prefeitura":"17.777.239/0001-75","localizacao":{"estado":{"codigo_ibge":29,"sigla":"BA"},"cidade":{"codigo_ibge":290190,"nome_municipio":"Aporá"},"cep":"93.351-060","bairro":"graça","endereco":"rua dos santos","complemento":"12"},"telefones":{"telefone_um":"55999999999","telefone_dois":"","telefone_tres":""},"endereco_eletronico":"http://teste.com.br"}},{"id":4460,"conselho":null,"_links":{"self":{"href":"http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4460/"}},"_embedded":{"acoes_plano_trabalho":null},"situacao_adesao":{"situacao_adesao":"Aguardando envio da documentação"},"governo":{"nome_prefeito":"Valdemar Larceda  Silva Filho","email_institucional_prefeito":"administracao@malhada.ba.gov.br","termo_posse_prefeito":"/media/termo_posse/termo_OS7pAZV.docx"},"ente_federado":{"cnpj_prefeitura":"14.105.217/0001-70","localizacao":{"estado":{"codigo_ibge":29,"sigla":"BA"},"cidade":{"codigo_ibge":292020,"nome_municipio":"Malhada"},"cep":"46.440-000","bairro":"centro","endereco":"Praça Santa Cruz","complemento":"casa"},"telefones":{"telefone_um":"7736912145","telefone_dois":"","telefone_tres":""},"endereco_eletronico":"http://www.malhada.ba.gov.br"}},{"id":4459,"conselho":null,"_links":{"self":{"href":"http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4459/"}},"_embedded":{"acoes_plano_trabalho":null},"situacao_adesao":{"situacao_adesao":"Aguardando envio da documentação"},"governo":{"nome_prefeito":"Hipoliton Sael Holanda Melo","email_institucional_prefeito":"gabinetecivil@portodomangue.rn.gov.br","termo_posse_prefeito":"/media/termo_posse/SCAN_20180108_105053728.pdf"},"ente_federado":{"cnpj_prefeitura":"01.612.371/0001-97","localizacao":{"estado":{"codigo_ibge":24,"sigla":"RN"},"cidade":{"codigo_ibge":241025,"nome_municipio":"Porto do Mangue"},"cep":"59.668-000","bairro":"Centro","endereco":"Rua Joca de Melo 96","complemento":"Centro"},"telefones":{"telefone_um":"8435260047","telefone_dois":"","telefone_tres":""},"endereco_eletronico":"http://portodomangue.rn.gov.br/"}},{"id":4458,"conselho":null,"_links":{"self":{"href":"http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4458/"}},"_embedded":{"acoes_plano_trabalho":null},"situacao_adesao":null,"governo":{"nome_prefeito":" ","email_institucional_prefeito":" ","termo_posse_prefeito":null},"ente_federado":{"cnpj_prefeitura":" ","localizacao":{"estado":{"codigo_ibge":17,"sigla":"TO"},"cidade":{"codigo_ibge":171270,"nome_municipio":"Mateiros"},"cep":" ","bairro":" ","endereco":" ","complemento":" "},"telefones":{"telefone_um":" ","telefone_dois":" ","telefone_tres":" "},"endereco_eletronico":null}},{"id":4457,"conselho":null,"_links":{"self":{"href":"http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4457/"}},"_embedded":{"acoes_plano_trabalho":null},"situacao_adesao":null,"governo":{"nome_prefeito":" ","email_institucional_prefeito":" ","termo_posse_prefeito":null},"ente_federado":{"cnpj_prefeitura":" ","localizacao":{"estado":{"codigo_ibge":17,"sigla":"TO"},"cidade":{"codigo_ibge":170720,"nome_municipio":"Dois Irmãos do Tocantins"},"cep":" ","bairro":" ","endereco":" ","complemento":" "},"telefones":{"telefone_um":" ","telefone_dois":" ","telefone_tres":" "},"endereco_eletronico":null}}]},"_links":{"self":{"href":"http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/?limit=&offset=&nome_municipio=&estado_sigla=&cnpj_prefeitura="},"page":{"href":"http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/?cnpj_prefeitura=&estado_sigla=&limit={?page}&nome_municipio=&offset=","templated":true},"next":{"href":"http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/?cnpj_prefeitura=&estado_sigla=&limit=10&nome_municipio=&offset=10"}},"count":2967,"page_size":10}
+{
+    "_embedded": {
+        "items": [
+            {
+                "id": 4466,
+                "conselho": {
+                    "conselheiros": []
+                },
+                "_links": {
+                    "self": {
+                        "href": "http://hmg.snc.cultura.gov.br/api/v1/sistemadeculturalocal/4466/"
+                    }
+                },
+                "_embedded": {
+                    "acoes_plano_trabalho": {
+                        "id": 6185,
+                        "criacao_conselho_cultural": {
+                            "ata_regimento_aprovado": null,
+                            "situacao": "Em preenchimento"
+                        },
+                        "_links": {
+                            "self": {
+                                "href": "http://hmg.snc.cultura.gov.br/api/v1/acoesplanotrabalho/6185/"
+                            }
+                        },
+                        "criacao_plano_cultura": {
+                            "ata_reuniao_aprovacao_plano": null,
+                            "minuta_preparada": null,
+                            "lei_plano_cultura": null,
+                            "situacao": "Em preenchimento",
+                            "ata_votacao_projeto_lei": null,
+                            "relatorio_diretrizes_aprovadas": null
+                        },
+                        "criacao_orgao_gestor": {
+                            "situacao": "Em preenchimento",
+                            "relatorio_atividade_secretaria": null
+                        },
+                        "criacao_fundo_cultura": {
+                            "lei_fundo_cultura": null,
+                            "situacao": "Em preenchimento",
+                            "cnpj_fundo_cultura": "18.851.446/0001-95"
+                        },
+                        "_embedded": {
+                            "sistema_cultura_local": {
+                                "_links": {
+                                    "self": {
+                                        "href": "http://hmg.snc.cultura.gov.br/api/v1/sistemadeculturalocal/4466/"
+                                    }
+                                }
+                            }
+                        },
+                        "criacao_lei_sistema_cultura": {
+                            "lei_sistema_cultura": null,
+                            "situacao": "Em preenchimento"
+                        }
+                    }
+                },
+                "situacao_adesao": {
+                    "situacao_adesao": "Publicado no DOU"
+                },
+                "governo": {
+                    "nome_prefeito": "Chico Xavier",
+                    "email_institucional_prefeito": "janaina.lima.df@gmail.com",
+                    "termo_posse_prefeito": "/media/termo_posse/Chrysanthemum.jpg"
+                },
+                "ente_federado": {
+                    "cnpj_prefeitura": "18.761.172/0001-43",
+                    "localizacao": {
+                        "estado": {
+                            "codigo_ibge": 53,
+                            "sigla": "DF"
+                        },
+                        "cidade": {
+                            "codigo_ibge": 530010,
+                            "nome_municipio": "Brasília"
+                        },
+                        "cep": "70.770-100",
+                        "bairro": "Asa Norte",
+                        "endereco": "Bla bla bla",
+                        "complemento": "bla bla"
+                    },
+                    "telefones": {
+                        "telefone_um": "99999999999",
+                        "telefone_dois": "",
+                        "telefone_tres": ""
+                    },
+                    "endereco_eletronico": "https://www.geradordecpf.org/"
+                }
+            },
+            {
+                "id": 4465,
+                "conselho": {
+                    "conselheiros": [
+                        {
+                            "email": "teste@email.com",
+                            "data_cadastro": "2018-03-29",
+                            "data_situacao": "2018-03-29",
+                            "nome": "TEste 123",
+                            "segmento": "Circo",
+                            "situacao": "1"
+                        }
+                    ]
+                },
+                "_links": {
+                    "self": {
+                        "href": "http://hmg.snc.cultura.gov.br/api/v1/sistemadeculturalocal/4465/"
+                    }
+                },
+                "_embedded": {
+                    "acoes_plano_trabalho": {
+                        "id": 6183,
+                        "criacao_conselho_cultural": {
+                            "ata_regimento_aprovado": null,
+                            "situacao": "Em preenchimento"
+                        },
+                        "_links": {
+                            "self": {
+                                "href": "http://hmg.snc.cultura.gov.br/api/v1/acoesplanotrabalho/6183/"
+                            }
+                        },
+                        "criacao_plano_cultura": {
+                            "ata_reuniao_aprovacao_plano": null,
+                            "minuta_preparada": null,
+                            "lei_plano_cultura": null,
+                            "situacao": "Em preenchimento",
+                            "ata_votacao_projeto_lei": null,
+                            "relatorio_diretrizes_aprovadas": null
+                        },
+                        "criacao_orgao_gestor": {
+                            "situacao": "Em preenchimento",
+                            "relatorio_atividade_secretaria": null
+                        },
+                        "criacao_fundo_cultura": {
+                            "lei_fundo_cultura": null,
+                            "situacao": "Em preenchimento",
+                            "cnpj_fundo_cultura": "96.384.155/0001-48"
+                        },
+                        "_embedded": {
+                            "sistema_cultura_local": {
+                                "_links": {
+                                    "self": {
+                                        "href": "http://hmg.snc.cultura.gov.br/api/v1/sistemadeculturalocal/4465/"
+                                    }
+                                }
+                            }
+                        },
+                        "criacao_lei_sistema_cultura": {
+                            "lei_sistema_cultura": null,
+                            "situacao": "Em preenchimento"
+                        }
+                    }
+                },
+                "situacao_adesao": {
+                    "situacao_adesao": "Publicado no DOU"
+                },
+                "governo": {
+                    "nome_prefeito": "Prefeito do Teste",
+                    "email_institucional_prefeito": "teste@email.com",
+                    "termo_posse_prefeito": "/media/termo_posse/Modelo_1mdl3.png"
+                },
+                "ente_federado": {
+                    "cnpj_prefeitura": "66.537.377/0001-92",
+                    "localizacao": {
+                        "estado": {
+                            "codigo_ibge": 15,
+                            "sigla": "PA"
+                        },
+                        "cidade": {
+                            "codigo_ibge": 150140,
+                            "nome_municipio": "Belém"
+                        },
+                        "cep": "71.000-000",
+                        "bairro": "Rua de Cima",
+                        "endereco": "Avenida Nao Importa",
+                        "complemento": "Rua de Baixo"
+                    },
+                    "telefones": {
+                        "telefone_um": "22020205950",
+                        "telefone_dois": "",
+                        "telefone_tres": ""
+                    },
+                    "endereco_eletronico": "http://www.cultura.gov.br/snc"
+                }
+            },
+            {
+                "id": 4464,
+                "conselho": {
+                    "conselheiros": []
+                },
+                "_links": {
+                    "self": {
+                        "href": "http://hmg.snc.cultura.gov.br/api/v1/sistemadeculturalocal/4464/"
+                    }
+                },
+                "_embedded": {
+                    "acoes_plano_trabalho": {
+                        "id": 6182,
+                        "criacao_conselho_cultural": {
+                            "ata_regimento_aprovado": null,
+                            "situacao": "Em preenchimento"
+                        },
+                        "_links": {
+                            "self": {
+                                "href": "http://hmg.snc.cultura.gov.br/api/v1/acoesplanotrabalho/6182/"
+                            }
+                        },
+                        "criacao_plano_cultura": {
+                            "ata_reuniao_aprovacao_plano": null,
+                            "minuta_preparada": null,
+                            "lei_plano_cultura": null,
+                            "situacao": "Em preenchimento",
+                            "ata_votacao_projeto_lei": null,
+                            "relatorio_diretrizes_aprovadas": null
+                        },
+                        "criacao_orgao_gestor": {
+                            "situacao": "Em preenchimento",
+                            "relatorio_atividade_secretaria": null
+                        },
+                        "criacao_fundo_cultura": {
+                            "lei_fundo_cultura": null,
+                            "situacao": "Em preenchimento",
+                            "cnpj_fundo_cultura": null
+                        },
+                        "_embedded": {
+                            "sistema_cultura_local": {
+                                "_links": {
+                                    "self": {
+                                        "href": "http://hmg.snc.cultura.gov.br/api/v1/sistemadeculturalocal/4464/"
+                                    }
+                                }
+                            }
+                        },
+                        "criacao_lei_sistema_cultura": {
+                            "lei_sistema_cultura": null,
+                            "situacao": "Em preenchimento"
+                        }
+                    }
+                },
+                "situacao_adesao": {
+                    "situacao_adesao": "Publicado no DOU"
+                },
+                "governo": {
+                    "nome_prefeito": "Fulano Cicrano",
+                    "email_institucional_prefeito": "fulano.cicrano@cultura.gov.br",
+                    "termo_posse_prefeito": "/media/termo_posse/Captura_de_tela_de_2017-04-13_01-28-59.png"
+                },
+                "ente_federado": {
+                    "cnpj_prefeitura": "95.876.554/0001-63",
+                    "localizacao": {
+                        "estado": {
+                            "codigo_ibge": 35,
+                            "sigla": "SP"
+                        },
+                        "cidade": {
+                            "codigo_ibge": 350460,
+                            "nome_municipio": "Bady Bassitt"
+                        },
+                        "cep": "14.300-000",
+                        "bairro": "Benjanmin Constant",
+                        "endereco": "Rua 0",
+                        "complemento": "Numero 0"
+                    },
+                    "telefones": {
+                        "telefone_um": "61998246668",
+                        "telefone_dois": "",
+                        "telefone_tres": ""
+                    },
+                    "endereco_eletronico": ""
+                }
+            },
+            {
+                "id": 4463,
+                "conselho": {
+                    "conselheiros": []
+                },
+                "_links": {
+                    "self": {
+                        "href": "http://hmg.snc.cultura.gov.br/api/v1/sistemadeculturalocal/4463/"
+                    }
+                },
+                "_embedded": {
+                    "acoes_plano_trabalho": {
+                        "id": 6184,
+                        "criacao_conselho_cultural": {
+                            "ata_regimento_aprovado": null,
+                            "situacao": "Em preenchimento"
+                        },
+                        "_links": {
+                            "self": {
+                                "href": "http://hmg.snc.cultura.gov.br/api/v1/acoesplanotrabalho/6184/"
+                            }
+                        },
+                        "criacao_plano_cultura": {
+                            "ata_reuniao_aprovacao_plano": null,
+                            "minuta_preparada": null,
+                            "lei_plano_cultura": null,
+                            "situacao": "Em preenchimento",
+                            "ata_votacao_projeto_lei": null,
+                            "relatorio_diretrizes_aprovadas": null
+                        },
+                        "criacao_orgao_gestor": {
+                            "situacao": "Em preenchimento",
+                            "relatorio_atividade_secretaria": null
+                        },
+                        "criacao_fundo_cultura": {
+                            "lei_fundo_cultura": null,
+                            "situacao": "Em preenchimento",
+                            "cnpj_fundo_cultura": null
+                        },
+                        "_embedded": {
+                            "sistema_cultura_local": {
+                                "_links": {
+                                    "self": {
+                                        "href": "http://hmg.snc.cultura.gov.br/api/v1/sistemadeculturalocal/4463/"
+                                    }
+                                }
+                            }
+                        },
+                        "criacao_lei_sistema_cultura": {
+                            "lei_sistema_cultura": null,
+                            "situacao": "Em preenchimento"
+                        }
+                    }
+                },
+                "situacao_adesao": {
+                    "situacao_adesao": "Publicado no DOU"
+                },
+                "governo": {
+                    "nome_prefeito": "João João",
+                    "email_institucional_prefeito": "joao32@email.com",
+                    "termo_posse_prefeito": "/media/termo_posse/Conte%C3%BAdos_Site.docx"
+                },
+                "ente_federado": {
+                    "cnpj_prefeitura": "10.869.193/0001-75",
+                    "localizacao": {
+                        "estado": {
+                            "codigo_ibge": 22,
+                            "sigla": "PI"
+                        },
+                        "cidade": {
+                            "codigo_ibge": 220240,
+                            "nome_municipio": "Capitão de Campos"
+                        },
+                        "cep": "71.120-000",
+                        "bairro": "Centro",
+                        "endereco": "Rua 22 Praça Central",
+                        "complemento": "Sem complemento"
+                    },
+                    "telefones": {
+                        "telefone_um": "86999925496",
+                        "telefone_dois": "",
+                        "telefone_tres": ""
+                    },
+                    "endereco_eletronico": "http://www.cultura.gov.br/snc"
+                }
+            },
+            {
+                "id": 4462,
+                "conselho": null,
+                "_links": {
+                    "self": {
+                        "href": "http://hmg.snc.cultura.gov.br/api/v1/sistemadeculturalocal/4462/"
+                    }
+                },
+                "_embedded": {
+                    "acoes_plano_trabalho": null
+                },
+                "situacao_adesao": {
+                    "situacao_adesao": "Aguardando envio da documentação"
+                },
+                "governo": {
+                    "nome_prefeito": "João Silva",
+                    "email_institucional_prefeito": "joao@email.com",
+                    "termo_posse_prefeito": "/media/termo_posse/snc_puGZolm.pdf"
+                },
+                "ente_federado": {
+                    "cnpj_prefeitura": "17.777.239/0001-75",
+                    "localizacao": {
+                        "estado": {
+                            "codigo_ibge": 29,
+                            "sigla": "BA"
+                        },
+                        "cidade": {
+                            "codigo_ibge": 290225,
+                            "nome_municipio": "Arataca"
+                        },
+                        "cep": "93.351-060",
+                        "bairro": "graça",
+                        "endereco": "rua dos santos",
+                        "complemento": "12"
+                    },
+                    "telefones": {
+                        "telefone_um": "61999999999",
+                        "telefone_dois": "",
+                        "telefone_tres": ""
+                    },
+                    "endereco_eletronico": "http://teste.com.br"
+                }
+            },
+            {
+                "id": 4461,
+                "conselho": null,
+                "_links": {
+                    "self": {
+                        "href": "http://hmg.snc.cultura.gov.br/api/v1/sistemadeculturalocal/4461/"
+                    }
+                },
+                "_embedded": {
+                    "acoes_plano_trabalho": null
+                },
+                "situacao_adesao": null,
+                "governo": {
+                    "nome_prefeito": "João Silva",
+                    "email_institucional_prefeito": "joao@email.com",
+                    "termo_posse_prefeito": "/media/termo_posse/snc.pdf"
+                },
+                "ente_federado": {
+                    "cnpj_prefeitura": "17.777.239/0001-75",
+                    "localizacao": {
+                        "estado": {
+                            "codigo_ibge": 29,
+                            "sigla": "BA"
+                        },
+                        "cidade": {
+                            "codigo_ibge": 290190,
+                            "nome_municipio": "Aporá"
+                        },
+                        "cep": "93.351-060",
+                        "bairro": "graça",
+                        "endereco": "rua dos santos",
+                        "complemento": "12"
+                    },
+                    "telefones": {
+                        "telefone_um": "55999999999",
+                        "telefone_dois": "",
+                        "telefone_tres": ""
+                    },
+                    "endereco_eletronico": "http://teste.com.br"
+                }
+            },
+            {
+                "id": 4460,
+                "conselho": null,
+                "_links": {
+                    "self": {
+                        "href": "http://hmg.snc.cultura.gov.br/api/v1/sistemadeculturalocal/4460/"
+                    }
+                },
+                "_embedded": {
+                    "acoes_plano_trabalho": null
+                },
+                "situacao_adesao": {
+                    "situacao_adesao": "Aguardando envio da documentação"
+                },
+                "governo": {
+                    "nome_prefeito": "Valdemar Larceda  Silva Filho",
+                    "email_institucional_prefeito": "administracao@malhada.ba.gov.br",
+                    "termo_posse_prefeito": "/media/termo_posse/termo_OS7pAZV.docx"
+                },
+                "ente_federado": {
+                    "cnpj_prefeitura": "14.105.217/0001-70",
+                    "localizacao": {
+                        "estado": {
+                            "codigo_ibge": 29,
+                            "sigla": "BA"
+                        },
+                        "cidade": {
+                            "codigo_ibge": 292020,
+                            "nome_municipio": "Malhada"
+                        },
+                        "cep": "46.440-000",
+                        "bairro": "centro",
+                        "endereco": "Praça Santa Cruz",
+                        "complemento": "casa"
+                    },
+                    "telefones": {
+                        "telefone_um": "7736912145",
+                        "telefone_dois": "",
+                        "telefone_tres": ""
+                    },
+                    "endereco_eletronico": "http://www.malhada.ba.gov.br"
+                }
+            },
+            {
+                "id": 4459,
+                "conselho": null,
+                "_links": {
+                    "self": {
+                        "href": "http://hmg.snc.cultura.gov.br/api/v1/sistemadeculturalocal/4459/"
+                    }
+                },
+                "_embedded": {
+                    "acoes_plano_trabalho": null
+                },
+                "situacao_adesao": {
+                    "situacao_adesao": "Aguardando envio da documentação"
+                },
+                "governo": {
+                    "nome_prefeito": "Hipoliton Sael Holanda Melo",
+                    "email_institucional_prefeito": "gabinetecivil@portodomangue.rn.gov.br",
+                    "termo_posse_prefeito": "/media/termo_posse/SCAN_20180108_105053728.pdf"
+                },
+                "ente_federado": {
+                    "cnpj_prefeitura": "01.612.371/0001-97",
+                    "localizacao": {
+                        "estado": {
+                            "codigo_ibge": 24,
+                            "sigla": "RN"
+                        },
+                        "cidade": {
+                            "codigo_ibge": 241025,
+                            "nome_municipio": "Porto do Mangue"
+                        },
+                        "cep": "59.668-000",
+                        "bairro": "Centro",
+                        "endereco": "Rua Joca de Melo 96",
+                        "complemento": "Centro"
+                    },
+                    "telefones": {
+                        "telefone_um": "8435260047",
+                        "telefone_dois": "",
+                        "telefone_tres": ""
+                    },
+                    "endereco_eletronico": "http://portodomangue.rn.gov.br/"
+                }
+            },
+            {
+                "id": 4458,
+                "conselho": null,
+                "_links": {
+                    "self": {
+                        "href": "http://hmg.snc.cultura.gov.br/api/v1/sistemadeculturalocal/4458/"
+                    }
+                },
+                "_embedded": {
+                    "acoes_plano_trabalho": null
+                },
+                "situacao_adesao": null,
+                "governo": {
+                    "nome_prefeito": " ",
+                    "email_institucional_prefeito": " ",
+                    "termo_posse_prefeito": null
+                },
+                "ente_federado": {
+                    "cnpj_prefeitura": " ",
+                    "localizacao": {
+                        "estado": {
+                            "codigo_ibge": 17,
+                            "sigla": "TO"
+                        },
+                        "cidade": {
+                            "codigo_ibge": 171270,
+                            "nome_municipio": "Mateiros"
+                        },
+                        "cep": " ",
+                        "bairro": " ",
+                        "endereco": " ",
+                        "complemento": " "
+                    },
+                    "telefones": {
+                        "telefone_um": " ",
+                        "telefone_dois": " ",
+                        "telefone_tres": " "
+                    },
+                    "endereco_eletronico": null
+                }
+            },
+            {
+                "id": 4457,
+                "conselho": null,
+                "_links": {
+                    "self": {
+                        "href": "http://hmg.snc.cultura.gov.br/api/v1/sistemadeculturalocal/4457/"
+                    }
+                },
+                "_embedded": {
+                    "acoes_plano_trabalho": null
+                },
+                "situacao_adesao": null,
+                "governo": {
+                    "nome_prefeito": " ",
+                    "email_institucional_prefeito": " ",
+                    "termo_posse_prefeito": null
+                },
+                "ente_federado": {
+                    "cnpj_prefeitura": " ",
+                    "localizacao": {
+                        "estado": {
+                            "codigo_ibge": 17,
+                            "sigla": "TO"
+                        },
+                        "cidade": {
+                            "codigo_ibge": 170720,
+                            "nome_municipio": "Dois Irmãos do Tocantins"
+                        },
+                        "cep": " ",
+                        "bairro": " ",
+                        "endereco": " ",
+                        "complemento": " "
+                    },
+                    "telefones": {
+                        "telefone_um": " ",
+                        "telefone_dois": " ",
+                        "telefone_tres": " "
+                    },
+                    "endereco_eletronico": null
+                }
+            }
+        ]
+    },
+    "_links": {
+        "self": {
+            "href": "http://hmg.snc.cultura.gov.br/api/v1/sistemadeculturalocal/?limit=&offset=&nome_municipio=&estado_sigla=&cnpj_prefeitura="
+        },
+        "page": {
+            "href": "http://hmg.snc.cultura.gov.br/api/v1/sistemadeculturalocal/?cnpj_prefeitura=&estado_sigla=&limit={?page}&nome_municipio=&offset=",
+            "templated": true
+        },
+        "next": {
+            "href": "http://hmg.snc.cultura.gov.br/api/v1/sistemadeculturalocal/?cnpj_prefeitura=&estado_sigla=&limit=10&nome_municipio=&offset=10"
+        }
+    },
+    "count": 2967,
+    "page_size": 10
+}

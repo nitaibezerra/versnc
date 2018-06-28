@@ -32,7 +32,7 @@ Cypress.Commands.add('api', () => {
   cy.server()           // enable response stubbing
   cy.route({
     method: 'GET',      // Route all GET requests
-    url: 'http://hmg.snc.cultura.gov.br/api/v1/sistemadeculturalocal/?limit=&offset=&nome_municipio=&estado_sigla=&cnpj_prefeitura=',    // that have a URL that matches '/users/*'
+    url: 'http://hmg.snc.cultura.gov.br/api/v1/sistemadeculturalocal/?limit=&offset=&nome_municipio=&estado_sigla=&data_adesao_min=&data_adesao_max=',    // that have a URL that matches '/users/*'
     response: 'fixture:entidadeResponse'        // and force the response to be: []
   })
  });
@@ -41,7 +41,7 @@ Cypress.Commands.add('apiSimples', () => {
   cy.server()           // enable response stubbing
   cy.route({
     method: 'GET',      // Route all GET requests
-    url: 'http://hmg.snc.cultura.gov.br/api/v1/sistemadeculturalocal/?limit=&offset=&nome_municipio=Malhada&estado_sigla=&cnpj_prefeitura=',    // that have a URL that matches '/users/*'
+    url: 'http://hmg.snc.cultura.gov.br/api/v1/sistemadeculturalocal/?limit=&offset=&nome_municipio=Malhada&estado_sigla=&data_adesao_min=&data_adesao_max=',    // that have a URL that matches '/users/*'
     response: 'fixture:entidade.json'        // and force the response to be: []
   })
 });
@@ -50,16 +50,25 @@ Cypress.Commands.add('api_busca_uf', () => {
   cy.server()           // enable response stubbing
   cy.route({
     method: 'GET',      // Route all GET requests
-    url: 'http://hmg.snc.cultura.gov.br/api/v1/sistemadeculturalocal/?limit=&offset=&nome_municipio=&estado_sigla=DF&cnpj_prefeitura=',    // that have a URL that matches '/users/*'
+    url: 'http://hmg.snc.cultura.gov.br/api/v1/sistemadeculturalocal/?limit=&offset=&nome_municipio=&estado_sigla=DF&data_adesao_min=&data_adesao_max=',    // that have a URL that matches '/users/*'
     response: 'fixture:entidadeResponse'        // and force the response to be: []
   })
  });
 
-Cypress.Commands.add('api_busca_cnpj', () => {
+Cypress.Commands.add('api_data_adesao_min', () => {
   cy.server()           // enable response stubbing
   cy.route({
     method: 'GET',      // Route all GET requests
-    url: 'http://hmg.snc.cultura.gov.br/api/v1/sistemadeculturalocal/?limit=&offset=&nome_municipio=&estado_sigla=&cnpj_prefeitura=14.105.217/0001-70',    // that have a URL that matches '/users/*'
-    response: 'fixture:entidade.json'        // and force the response to be: []
+    url: 'http://hmg.snc.cultura.gov.br/api/v1/sistemadeculturalocal/?limit=&offset=&nome_municipio=&estado_sigla=&data_adesao_min=11/10/2017&data_adesao_max=',    // that have a URL that matches '/users/*'
+    response: 'fixture:adesao_11-10-2017'        // and force the response to be: []
+  })
+});
+
+Cypress.Commands.add('api_data_adesao_max', () => {
+  cy.server()           // enable response stubbing
+  cy.route({
+    method: 'GET',      // Route all GET requests
+    url: 'http://hmg.snc.cultura.gov.br/api/v1/sistemadeculturalocal/?limit=&offset=&nome_municipio=&estado_sigla=&data_adesao_min=&data_adesao_max=1/1/2016',    // that have a URL that matches '/users/*'
+    response: 'fixture:adesao_ate_1-1-2016'        // and force the response to be: []
   })
 });

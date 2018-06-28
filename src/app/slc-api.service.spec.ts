@@ -57,14 +57,14 @@ describe('SlcApiService', () => {
           telefones: { telefone_um: '', telefone_dois: '', telefone_tres: '' },
           endereco_eletronico: null },
       id: 4456,
-      link_entidade: 'http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/4456.json',
+      link_entidade: 'http://hmg.snc.cultura.gov.br/api/v1/sistemadeculturalocal/4456.json',
       link_plano_trabalho_entidade: '',
       nome_municipio: 'Divinópolis do Tocantins',
       sigla_estado: 'TO',
       situacao_adesao: '',
     };
 
-    httpClient.get<Entidade>('http://snchomolog.cultura.gov.br/api/v1/sistemadeculturalocal/')
+    httpClient.get<Entidade>('http://hmg.snc.cultura.gov.br/api/v1/sistemadeculturalocal/')
       .subscribe(data => expect(data).toEqual(response));
     }));
   });
