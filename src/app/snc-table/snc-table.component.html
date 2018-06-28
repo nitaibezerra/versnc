@@ -26,7 +26,7 @@
 </div>
 
 <mat-card id="tabela">
-  <mat-paginator [length]="count" [pageSize]="10" (page)="onTrocaPagina($event)"></mat-paginator>
+  <mat-paginator [length]="count" [pageSizeOptions]="[5, 10, 25, 100]" (page)="onTrocaPagina($event)"></mat-paginator>
   <mat-table #snctable [dataSource]="sncDataSource" matSort>
     <ng-container matColumnDef="nome_municipio">
       <mat-header-cell *matHeaderCellDef mat-sort-header matTooltip="Ordenar A-Z" matTooltipPosition="above">MUNICÍPIO</mat-header-cell>

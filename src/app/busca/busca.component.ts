@@ -34,6 +34,7 @@ export class BuscaComponent implements OnInit {
   onRealizarBuscaComEnter(event) {
     if (event.keyCode === 13) {
       if (!this.seletorTipoBusca) {
+        this.queries['limit'] = this.slcApiService['pageSize'].toString();
         if (this.termoSimples.length < 3) {
           this.queries['nome_municipio'] = '';
           this.queries['offset'] = '';

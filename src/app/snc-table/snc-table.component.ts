@@ -59,17 +59,20 @@ export class SncTableComponent implements OnInit, OnDestroy {
 
   onTrocaPagina(event?: PageEvent){
     this.slcApiService['paginaAtual'] = this.paginator['_pageIndex']; // Página atual é armazenada na service
+    this.slcApiService['pageSize'] = this.paginator['_pageSize'];
     let index = this.slcApiService['paginaAtual'];
-
-    this.pages = index * 10; // Number offset que vai para a chamada da API
+    let pageSize = this.slcApiService['pageSize'];
+    this.pages = index * pageSize; // Number offset que vai para a chamada da API
     this.listaRetorno[3] = this.pages; 
     this.listaRetorno[2]['offset'] = this.pages.toString(); // String 'offset' que vai para a chamada da API e realiza a paginação
+    this.listaRetorno[2]['limit'] = pageSize; 
     
     this.slcApiService.carregarPagina(index, this.listaRetorno[2]);
   }
   
   ngAfterViewInit() {
     this.paginator['_pageIndex'] = this.slcApiService['paginaAtual']; // Atualiza o valor da página atual corretamente    
+    this.paginator['_pageSize'] = this.slcApiService['pageSize']; 
   }
   
   ngOnInit() {

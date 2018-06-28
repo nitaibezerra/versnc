@@ -22,6 +22,7 @@ export class SlcApiService {
   private buscar = new BehaviorSubject<any>([]);
   buscaAtual = this.buscar.asObservable();
   private paginaAtual: number = 0;
+  private pageSize = 10;
 
   trocaBusca(any) {
     this.buscar.next(any);
