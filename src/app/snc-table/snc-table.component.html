@@ -33,11 +33,6 @@
       <mat-cell *matCellDef="let entidade"> {{entidade.nome_municipio}} - {{entidade.sigla_estado}} </mat-cell>
     </ng-container>
 
-    <ng-container matColumnDef="situacao_adesao">
-      <mat-header-cell *matHeaderCellDef mat-sort-header matTooltip="Ordenar A-Z" matTooltipPosition="above">SITUAÇÂO DA ADESÃO</mat-header-cell>
-      <mat-cell *matCellDef="let entidade"> {{entidade.situacao_adesao}} </mat-cell>
-    </ng-container>
-
     <ng-container matColumnDef="data_adesao">
       <mat-header-cell *matHeaderCellDef mat-sort-header matTooltip="Ordenar A-Z" matTooltipPosition="above">DATA DA ADESÃO</mat-header-cell>
       <mat-cell *matCellDef="let entidade"> {{entidade.data_adesao | date: 'dd/M/y'}} </mat-cell>
@@ -55,8 +50,8 @@
       </mat-cell>
     </ng-container>
 
-    <mat-header-row *matHeaderRowDef="['nome_municipio', 'situacao_adesao', 'data_adesao', 'plano_trabalho']"></mat-header-row>
-    <mat-row *matRowDef="let row; columns: ['nome_municipio', 'situacao_adesao', 'data_adesao', 'plano_trabalho'];"></mat-row>
+    <mat-header-row *matHeaderRowDef="['nome_municipio', 'data_adesao', 'plano_trabalho']"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: ['nome_municipio', 'data_adesao', 'plano_trabalho'];"></mat-row>
   </mat-table>
 </mat-card>
 
