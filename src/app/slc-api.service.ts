@@ -102,6 +102,9 @@ export class SlcApiService {
           entidade.sigla_estado = element['ente_federado']['localizacao']['estado']['sigla'];
           if (element['ente_federado']['localizacao']['cidade'] !== null) {
             entidade.nome_municipio = String(element['ente_federado']['localizacao']['cidade']['nome_municipio']);
+          } else {
+            entidade.nome_municipio = null;
+
           }
           return entidade;
         });
