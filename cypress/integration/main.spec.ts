@@ -131,4 +131,12 @@ describe('' +
       cy.get('mat-cell').eq(0).contains(' Porto do Mangue - RN ');
     });
 
+    it('Testa se a quantidade de municípios retornados pela busca está correto na descrição acima da tabela', () => {
+      cy.api();
+      cy.visit('http://localhost:4200/');
+      cy.get('input').type('{enter}');
+
+      cy.get('div h3.total.ng-star-inserted').contains('Municípios: 2967');
+    });
+
   });

@@ -12,17 +12,17 @@
 
   <mat-table #snctable [dataSource]="sncDataSource" matSort>
     <ng-container matColumnDef="nome_municipio">
-      <mat-header-cell *matHeaderCellDef mat-sort-header matTooltip="Ordenar A-Z" matTooltipPosition="above">MUNICÍPIO</mat-header-cell>
+      <mat-header-cell *matHeaderCellDef mat-sort-header matTooltip="Ordenar A-Z" matTooltipPosition="before">MUNICÍPIO</mat-header-cell>
       <mat-cell *matCellDef="let entidade"> {{entidade.nome_municipio}} - {{ entidade.sigla_estado}} </mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="data_adesao">
-      <mat-header-cell *matHeaderCellDef mat-sort-header matTooltip="Ordenar A-Z" matTooltipPosition="above">DATA DA ADESÃO</mat-header-cell>
+      <mat-header-cell *matHeaderCellDef mat-sort-header matTooltip="Ordenar A-Z" matTooltipPosition="before">DATA DA ADESÃO</mat-header-cell>
       <mat-cell *matCellDef="let entidade"> {{entidade.data_adesao | date: 'dd/MM/y'}} </mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="plano_trabalho">
-      <mat-header-cell *matHeaderCellDef matTooltip="Ordenar A-Z" matTooltipPosition="above">DETALHAR</mat-header-cell>
+      <mat-header-cell *matHeaderCellDef>DETALHAR</mat-header-cell>
       <mat-cell *matCellDef="let entidade">
         <a href="http://hmg.snc.cultura.gov.br/adesao/detalhar/{{entidade.id}}" class="detalhe-municipio" target="_blank">
           <i class="material-icons">insert_drive_file</i>
