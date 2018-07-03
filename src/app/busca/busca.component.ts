@@ -63,7 +63,6 @@ export class BuscaComponent implements OnInit {
         this.queries['estado_sigla'] = this.queries['estado_sigla'].toUpperCase()
         this.queries['data_adesao_min'] = this.getDatePicker(this.data_adesao_min);
         this.queries['data_adesao_max']=this.getDatePicker(this.data_adesao_max);
-        console.log(this.queries);
         this.onRealizarBusca();
       }
 
