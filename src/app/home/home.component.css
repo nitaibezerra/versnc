@@ -19,18 +19,11 @@
 }
 
 .contador p{
-  text-align: center;
   color: #2B9087;
-  font-size: 26px;
   margin: 0 0 0 0;
-  padding: 0 0 0 0;
 }
 .contador h1{
-  text-align: center;
   color: #2B9087;
-  font-size: 32px;
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
 }
 
 @media (min-width: 659px) {
@@ -41,7 +34,7 @@
     margin-bottom: 0px;
   }
   #cardsHome {
-    height: 40%;
+    height: 50%;
   }
 }
 
@@ -61,10 +54,14 @@
   position: relative;
 }
 
-#cardsHome h4 {
+#cardsHome h2 {
   color: whitesmoke;
   text-align: center;
   margin-top: 10px;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 36px;
+  font-style: normal;
 }
 
 .card a {
@@ -93,4 +90,22 @@
 
 #verdeClaro span {
   color: #00FF6A;
+}
+
+.locations {
+  margin-right: -15px;
+}
+
+mat-card h1 {
+  text-align: left;
+  color: #2B9087;
+  font-weight: 300;
+  margin-top: 35px;
+  margin-bottom: 0px;
+}
+
+mat-card p {
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
 }
