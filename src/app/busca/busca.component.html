@@ -46,12 +46,19 @@
     </mat-form-field>
 
     <mat-form-field class="textCenter">
-      <input #searchBox matInput [matDatepicker]="picker2" [(ngModel)]="data_adesao_max" [ngModelOptions]="{standalone: true}" placeholder="Adesão até a data">
+      <input #searchBox matInput [matDatepicker]="picker2" [(ngModel)]="data_adesao_max" [ngModelOptions]="{standalone: true}"
+        placeholder="Adesão até a data">
       <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
       <mat-datepicker #picker2></mat-datepicker>
     </mat-form-field>
 
   </form>
 
-  <a class="alinhamento" (click)="seletorTipoBusca = !seletorTipoBusca">{{ seletorTipoBusca ? '&#x25B4; Busca Simples' : '&#x25B8; Busca Avançada' }}</a>
+  <button *ngIf="!seletorTipoBusca" id="trocaBusca" mat-button class="alinhamento" (click)="seletorTipoBusca = true">
+    <span class="material-icons">keyboard_arrow_down</span>{{ seletorTipoBusca ? false : 'Abrir Filtros'}}
+  </button>
+  <button *ngIf="seletorTipoBusca" id="trocaBusca" mat-button class="alinhamento" (click)="seletorTipoBusca = false">
+    <span class="material-icons">keyboard_arrow_up</span> Fechar Filtros
+  </button>
+
 </div>
