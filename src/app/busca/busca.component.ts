@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { DateAdapter, MAT_DATE_LOCALE, MAT_DATE_FORMATS } from '@angular/material/';
 import { Entidade } from '../models/entidade.model';
-import { SlcApiService } from '../slc-api.service';
-import { SncTableComponent } from '../snc-table/snc-table.component';
+import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDatepickerModule } from '@angular/material/datepicker';
-import { DateAdapter, MAT_DATE_LOCALE, MAT_DATE_FORMATS } from '@angular/material/';
 import { MAT_MOMENT_DATE_FORMATS, MomentDateAdapter } from '@angular/material-moment-adapter';
+import { SncTableComponent } from '../snc-table/snc-table.component';
+
+import { SlcApiService } from '../slc-api.service';
 
 @Component({
   selector: 'snc-busca',

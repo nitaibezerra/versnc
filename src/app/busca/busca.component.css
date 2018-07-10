@@ -31,3 +31,13 @@
     margin-bottom: 2px;
   }
  
+#trocaBusca {
+    width: 135px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    text-transform: capitalize;
+    color: #828282;
+    padding: 8px;
+}
