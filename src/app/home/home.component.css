@@ -7,8 +7,8 @@
 
 .contador {
   background: #F2F2F2;
-  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25); */
-  height: 30%;
+  height: 200px;
+  min-height: 40px;
   margin: 0 0 0 0px;
 }
 
@@ -41,6 +41,27 @@
   height: 40px;
 }
 
+@media (min-width: 288px) {
+  .alinhamento {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 0px;
+  }
+
+  .locations {
+    width: 30%;
+  }
+
+}
+
+@media (min-width: 360px) {
+  .locations{
+    margin-right: 6%;
+    margin-left: 6%;
+  }
+}
+
 @media (min-width: 659px) {
   .alinhamento {
     display: flex;
@@ -48,8 +69,10 @@
     justify-content: space-around;
     margin-bottom: 0px;
   }
+
   #cardsHome {
-    height: 50%;
+    height: 360px;
+    min-height: 360px;
   }
 }
 
