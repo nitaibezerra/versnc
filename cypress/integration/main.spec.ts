@@ -69,11 +69,10 @@ describe('' +
       cy.get('app-root snc-table mat-card mat-table mat-row mat-cell').eq(0).contains(' Malhada - BA ');
     });
 
-    it('Testa mudança da Busca Simples p/ Busca Avançada após click no botão de Busca Avançada', () => {
+    it('Testa mudança da Busca Simples p/ Busca Avançada após click no botão de Abrir Filtros', () => {
       cy.api();
       cy.visit('http://localhost:4200/');
-      cy.get('.alinhamento').eq(1).click();
-      cy.get('.alinhamento').eq(1).contains('Busca Simples');
+      cy.get('.alinhamento').eq(1).contains('Abrir Filtros');
     });
 
     it('Testa input Estado/Municipio da Busca Avançada e retorno respectivo na tabela', () => {
