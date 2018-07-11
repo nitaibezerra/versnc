@@ -9,9 +9,9 @@ describe('' +
       cy.visit('http://localhost:4200/');
     });
 
-    it('Apresenta descrição Consulte seu Município ou UF', () => {
+    it('Apresenta descrição Consulte seu Estado ou Município', () => {
       cy.visit('http://localhost:4200/home');
-      cy.get('app-root snc-busca h4').contains('Consulte o seu Município ou UF');
+      cy.get('app-root snc-busca h4').contains('Consulte seu Estado ou Município');
     });
 
     it('Apresenta Tabela na Pagina Inicial', () => {
