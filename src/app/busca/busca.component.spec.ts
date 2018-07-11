@@ -57,9 +57,9 @@ describe('BuscaComponent', () => {
     expect(component['queries']['estado_sigla']).toEqual('');
   });
 
-  it('Verifica se descrição do campo de busca contem - Consulte o seu Município ou UF - ', () => {
+  it('Verifica se descrição do campo de busca contem - Consulte seu Estado ou Município - ', () => {
     const htmlComponent = fixture.debugElement.nativeElement;
-    expect(htmlComponent.querySelector('h4').textContent).toContain('Consulte o seu Município ou UF');
+    expect(htmlComponent.querySelector('h4').textContent).toContain('Consulte seu Estado ou Município');
   });
 
   it('Verifica se a informação digitada na busca é armazenada corretamente no componente', inject([SlcApiService], (service: SlcApiService) => {
