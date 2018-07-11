@@ -81,7 +81,6 @@ export class SlcApiService {
           entidade.ente_federado = element['ente_federado'];
 
           entidade.situacao_adesao = element['situacao_adesao'] ? String(element['situacao_adesao']['situacao_adesao']) : '';
-          console.log(entidade.situacao_adesao);
           entidade.conselho = element['conselho'] ? element['conselho'] : ''; 
 
           entidade.link_entidade = String(element['_links']['self']['href']);
