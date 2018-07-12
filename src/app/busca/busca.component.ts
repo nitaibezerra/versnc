@@ -28,6 +28,8 @@ export class BuscaComponent implements OnInit {
   private page: number = 0;
   private data_adesao_min: String = "";
   private data_adesao_max: String = "";
+  private visualizarEstados = false;
+  private visualizarMunicipios = false;
 
   constructor(private slcApiService: SlcApiService) {
   }
@@ -47,7 +49,6 @@ export class BuscaComponent implements OnInit {
 
   onRealizarBuscaComEnter(event) {
     if (event.keyCode === 13) {
-
       if (!this.seletorTipoBusca) { // BUSCA SIMPLES
         if (this.termoSimples.length < 3) {
           this.queries['nome_municipio'] = '';
@@ -64,7 +65,7 @@ export class BuscaComponent implements OnInit {
       } else { // BUSCA AVANÇADA
         this.queries['estado_sigla'] = this.queries['estado_sigla'].toUpperCase()
         this.queries['data_adesao_min'] = this.getDatePicker(this.data_adesao_min);
-        this.queries['data_adesao_max']=this.getDatePicker(this.data_adesao_max);
+        this.queries['data_adesao_max'] = this.getDatePicker(this.data_adesao_max);
         this.onRealizarBusca();
       }
 
