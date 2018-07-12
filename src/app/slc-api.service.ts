@@ -88,7 +88,7 @@ export class SlcApiService {
           entidade.nome_estado = element['ente_federado']['localizacao']['estado']['nome_uf'];
           entidade.sigla_estado = element['ente_federado']['localizacao']['estado']['sigla'];
           
-          if (element['_embedded']['acoes_plano_trabalho'] !== null || undefined) {
+          if (element['_embedded']['acoes_plano_trabalho']) {
             entidade.acoes_plano_trabalho = element['_embedded']['acoes_plano_trabalho'];
             entidade.link_plano_trabalho_entidade = entidade.acoes_plano_trabalho['_links']['self']['href'];
 
@@ -107,9 +107,9 @@ export class SlcApiService {
             entidade.municipioUF = entidade.nome_estado;
           }
 
-
           return entidade;
         });
+
         return { entesFederados, count };
       });
   }
